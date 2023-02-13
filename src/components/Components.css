@@ -1,0 +1,31 @@
+:root {
+	--cobalto: #28469d;
+}
+.animacion {
+	-webkit-animation: scroll 10s linear infinite;
+	animation: scroll 10s linear infinite;
+	width: calc(4rem * 32);
+}
+@keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	100% {
+		-webkit-transform: translateX(calc(-4rem * 16));
+		transform: translateX(calc(-4rem * 16));
+	}
+}
+
+.bg {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 4%,
+		rgba(40, 70, 157, 1) 83%
+	);
+}
+
+ion-icon {
+	color: var(--cobalto);
+}
