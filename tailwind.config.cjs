@@ -9,11 +9,13 @@ module.exports = {
 				azulito: '#0080FF',
 			},
 			fontFamily: {
-				monserrat: 'monserrat, sans-serif',
+				monserrat: ['Montserrat, sans-serif'],
 			},
 			backgroundImage: {
-				heroHome: 'url(./src/assets/Imagenes-Optimen/heroHome.jpg)',
-				heroAbout: '',
+				heroHome:
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/heroHome.jpg)',
+				heroAbout:
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/ops.png)',
 			},
 			height: {
 				500: '500px',
@@ -29,7 +31,12 @@ module.exports = {
 			gridTemplateColumns: {
 				templateColumns: 'auto auto auto 1fr',
 			},
+			gridTemplateRows: {
+				auto1: 'auto',
+				auto2: 'auto auto',
+			},
 		},
 	},
+	darkMode: 'class',
 	plugins: [],
 };

@@ -1,10 +1,12 @@
 import FirstCard from './FirstCard';
+import Border from '../Border';
+
 function FirstSection() {
 	return (
 		<div className="ml-8 mr-8 font-monserrat">
-			<section className="py-20 px-8">
+			<section className="pt-14 px-8 mt-[-5rem]">
 				<div className="w-full max-w-940 mr-auto ml-auto">
-					<div className="grid mt-12 gap-x-12 gap-y-24 grid-cols-3">
+					<div className="grid mt-12 gap-x-20 gap-y-24 grid-cols-3">
 						<FirstCard
 							src="./src/assets/Imagenes-Optimen/mission.png"
 							alt="mission"
@@ -35,6 +37,7 @@ function FirstSection() {
 						></FirstCard>
 					</div>
 				</div>
+				<Border />
 			</section>
 		</div>
 	);
