@@ -7,6 +7,7 @@ module.exports = {
 				cobalto: '#28469d',
 				gris: 'rgb(0,0,0,0.80)',
 				azulito: '#0080FF',
+				azulitoClaro: 'rgba(0, 128, 255, 0.13)',
 			},
 			fontFamily: {
 				monserrat: ['Montserrat, sans-serif'],
@@ -16,6 +17,7 @@ module.exports = {
 					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/heroHome.jpg)',
 				heroAbout:
 					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/ops.png)',
+				opacity: 'rgba(0, 0, 0, 0.8)',
 			},
 			height: {
 				500: '500px',
@@ -34,6 +36,12 @@ module.exports = {
 			gridTemplateRows: {
 				auto1: 'auto',
 				auto2: 'auto auto',
+			},
+			boxShadow: {
+				sombra: '0 1px 5px -4px #000',
+			},
+			flex: {
+				ceroAuto: '0 auto',
 			},
 		},
 	},

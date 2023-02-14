@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import HeroAbout from '../components/AboutUs/HeroAbout';
 import FirstSection from '../components/AboutUs/FirstSection';
 import SecondSection from '../components/AboutUs/SecondSection';
+import ThirdSection from '../components/AboutUs/ThirdSection';
 function AboutUs() {
 	return (
 		<div className="overflow-x-hidden">
@@ -13,6 +14,7 @@ function AboutUs() {
 			/>
 			<FirstSection />
 			<SecondSection />
+			<ThirdSection />
 			<Footer />
 		</div>
 	);
