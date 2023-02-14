@@ -1,9 +1,11 @@
+import Border from '../Border';
+
 function FirstSection() {
 	return (
 		<div className="ml-8 mr-8 font-monserrat">
 			<section className="w-full max-w-1440 mr-auto ml-auto">
 				<div className="mt-16 mb-16">
-					<div className="grid items-center gap-x-20 gap-y-8 grid-cols-2 mb-8 border-b-2 border-azulito border-opacity-40">
+					<div className="grid items-center gap-x-20 gap-y-8 grid-cols-2 mb-8 0">
 						<div className="mb-8">
 							<h2 className="mt-3 mb-5 text-cobalto font-semibold text-4xl leading-40">
 								A World Class Global Enterpise
@@ -20,7 +22,8 @@ function FirstSection() {
 							alt="A world class global enterpise"
 						/>
 					</div>
-					<div className="grid items-center gap-x-20 gap-y-8 grid-cols-2 mb-8 border-b-2 border-azulito border-opacity-40 mt-12">
+					<Border />
+					<div className="grid items-center gap-x-20 gap-y-8 grid-cols-2 mb-8 mt-12">
 						<img
 							className="max-w-full"
 							// src="./src/assets/Imagenes-Optimen/desktop_img (1).webp"
@@ -36,11 +39,12 @@ function FirstSection() {
 						</div>
 					</div>
 				</div>
+				<Border />
 				<div className="text-center">
-					<h2 className="text-cobalto font-semibold text-4xl mb-5 pb-10 ">
+					<h2 className="text-cobalto font-semibold text-4xl mb-5 pb-10 mt-7">
 						Capabilities
 					</h2>
-					<div className="grid grid-cols-2 gap-4 border-b-2 border-azulito border-opacity-40 ">
+					<div className="grid grid-cols-2 gap-4">
 						<p className="text-azulito font-bold opacity-30 hover:opacity-100">
 							Airline Operations Expertise
 						</p>
@@ -78,6 +82,7 @@ function FirstSection() {
 							Operations Modeling
 						</p>
 					</div>
+					<Border />
 				</div>
 			</section>
 		</div>

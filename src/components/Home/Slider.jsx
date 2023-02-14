@@ -1,3 +1,4 @@
+import '../Components.css';
 function Slider() {
 	return (
 		<section>
