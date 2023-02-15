@@ -1,5 +1,5 @@
 import Border from '../Border';
-import FourthCard from './FourthCard';
+import ThirdCard from './ThirdCard';
 
 function ThirdSection() {
 	return (
@@ -10,12 +10,12 @@ function ThirdSection() {
 				</h2>
 				<div className="h-auto mt-12 text-center mb-5">
 					<div className="overflow-hidden whitespace-nowrap h-full z-10 flex justify-around">
-						<FourthCard
+						<ThirdCard
 							src="./src/assets/Imagenes-Optimen/airplane_1.jpg"
 							alt="airplane1"
 							description="Associated with long experience in the Airline Industry with high trust and tight relation with commercial airlines and industry key players."
 						/>
-						<FourthCard
+						<ThirdCard
 							src="./src/assets/Imagenes-Optimen/airplane_2.jpg"
 							alt="airplane2"
 							description="Broad experience developing software in real Airline Operational Control Systems and implementation of Optimization Software."

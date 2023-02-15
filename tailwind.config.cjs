@@ -8,6 +8,7 @@ module.exports = {
 				gris: 'rgb(0,0,0,0.80)',
 				azulito: '#0080FF',
 				azulitoClaro: 'rgba(0, 128, 255, 0.13)',
+				opacidad: '1A1B1F',
 			},
 			fontFamily: {
 				monserrat: ['Montserrat, sans-serif'],
@@ -42,6 +43,9 @@ module.exports = {
 			},
 			flex: {
 				ceroAuto: '0 auto',
+			},
+			transitionProperty: {
+				card: 'transition: transform 500ms ease 0',
 			},
 		},
 	},
