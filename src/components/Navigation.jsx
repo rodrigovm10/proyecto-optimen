@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 function Navigation() {
 	return (
-		<div className="flex justify-start items-center bg-cobalto py-2 pr-10 pl-8">
-			<div className="relative flex justify-between items-center flex-1">
+		<div className="flex items-center justify-start bg-cobalto py-2 pr-10 pl-8">
+			<div className="relative flex flex-1 items-center justify-between">
 				<Link to="/">
 					<img
 						className="w-15 h-12"
@@ -11,13 +11,13 @@ function Navigation() {
 					/>
 				</Link>
 				<div>
-					<nav className="font-monserrat uppercase text-xs ">
+					<nav className="font-monserrat text-xs uppercase ">
 						<Link to="/" className="p-5 tracking-widest text-white opacity-60">
 							Home
 						</Link>
 
 						<Link
-							to="/AboutUs"
+							to="/About Us"
 							className="p-5 tracking-widest text-white opacity-60"
 						>
 							About
@@ -29,7 +29,7 @@ function Navigation() {
 							News
 						</a>
 						<a
-							href="#"
+							href="/Contact Us"
 							className="p-5 text-xs tracking-widest text-white opacity-60 "
 						>
 							Contact Us

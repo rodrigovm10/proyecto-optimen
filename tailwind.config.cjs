@@ -10,6 +10,7 @@ module.exports = {
 				azulito: '#0080FF',
 				azulitoClaro: 'rgba(0, 128, 255, 0.13)',
 				opacidad: '1A1B1F',
+				triplee: '#eee',
 			},
 			fontFamily: {
 				monserrat: ['Montserrat, sans-serif'],
@@ -34,6 +35,7 @@ module.exports = {
 			},
 			gridTemplateColumns: {
 				templateColumns: 'auto auto auto 1fr',
+				'2.5-1fr': '2.5 1fr',
 			},
 			gridTemplateRows: {
 				auto1: 'auto',

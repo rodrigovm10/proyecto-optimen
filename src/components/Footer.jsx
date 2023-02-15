@@ -3,36 +3,37 @@ import Nav from './Nav';
 
 function Footer() {
 	return (
-		<footer className="bg-gris py-10 pr-8 pl-4 relative ">
-			<div className="w-full max-w-940 mr-auto ml-auto">
-				<div className="flex max-w-900 mr-auto ml-auto justify-between items-start">
-					<Link to="/" className="max-w-full inline-block">
+		<footer className="relative bg-gris py-10 pr-8 pl-4 ">
+			<div className="mr-auto ml-auto w-full max-w-940">
+				<div className="mr-auto ml-auto flex max-w-900 items-start justify-between">
+					<Link to="/" className="inline-block max-w-full">
 						<img
 							className="w-56"
 							src="./src/assets/Imagenes-Optimen/logo-blanco-azul.png"
 							alt="Logo Optimen"
 						/>
 					</Link>
-					<nav className="grid auto-cols-fr gap-x-16 gap-y-10 grid-cols-templateColumns">
+					<nav className="grid auto-cols-fr grid-cols-templateColumns gap-x-16 gap-y-10">
 						<Nav
 							title="Menu"
 							link1="Home"
 							to1="/"
 							link2="About Us"
-							to2="/AboutUs"
+							to2="/About Us"
 							link3="Customers"
 							link4="News"
 							link5="Contact Us"
+							to6="/Contact Us"
 						/>
-						<div className="text-white flex flex-col justify-start items-start text-sm leading-4">
-							<p className="opacity-80 font-bold tracking-wider uppercase">
+						<div className="flex flex-col items-start justify-start text-sm leading-4 text-white">
+							<p className="font-bold uppercase tracking-wider opacity-80">
 								Location
 							</p>
-							<p className="opacity-60 mt-3 mb-1">
+							<p className="mt-3 mb-1 opacity-60">
 								Av. León 119 | León, Guanajuato | Mexico
 							</p>
-							<p className="opacity-60 mt-3 mb-1">Phone: +52 (477) 7173339</p>
-							<p className="opacity-60 mt-3 mb-1">Email: info@optimen.com.mx</p>
+							<p className="mt-3 mb-1 opacity-60">Phone: +52 (477) 7173339</p>
+							<p className="mt-3 mb-1 opacity-60">Email: info@optimen.com.mx</p>
 						</div>
 						<Nav
 							title="About"
@@ -56,8 +57,8 @@ function Footer() {
 						</div>
 					</nav>
 				</div>
-				<div className="w-full h-px mt-16 mb-4 bg-slate-50"></div>
-				<p className="text-sm leading-4 text-center text-cobalto hover:text-black">
+				<div className="mt-16 mb-4 h-px w-full bg-slate-50"></div>
+				<p className="text-center text-sm leading-4 text-cobalto hover:text-black">
 					Copyright © 2021 Company name
 				</p>
 			</div>

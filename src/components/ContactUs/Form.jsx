@@ -1,0 +1,17 @@
+import FormSection from './FormSection';
+import LocationSection from './LocationSection';
+
+function Form() {
+	return (
+		<div className="mr-8 ml-8">
+			<section className="mr-auto ml-auto w-full max-w-[1140px]">
+				<div className="grid-cols-2.5-1fr mt-24 mb-24 grid auto-cols-fr grid-rows-auto1 items-start gap-y-20 gap-x-8">
+					<FormSection />
+					<LocationSection />
+				</div>
+			</section>
+		</div>
+	);
+}
+
+export default Form;
