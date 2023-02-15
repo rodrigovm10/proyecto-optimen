@@ -5,6 +5,7 @@ import FirstSection from '../components/AboutUs/FirstSection';
 import SecondSection from '../components/AboutUs/SecondSection';
 import ThirdSection from '../components/AboutUs/ThirdSection';
 import FourthSection from '../components/AboutUs/FourthSection';
+import FifthSection from '../components/AboutUs/FifthSection';
 function AboutUs() {
 	return (
 		<div className="overflow-x-hidden">
@@ -17,6 +18,7 @@ function AboutUs() {
 			<SecondSection />
 			<ThirdSection />
 			<FourthSection />
+			<FifthSection />
 			<Footer />
 		</div>
 	);
