@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Suspense, lazy } from 'react';
+
 const CarouselSection = lazy(() => import('../Customers/CarouselSection'));
 
 function Customers() {

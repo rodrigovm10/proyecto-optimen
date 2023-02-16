@@ -24,7 +24,6 @@ function CarouselSection({
 	alt9,
 	src10,
 	alt10,
-	mas,
 }) {
 	return (
 		<div className="mr-8 ml-8 font-monserrat">
