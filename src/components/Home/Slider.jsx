@@ -8,7 +8,15 @@ import Clutig from '../../assets/Imagenes-Optimen/Home/CLUTIG.webp';
 import LogoGob from '../../assets/Imagenes-Optimen/Home/LOGO_GOBIERNO.webp';
 import Atg from '../../assets/Imagenes-Optimen/Home/ATG_ADDITIVE_MANUFCATURING.webp';
 import UTNG from '../../assets/Imagenes-Optimen/Home/logo-utng.png';
-import Horizont from '../../assets/Imagenes-Optimen/Home/HORIZONTC.jpg ';
+import Horizont from '../../assets/Imagenes-Optimen/Home/HORIZONTC.jpg';
+import Educafin from '../../assets/Imagenes-Optimen/Home/EDUCAFINEVOLUCIONA.png';
+import IdeaGTO from '../../assets/Imagenes-Optimen/Home/idea_gto.png';
+import CEI from '../../assets/Imagenes-Optimen/Home/CEI_GPA.jpeg';
+import Cinvestav from '../../assets/Imagenes-Optimen/Home/Cinvestav.png';
+import IECA from '../../assets/Imagenes-Optimen/Home/IECA_.png';
+import Juventud from '../../assets/Imagenes-Optimen/Home/JuventudEsGTO.jpg';
+import TDM from '../../assets/Imagenes-Optimen/Home/TDM.jpg';
+
 function Slider() {
 	return (
 		<section>
@@ -49,41 +57,21 @@ function Slider() {
 							src={Horizont}
 							alt={'HORIZONTC'}
 						/>
-						<img
-							className={'mr-4 ml-4 w-24'}
-							src={'./src/assets/Imagenes-Optimen/Home/EDUCAFINEVOLUCIONA.png'}
-							alt={'EDUCAFIN'}
-						/>
-						<img
-							className={'mr-4 ml-4 w-24'}
-							src={'./src/assets/Imagenes-Optimen/Home/idea_gto.png'}
-							alt={'idea-gto'}
-						/>
-						<img
-							className={'mr-4 ml-4 w-24'}
-							src={'./src/assets/Imagenes-Optimen/Home/CEI_GPA.jpeg'}
-							alt={'CEI_GPA'}
-						/>
+						<img className={'mr-4 ml-4 w-24'} src={Educafin} alt={'EDUCAFIN'} />
+						<img className={'mr-4 ml-4 w-24'} src={IdeaGTO} alt={'idea-gto'} />
+						<img className={'mr-4 ml-4 w-24'} src={CEI} alt={'CEI_GPA'} />
 						<img
 							className={'mr-4 ml-4 w-16'}
-							src={'./src/assets/Imagenes-Optimen/Home/Cinvestav.png'}
+							src={Cinvestav}
 							alt={'Cinvestav'}
 						/>
-						<img
-							className={'mr-4 ml-4 w-24'}
-							src={'./src/assets/Imagenes-Optimen/Home/IECA_.png'}
-							alt={'IECA'}
-						/>
+						<img className={'mr-4 ml-4 w-24'} src={IECA} alt={'IECA'} />
 						<img
 							className={'mr-4 ml-4 w-16'}
-							src={'./src/assets/Imagenes-Optimen/Home/JuventudEsGTO.jpg'}
+							src={Juventud}
 							alt={'JuventudEsGTO'}
 						/>
-						<img
-							className={'mr-4 ml-4 w-16'}
-							src={'./src/assets/Imagenes-Optimen/Home/TDM.jpg'}
-							alt={'JuventudEsGTO'}
-						/>
+						<img className={'mr-4 ml-4 w-16'} src={TDM} alt={'TDM'} />
 					</div>
 				</div>
 			</div>

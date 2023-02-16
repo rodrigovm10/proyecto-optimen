@@ -1,14 +1,16 @@
 function ThirdCard({ src, alt, description }) {
 	return (
-		<div className="w-3/12 mr-4 h-full whitespace-normal">
-			<div className="pb-6 rounded-2xl bg-azulitoClaro shadow-sombra">
+		<div className={'mr-4 h-full w-3/12 whitespace-normal'}>
+			<div className={'rounded-2xl bg-azulitoClaro pb-6 shadow-sombra'}>
 				<img
-					className="mb-5 rounded-tr-2xl rounded-l-2xl rounded-bl-none bg-opacity h-52"
+					className={
+						'mb-5 h-52 rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
+					}
 					src={src}
 					alt={alt}
 				/>
-				<div className="flex px-6 flex-col items-start">
-					<p className="mb-5 flex-ceroAuto">{description}</p>
+				<div className={'flex flex-col items-start px-6'}>
+					<p className={'mb-5 flex-ceroAuto'}>{description}</p>
 				</div>
 			</div>
 		</div>

@@ -1,13 +1,25 @@
 function HeroAbout({ title, description }) {
 	return (
 		<>
-			<div className="bg-heroAbout bg-no-repeat flex h-500 justify-center items-center bg-fixed mb-16 font-monserrat bg-cover">
-				<div className="w-3/4 max-w-7xl text-center">
-					<div className="w-4/5 mr-auto mb-9 ml-auto">
-						<h1 className=" mt-2.5 mb-8 opacity-80 text-6xl leading-10 font-semibold text-white">
+			<div
+				className={
+					'mb-16 flex h-500 items-center justify-center bg-heroAbout bg-cover bg-fixed bg-no-repeat font-monserrat'
+				}
+			>
+				<div className={'w-3/4 max-w-7xl text-center'}>
+					<div className={'mr-auto mb-9 ml-auto w-4/5'}>
+						<h1
+							className={
+								' mt-2.5 mb-8 text-6xl font-semibold leading-10 text-white opacity-80'
+							}
+						>
 							{title}
 						</h1>
-						<p className="mb-2 text-xl leading-9 font-semibold text-white opacity-60">
+						<p
+							className={
+								'mb-2 text-xl font-semibold leading-9 text-white opacity-60'
+							}
+						>
 							{description}
 						</p>
 					</div>

@@ -1,38 +1,55 @@
-import Border from '../Border';
-import FourthCard from './FourthCard';
+import Hannover from '../../assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.jpg';
+import Xprice from '../../assets/Imagenes-Optimen/About Us/xprize_ana_avatar.png';
+import AWS from '../../assets/Imagenes-Optimen/About Us/aws_mentefactura.png';
 
 function FourthSection() {
 	return (
-		<div className="ml-8 mr-8 font-monserrat">
-			<section className="py-10 px-8">
-				<h2 className="mb-5 text-center text-3xl font-semibold text-cobalto">
+		<div className={'ml-8 mr-8 font-monserrat'}>
+			<section className={'py-10 px-8'}>
+				<h2 className={'mb-5 text-center text-3xl font-semibold text-cobalto'}>
 					Innovation Hub
 				</h2>
-				<p className="mr-auto ml-auto max-w-[530px] text-center text-opacidad opacity-60">
+				<p
+					className={
+						'mr-auto ml-auto max-w-[530px] text-center text-opacidad opacity-60'
+					}
+				>
 					Througt our capabilities, the services we provide , and our
 					commitment, we implement proyects resulting in sastifiedclients and
 					succes stories
 				</p>
-				<div className="mt-12 h-auto text-center">
-					<div className="z-10 flex h-full justify-evenly overflow-hidden whitespace-nowrap">
+				<div className={'mt-12 h-auto text-center'}>
+					<div
+						className={
+							'z-10 flex h-full justify-evenly overflow-hidden whitespace-nowrap'
+						}
+					>
 						<div
-							className="transition-card h-full w-[30%] translate-x-0 whitespace-normal"
-							aria-label="1 of 5"
-							role="group"
+							className={
+								'transition-card h-full w-[30%] translate-x-0 whitespace-normal'
+							}
 						>
-							<div className="rounded-2xl bg-azulitoClaro pb-6">
+							<div className={'rounded-2xl bg-azulitoClaro pb-6'}>
 								<img
-									className="mb-[18px] w-[350px] rounded-tl-2xl rounded-tr-2xl"
-									src="./src/assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.jpg"
-									alt="HANNOVER_MESSE"
+									className={
+										'mb-[18px] w-[350px] rounded-tl-2xl rounded-tr-2xl'
+									}
+									src={Hannover}
+									alt={'HANNOVER_MESSE'}
 								/>
-								<div className="flex flex-col items-start pr-6 pl-6 text-center">
-									<h3 className="mb-3 text-center text-2xl font-semibold text-azulito">
+								<div
+									className={'flex flex-col items-start pr-6 pl-6 text-center'}
+								>
+									<h3
+										className={
+											'mb-3 text-center text-2xl font-semibold text-azulito'
+										}
+									>
 										Hannover Messe
 									</h3>
-									<p className="mb-5 opacity-60">
-										Optimen family present at "Industrial Transformation Mexico,
-										Hannover Messe". HANNOVER MESSE is the most important
+									<p className={'mb-5 opacity-60'}>
+										Optimen family present at 'Industrial Transformation Mexico,
+										Hannover Messe'. HANNOVER MESSE is the most important
 										international platform and hot spot for industrial
 										transformation - with excellent innovations or unusual
 										products.
@@ -41,21 +58,29 @@ function FourthSection() {
 							</div>
 						</div>
 						<div
-							className="transition-card h-full w-[30%] translate-x-0 whitespace-normal"
-							aria-label="2 of 5"
-							role="group"
+							className={
+								'transition-card h-full w-[30%] translate-x-0 whitespace-normal'
+							}
 						>
-							<div className="rounded-2xl bg-azulitoClaro pb-12">
+							<div className={'rounded-2xl bg-azulitoClaro pb-12'}>
 								<img
-									className="mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl"
-									src="./src/assets/Imagenes-Optimen/About Us/xprize_ana_avatar.png"
-									alt="xprize"
+									className={
+										'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
+									}
+									src={Xprice}
+									alt={'xprize'}
 								/>
-								<div className="flex flex-col items-start pr-6 pl-6 text-center">
-									<h3 className="mb-3 text-center text-2xl font-semibold text-azulito">
+								<div
+									className={'flex flex-col items-start pr-6 pl-6 text-center'}
+								>
+									<h3
+										className={
+											'mb-3 text-center text-2xl font-semibold text-azulito'
+										}
+									>
 										Ana Avatar XPrize
 									</h3>
-									<p className="mb-5 opacity-60">
+									<p className={'mb-5 opacity-60'}>
 										Optimen teamed up with Inbiodroid are working together on
 										ANA Avatar XPRIZE challenge that aims to create an Avatar
 										system that can transport human presence to a remote
@@ -65,21 +90,29 @@ function FourthSection() {
 							</div>
 						</div>
 						<div
-							className="transition-card h-full w-[30%] translate-x-0 whitespace-normal"
-							aria-label="3 of 5"
-							role="group"
+							className={
+								'transition-card h-full w-[30%] translate-x-0 whitespace-normal'
+							}
 						>
-							<div className="rounded-2xl bg-azulitoClaro pb-4">
+							<div className={'rounded-2xl bg-azulitoClaro pb-4'}>
 								<img
-									className="mb-[18px] h-[227px] w-[450px] rounded-tl-2xl rounded-tr-2xl"
-									src="./src/assets/Imagenes-Optimen/About Us/aws_mentefactura.png"
-									alt="xprize"
+									className={
+										'mb-[18px] h-[227px] w-[450px] rounded-tl-2xl rounded-tr-2xl'
+									}
+									src={AWS}
+									alt={'xprize'}
 								/>
-								<div className="flex flex-col items-start pr-6 pl-6 text-center">
-									<h3 className="mb-3 text-center text-2xl font-semibold text-azulito">
+								<div
+									className={'flex flex-col items-start pr-6 pl-6 text-center'}
+								>
+									<h3
+										className={
+											'mb-3 text-center text-2xl font-semibold text-azulito'
+										}
+									>
 										AWS Mentefactura GTO Challenge
 									</h3>
-									<p className="mb-5 opacity-60">
+									<p className={'mb-5 opacity-60'}>
 										Hackathon organized by the alliance between AWS, Optimen,
 										Educafin, IdeaGTO, SEG and GAP with the purpose that
 										students, Guanajuato talent, will execute innovative
@@ -89,7 +122,7 @@ function FourthSection() {
 							</div>
 						</div>
 					</div>
-					<div className="static m-auto mt-6 h-[40px] bg-white pt-3">
+					<div className={'static m-auto mt-6 h-[40px] bg-white pt-3'}>
 						<div className=""></div>
 					</div>
 				</div>
