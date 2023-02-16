@@ -15,7 +15,7 @@ function FormSection() {
 				<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
 					<label
 						for="Name"
-						className="mb-3 text-xs font-medium uppercase leading-[1px]"
+						className="mb-3 text-xs font-medium uppercase leading-[1px] tracking-widest"
 					>
 						Name
 					</label>
@@ -29,7 +29,7 @@ function FormSection() {
 					/>
 					<label
 						for="Address"
-						className="mb-3 text-xs font-medium uppercase leading-[1px]"
+						className="mb-3 text-xs font-medium uppercase leading-[1px] tracking-widest"
 					>
 						Email Address
 					</label>
@@ -43,7 +43,7 @@ function FormSection() {
 					/>
 					<label
 						for="Message"
-						className="mb-3 text-xs font-medium uppercase leading-[1px]"
+						className="mb-3 text-xs font-medium uppercase leading-[1px] tracking-widest"
 					>
 						Message
 					</label>

@@ -3,9 +3,9 @@ import LocationSection from './LocationSection';
 
 function Form() {
 	return (
-		<div className="mr-8 ml-8">
+		<div className="mr-8 ml-8 font-monserrat">
 			<section className="mr-auto ml-auto w-full max-w-[1140px]">
-				<div className="grid-cols-2.5-1fr mt-24 mb-24 grid auto-cols-fr grid-rows-auto1 items-start gap-y-20 gap-x-8">
+				<div className="mt-24 mb-24 grid auto-cols-fr grid-cols-2.5-1fr grid-rows-auto1 items-start gap-y-20 gap-x-8">
 					<FormSection />
 					<LocationSection />
 				</div>

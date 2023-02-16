@@ -35,7 +35,7 @@ module.exports = {
 			},
 			gridTemplateColumns: {
 				templateColumns: 'auto auto auto 1fr',
-				'2.5-1fr': '2.5 1fr',
+				'2.5-1fr': '2.5fr 1fr',
 			},
 			gridTemplateRows: {
 				auto1: 'auto',
