@@ -17,9 +17,9 @@ module.exports = {
 			},
 			backgroundImage: {
 				heroHome:
-					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/heroHome.jpg)',
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/Home/heroHome.jpg)',
 				heroAbout:
-					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/ops.png)',
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/About Us/ops.png)',
 				opacity: 'rgba(0, 0, 0, 0.8)',
 			},
 			height: {

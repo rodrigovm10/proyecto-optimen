@@ -2,100 +2,100 @@ import '../Components.css';
 function Slider() {
 	return (
 		<section>
-			<h2 className="mt-3 mb-5 text-cobalto font-semibold text-4xl leading-40 text-center">
+			<h2 className="mt-3 mb-5 text-center text-4xl font-semibold leading-40 text-cobalto">
 				Partnerships and Affiliations
 			</h2>
-			<div className="opacity-40 py-6 px-8 overflow-hidden">
-				<div className=" w-full max-w-4xl mr-auto ml-auto ">
-					<div className="flex animacion justify-around items-center">
+			<div className="overflow-hidden py-6 px-8 opacity-40">
+				<div className=" mr-auto ml-auto w-full max-w-4xl ">
+					<div className="animacion flex items-center justify-around">
 						<img
-							className="w-16 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/GTOtech2.webp"
+							className="mr-4 ml-4 w-16"
+							src="./src/assets/Imagenes-Optimen/Home/GTOtech2.webp"
 							alt="GTOtech2"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/bjx_aerospace.png"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/bjx_aerospace.png"
 							alt="Aerospace"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/COFOCE.webp"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/COFOCE.webp"
 							alt="GTOtech2"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/SDES.png"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/SDES.png"
 							alt="COFOCE"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/AEROCLUSTER_QRO.webp"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/AEROCLUSTER_QRO.webp"
 							alt="AEROCLUSTER_QRO"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/CANIETI.webp"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/CANIETI.webp"
 							alt="CANIETI"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/CLUTIG.webp"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/CLUTIG.webp"
 							alt="CLUTIG"
 						/>
 						<img
-							className="w-16 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/LOGO_GOBIERNO.webp"
+							className="mr-4 ml-4 w-16"
+							src="./src/assets/Imagenes-Optimen/Home/LOGO_GOBIERNO.webp"
 							alt="LOGO_GOBIERNO"
 						/>
 						<img
-							className="w-16 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/logo-utng.png"
+							className="mr-4 ml-4 w-16"
+							src="./src/assets/Imagenes-Optimen/Home/logo-utng.png"
 							alt="logo-utng"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/ATG_ADDITIVE_MANUFCATURING.webp"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/ATG_ADDITIVE_MANUFCATURING.webp"
 							alt="ATG-ADDITIVE"
 						/>
 						<img
-							className="w-32 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/HORIZONTC.jpg "
+							className="mr-4 ml-4 w-32"
+							src="./src/assets/Imagenes-Optimen/Home/HORIZONTC.jpg "
 							alt="HORIZONTC"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/EDUCAFINEVOLUCIONA.png"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/EDUCAFINEVOLUCIONA.png"
 							alt="EDUCAFIN"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/idea_gto.png"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/idea_gto.png"
 							alt="idea-gto"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/CEI_GPA.jpeg"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/CEI_GPA.jpeg"
 							alt="CEI_GPA"
 						/>
 						<img
-							className="w-16 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/Cinvestav.png"
+							className="mr-4 ml-4 w-16"
+							src="./src/assets/Imagenes-Optimen/Home/Cinvestav.png"
 							alt="Cinvestav"
 						/>
 						<img
-							className="w-24 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/IECA_.png"
+							className="mr-4 ml-4 w-24"
+							src="./src/assets/Imagenes-Optimen/Home/IECA_.png"
 							alt="IECA"
 						/>
 						<img
-							className="w-16 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/JuventudEsGTO.jpg"
+							className="mr-4 ml-4 w-16"
+							src="./src/assets/Imagenes-Optimen/Home/JuventudEsGTO.jpg"
 							alt="JuventudEsGTO"
 						/>
 						<img
-							className="w-16 mr-4 ml-4"
-							src="./src/assets/Imagenes-Optimen/TDM.jpg"
+							className="mr-4 ml-4 w-16"
+							src="./src/assets/Imagenes-Optimen/Home/TDM.jpg"
 							alt="JuventudEsGTO"
 						/>
 					</div>

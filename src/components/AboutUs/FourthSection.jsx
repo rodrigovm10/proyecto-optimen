@@ -5,29 +5,29 @@ function FourthSection() {
 	return (
 		<div className="ml-8 mr-8 font-monserrat">
 			<section className="py-10 px-8">
-				<h2 className="text-cobalto font-semibold text-center text-3xl mb-5">
+				<h2 className="mb-5 text-center text-3xl font-semibold text-cobalto">
 					Innovation Hub
 				</h2>
-				<p className="max-w-[530px] mr-auto ml-auto opacity-60 text-center text-opacidad">
+				<p className="mr-auto ml-auto max-w-[530px] text-center text-opacidad opacity-60">
 					Througt our capabilities, the services we provide , and our
 					commitment, we implement proyects resulting in sastifiedclients and
 					succes stories
 				</p>
-				<div className="h-auto mt-12 text-center">
-					<div className="overflow-hidden whitespace-nowrap h-full z-10 flex justify-evenly">
+				<div className="mt-12 h-auto text-center">
+					<div className="z-10 flex h-full justify-evenly overflow-hidden whitespace-nowrap">
 						<div
-							className="translate-x-0 transition-card w-[30%] h-full whitespace-normal"
+							className="transition-card h-full w-[30%] translate-x-0 whitespace-normal"
 							aria-label="1 of 5"
 							role="group"
 						>
-							<div className="pb-6 rounded-2xl bg-azulitoClaro">
+							<div className="rounded-2xl bg-azulitoClaro pb-6">
 								<img
-									className="mb-[18px] rounded-tl-2xl rounded-tr-2xl w-[350px]"
-									src="./src/assets/Imagenes-Optimen/HANNOVER_MESSE.jpg"
+									className="mb-[18px] w-[350px] rounded-tl-2xl rounded-tr-2xl"
+									src="./src/assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.jpg"
 									alt="HANNOVER_MESSE"
 								/>
-								<div className="flex pr-6 pl-6 flex-col items-start text-center">
-									<h3 className="mb-3 text-azulito text-2xl font-semibold text-center">
+								<div className="flex flex-col items-start pr-6 pl-6 text-center">
+									<h3 className="mb-3 text-center text-2xl font-semibold text-azulito">
 										Hannover Messe
 									</h3>
 									<p className="mb-5 opacity-60">
@@ -41,18 +41,18 @@ function FourthSection() {
 							</div>
 						</div>
 						<div
-							className="translate-x-0 transition-card w-[30%] h-full whitespace-normal"
+							className="transition-card h-full w-[30%] translate-x-0 whitespace-normal"
 							aria-label="2 of 5"
 							role="group"
 						>
-							<div className="pb-12 rounded-2xl bg-azulitoClaro">
+							<div className="rounded-2xl bg-azulitoClaro pb-12">
 								<img
-									className="mb-[18px] rounded-tl-2xl rounded-tr-2xl h-[227px]"
-									src="./src/assets/Imagenes-Optimen/xprize_ana_avatar.png"
+									className="mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl"
+									src="./src/assets/Imagenes-Optimen/About Us/xprize_ana_avatar.png"
 									alt="xprize"
 								/>
-								<div className="flex pr-6 pl-6 flex-col items-start text-center">
-									<h3 className="mb-3 text-azulito text-2xl font-semibold text-center">
+								<div className="flex flex-col items-start pr-6 pl-6 text-center">
+									<h3 className="mb-3 text-center text-2xl font-semibold text-azulito">
 										Ana Avatar XPrize
 									</h3>
 									<p className="mb-5 opacity-60">
@@ -65,18 +65,18 @@ function FourthSection() {
 							</div>
 						</div>
 						<div
-							className="translate-x-0 transition-card w-[30%] h-full whitespace-normal"
+							className="transition-card h-full w-[30%] translate-x-0 whitespace-normal"
 							aria-label="3 of 5"
 							role="group"
 						>
-							<div className="pb-4 rounded-2xl bg-azulitoClaro">
+							<div className="rounded-2xl bg-azulitoClaro pb-4">
 								<img
-									className="mb-[18px] rounded-tl-2xl rounded-tr-2xl h-[227px] w-[450px]"
-									src="./src/assets/Imagenes-Optimen/aws_mentefactura.png"
+									className="mb-[18px] h-[227px] w-[450px] rounded-tl-2xl rounded-tr-2xl"
+									src="./src/assets/Imagenes-Optimen/About Us/aws_mentefactura.png"
 									alt="xprize"
 								/>
-								<div className="flex pr-6 pl-6 flex-col items-start text-center">
-									<h3 className="mb-3 text-azulito text-2xl font-semibold text-center">
+								<div className="flex flex-col items-start pr-6 pl-6 text-center">
+									<h3 className="mb-3 text-center text-2xl font-semibold text-azulito">
 										AWS Mentefactura GTO Challenge
 									</h3>
 									<p className="mb-5 opacity-60">
@@ -89,7 +89,7 @@ function FourthSection() {
 							</div>
 						</div>
 					</div>
-					<div className="static mt-6 bg-white m-auto pt-3 h-[40px]">
+					<div className="static m-auto mt-6 h-[40px] bg-white pt-3">
 						<div className=""></div>
 					</div>
 				</div>

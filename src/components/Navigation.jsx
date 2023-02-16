@@ -22,18 +22,24 @@ function Navigation() {
 						>
 							About
 						</Link>
-						<a href="#" className="p-5 tracking-widest text-white opacity-60  ">
+						<Link
+							to="/Customers"
+							className="p-5 tracking-widest text-white opacity-60  "
+						>
 							Customers
-						</a>
-						<a href="#" className="p-5 tracking-widest text-white opacity-60 ">
+						</Link>
+						<Link
+							to="/News"
+							className="p-5 tracking-widest text-white opacity-60 "
+						>
 							News
-						</a>
-						<a
-							href="/Contact Us"
+						</Link>
+						<Link
+							to="/Contact Us"
 							className="p-5 text-xs tracking-widest text-white opacity-60 "
 						>
 							Contact Us
-						</a>
+						</Link>
 					</nav>
 				</div>
 			</div>

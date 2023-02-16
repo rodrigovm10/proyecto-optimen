@@ -21,9 +21,11 @@ function Footer() {
 							link2="About Us"
 							to2="/About Us"
 							link3="Customers"
+							to3="/Customers"
 							link4="News"
+							to4="/News"
 							link5="Contact Us"
-							to6="/Contact Us"
+							to5="/Contact Us"
 						/>
 						<div className="flex flex-col items-start justify-start text-sm leading-4 text-white">
 							<p className="font-bold uppercase tracking-wider opacity-80">
