@@ -4,7 +4,7 @@ function ThirdCard({ src, alt, description }) {
 			<div className={'rounded-2xl bg-azulitoClaro pb-6 shadow-sombra'}>
 				<img
 					className={
-						'mb-5 h-52 rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
+						'mb-5 h-52 w-full rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
 					}
 					src={src}
 					alt={alt}

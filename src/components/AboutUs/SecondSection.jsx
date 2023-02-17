@@ -5,7 +5,7 @@ import Auditing from '../../assets/Imagenes-Optimen/About Us/check-list.png';
 import Business from '../../assets/Imagenes-Optimen/About Us/rules.png';
 import Outsoursing from '../../assets/Imagenes-Optimen/About Us/outsourcing.png';
 import Innovation from '../../assets/Imagenes-Optimen/About Us/innovation (1).png';
-import Interface from './src/assets/Imagenes-Optimen/About Us/interface.png';
+import Interface from '../../assets/Imagenes-Optimen/About Us/interface.png';
 
 function SecondSection() {
 	return (

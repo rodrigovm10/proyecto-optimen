@@ -39,7 +39,7 @@ function ThirdSection() {
 							>
 								<img
 									className={
-										'mb-5 h-52 rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
+										'mb-5 h-52 w-full rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
 									}
 									src={Airplane3}
 									alt={'airplane3'}
