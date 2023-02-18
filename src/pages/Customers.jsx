@@ -18,8 +18,12 @@ import UnitedA from './../assets/Imagenes-Optimen/Customers/United-Airlines-logo
 import Kalita from './../assets/Imagenes-Optimen/Customers/Kalita.webp';
 import Frontier from './../assets/Imagenes-Optimen/Customers/Frontier.png';
 import Alaska from './../assets/Imagenes-Optimen/Customers/Alaska.webp';
-const CarouselSection = lazy(() => import('../Customers/CarouselSection'));
-const CarouselSection2 = lazy(() => import('../Customers/CarouselSection2'));
+const CarouselSection = lazy(() =>
+	import('../components/Customers/CarouselSection')
+);
+const CarouselSection2 = lazy(() =>
+	import('../components/Customers/CarouselSection2')
+);
 
 function Customers() {
 	return (

@@ -1,147 +1,145 @@
-import { Link } from 'react-router-dom';
-
 function FirstLine() {
 	return (
-		<div className={'sticky top-20 flex flex-col items-start justify-start'}>
-			<Link
-				to={'#1'}
+		<div className={'hrefp-20 sticky flex flex-col items-start justify-start'}>
+			<a
+				href={'#1'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-80 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				The Beginning {<br />}
-			</Link>
-			<Link
-				to={'#2'}
+			</a>
+			<a
+				href={'#2'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				First support team {<br />}
-			</Link>
-			<Link
-				to={'#3'}
+			</a>
+			<a
+				href={'#3'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				On the big League {<br />}
-			</Link>
-			<Link
-				to={'#4'}
+			</a>
+			<a
+				href={'#4'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Optimen and the Aerospace Cluster {<br />}
-			</Link>
-			<Link
-				to={'#5'}
+			</a>
+			<a
+				href={'#5'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Our Opening
 				{<br />}
-			</Link>
-			<Link
-				to={'#6'}
+			</a>
+			<a
+				href={'#6'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				First South American Client
 				{<br />}
-			</Link>
-			<Link
-				to={'#7'}
+			</a>
+			<a
+				href={'#7'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
-				Guanajuato Talent
+				Guanajuahref Talent
 				{<br />}
-			</Link>
-			<Link
-				to={'#8'}
+			</a>
+			<a
+				href={'#8'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Go Innovation Forum
 				{<br />}
-			</Link>
-			<Link
-				to={'#9'}
+			</a>
+			<a
+				href={'#9'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Other Relationships
 				{<br />}
-			</Link>
-			<Link
-				to={'#10'}
+			</a>
+			<a
+				href={'#10'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Innovation Hub Optimen
 				{<br />}
-			</Link>
-			<Link
-				to={'#11'}
+			</a>
+			<a
+				href={'#11'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Going global
 				{<br />}
-			</Link>
-			<Link
-				to={'#12'}
+			</a>
+			<a
+				href={'#12'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				UTNG relationship
 				{<br />}
-			</Link>
-			<Link
-				to={'#13'}
+			</a>
+			<a
+				href={'#13'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				Aeroclúster Querétaro
 				{<br />}
-			</Link>
-			<Link
-				to={'#14'}
+			</a>
+			<a
+				href={'#14'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				CANIETI-CLUTIG
 				{<br />}
-			</Link>
-			<Link
-				to={'#15'}
+			</a>
+			<a
+				href={'#15'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
-				Distinctive 'Marca GTO'
+				Distinctive 'Marca Ghref'
 				{<br />}
-			</Link>
-			<Link
-				to={'#16'}
+			</a>
+			<a
+				href={'#16'}
 				className={
-					'mb-9 text-2xl font-semibold italic leading-8 text-azulito opacity-60 hover:opacity-100'
+					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
 				EDUCAFIN EVOLUCIONA {<br />}
-			</Link>
+			</a>
 		</div>
 	);
 }

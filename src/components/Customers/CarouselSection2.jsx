@@ -1,8 +1,8 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Border from '../components/Border';
+import Border from '../../components/Border';
 
-function CarouselSection({
+function CarouselSection2({
 	title,
 	description,
 	src1,
@@ -19,6 +19,12 @@ function CarouselSection({
 	alt6,
 	src7,
 	alt7,
+	src8,
+	alt8,
+	src9,
+	alt9,
+	src10,
+	alt10,
 }) {
 	return (
 		<div className={'mr-8 ml-8 font-monserrat'}>
@@ -68,6 +74,15 @@ function CarouselSection({
 							<div>
 								<img src={src7} alt={alt7} />
 							</div>
+							<div>
+								<img src={src8} alt={alt8} />
+							</div>
+							<div>
+								<img src={src9} alt={alt9} />
+							</div>
+							<div>
+								<img src={src10} alt={alt10} />
+							</div>
 						</Carousel>
 					</div>
 					<Border />
@@ -77,4 +92,4 @@ function CarouselSection({
 	);
 }
 
-export default CarouselSection;
+export default CarouselSection2;
