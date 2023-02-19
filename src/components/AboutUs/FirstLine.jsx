@@ -1,6 +1,6 @@
 function FirstLine() {
 	return (
-		<div className={'hrefp-20 sticky flex flex-col items-start justify-start'}>
+		<div className={'sticky flex flex-col items-start justify-start'}>
 			<a
 				href={'#1'}
 				className={
@@ -57,7 +57,7 @@ function FirstLine() {
 					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
-				Guanajuahref Talent
+				Guanajuato Talent
 				{<br />}
 			</a>
 			<a
@@ -129,7 +129,7 @@ function FirstLine() {
 					'mb-9 text-2xl font-semibold italic leading-8 text-black opacity-60 hover:opacity-100'
 				}
 			>
-				Distinctive 'Marca Ghref'
+				Distinctive 'Marca GTO'
 				{<br />}
 			</a>
 			<a

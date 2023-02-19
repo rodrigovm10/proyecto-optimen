@@ -4,7 +4,7 @@ function SecondLine() {
 			<div className={'relative'} id={'1'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2006 - The beginning
@@ -19,7 +19,7 @@ function SecondLine() {
 			<div className={'relative'} id={'2'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2009 - First support team
@@ -34,7 +34,7 @@ function SecondLine() {
 			<div className={'relative'} id={'3'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2014 - On the big league
@@ -49,7 +49,7 @@ function SecondLine() {
 			<div className={'relative'} id={'4'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2016 - Our Opening
@@ -63,7 +63,7 @@ function SecondLine() {
 			<div className={'relative'} id={'5'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2017 - Optimen and the Aerospace Cluster
@@ -77,7 +77,7 @@ function SecondLine() {
 			<div className={'relative'} id={'6'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2017 - First South American Client
@@ -91,7 +91,7 @@ function SecondLine() {
 			<div className={'relative'} id={'7'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2017 - Guanajuato Talent
@@ -106,7 +106,7 @@ function SecondLine() {
 			<div className={'relative'} id={'8'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2017 - Go Innovation Forum
@@ -121,7 +121,7 @@ function SecondLine() {
 			<div className={'relative'} id={'9'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2018 - Other Relationships
@@ -136,7 +136,7 @@ function SecondLine() {
 			<div className={'relative'} id={'10'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2019 - Innovation Hub Optimen
@@ -152,7 +152,7 @@ function SecondLine() {
 			<div className={'relative'} id={'11'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2019 - Going global
@@ -178,7 +178,7 @@ function SecondLine() {
 			<div className={'relative'} id={'13'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2020 - Aeroclúster Querétaro
@@ -193,7 +193,7 @@ function SecondLine() {
 			<div className={'relative'} id={'14'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2020 - CANIETI-CLUTIG
@@ -208,7 +208,7 @@ function SecondLine() {
 			<div className={'relative'} id={'15'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2020 - Distinctive "Marca GTO"
@@ -220,7 +220,7 @@ function SecondLine() {
 			<div className={'relative'} id={'16'}>
 				<h3
 					className={
-						'mt-3 mb-3 text-3xl font-normal leading-10 text-cobalto opacity-80 '
+						'mt-3 mb-3 text-3xl font-normal leading-[46px] text-cobalto opacity-80'
 					}
 				>
 					2021 - EDUCAFIN EVOLUCIONA
