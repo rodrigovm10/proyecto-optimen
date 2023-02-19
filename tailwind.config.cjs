@@ -21,6 +21,8 @@ module.exports = {
 				heroAbout:
 					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/About Us/ops.png)',
 				opacity: 'rgba(0, 0, 0, 0.8)',
+				heroNew:
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/assets/Imagenes-Optimen/News/network-3524352.jpg)',
 			},
 			height: {
 				500: '500px',
