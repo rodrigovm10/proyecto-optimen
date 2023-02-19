@@ -70,7 +70,7 @@ function FourthSection() {
 									'transition-card h-full w-[30%] translate-x-0 whitespace-normal'
 								}
 							>
-								<div className={'rounded-2xl bg-azulitoClaro pb-12'}>
+								<div className={'rounded-2xl bg-azulitoClaro pb-[74px]'}>
 									<img
 										className={
 											'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
@@ -104,7 +104,7 @@ function FourthSection() {
 									'transition-card h-full w-[30%] translate-x-0 whitespace-normal'
 								}
 							>
-								<div className={'rounded-2xl bg-azulitoClaro pb-4'}>
+								<div className={'rounded-2xl bg-azulitoClaro pb-[44px]'}>
 									<img
 										className={
 											'mb-[18px] h-[227px] w-[450px] rounded-tl-2xl rounded-tr-2xl'
