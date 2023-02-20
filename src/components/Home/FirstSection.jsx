@@ -1,5 +1,6 @@
 import Border from '../Border';
-// import ;
+import Img1 from '../../assets/Imagenes-Optimen/Home/img-1.jpg';
+import Img2 from '../../assets/Imagenes-Optimen/Home/img-2.jpg';
 
 function FirstSection() {
 	return (
@@ -25,7 +26,7 @@ function FirstSection() {
 						</div>
 						<img
 							className={'max-w-full'}
-							// src="./src/assets/Imagenes-Optimen/desktop_img (1).webp"
+							src={Img1}
 							alt={'A world class global enterpise'}
 						/>
 					</div>
@@ -37,7 +38,7 @@ function FirstSection() {
 					>
 						<img
 							className="max-w-full"
-							// src="./src/assets/Imagenes-Optimen/desktop_img (1).webp"
+							src={Img2}
 							alt={'A world class global enterpise'}
 						/>
 						<div className={'relative left-20 mb-8'}>
