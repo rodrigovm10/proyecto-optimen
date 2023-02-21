@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import Border from '../Border';
 import ThirdCard from './ThirdCard';
 import Airplane1 from '../../assets/Imagenes-Optimen/About Us/airplane_1.jpg';
@@ -37,13 +38,15 @@ function ThirdSection() {
 									'rounded-2xl bg-azulitoClaro pb-[72px] shadow-sombra'
 								}
 							>
-								<img
-									className={
-										'mb-5 h-52 w-full rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
-									}
-									src={Airplane3}
-									alt={'airplane3'}
-								/>
+								<LazyLoad>
+									<img
+										className={
+											'mb-5 h-52 w-full rounded-l-2xl rounded-tr-2xl rounded-bl-none bg-opacity'
+										}
+										src={Airplane3}
+										alt={'airplane3'}
+									/>
+								</LazyLoad>
 								<div className={'flex flex-col items-start px-6'}>
 									<p className={'mb-5 flex-ceroAuto'}>
 										Strong Project Management following the industry best

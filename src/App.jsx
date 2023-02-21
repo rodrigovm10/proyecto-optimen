@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
 import News from './pages/News';
 import Customers from './pages/Customers';
-
+import Login from './pages/Login';
 function App() {
 	return (
 		<BrowserRouter>
@@ -15,6 +15,7 @@ function App() {
 				<Route path="/Customers" element={<Customers />}></Route>
 				<Route path="/Contact Us" element={<ContactUs />}></Route>
 				<Route path="/News" element={<News />}></Route>
+				<Route path="/Login" element={<Login />}></Route>
 			</Routes>
 		</BrowserRouter>
 	);

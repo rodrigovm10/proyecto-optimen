@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import '../Components.css';
 import GTOtech from '../../assets/Imagenes-Optimen/Home/GTOtech2.webp';
 import AeroSpace from '../../assets/Imagenes-Optimen/Home/bjx_aerospace.png';
@@ -30,48 +31,104 @@ function Slider() {
 			<div className={'overflow-hidden py-6 px-8 opacity-40'}>
 				<div className={' mr-auto ml-auto w-full max-w-4xl '}>
 					<div className={'animacion flex items-center justify-around'}>
-						<img className={'mr-4 ml-4 w-16'} src={GTOtech} alt={'GTOtech2'} />
-						<img
-							className={'mr-4 ml-4 w-24'}
-							src={AeroSpace}
-							alt={'Aerospace'}
-						/>
-						<img className={'mr-4 ml-4 w-24'} src={GTOtech} alt={'GTOtech2'} />
-						<img className={'mr-4 ml-4 w-24'} src={Cofoce} alt={'COFOCE'} />
-						<img
-							className={'mr-4 ml-4 w-24'}
-							src={Aerocluster}
-							alt={'AEROCLUSTER_QRO'}
-						/>
-						<img className={'mr-4 ml-4 w-24'} src={Canieti} alt={'CANIETI'} />
-						<img className={'mr-4 ml-4 w-24'} src={Clutig} alt={'CLUTIG'} />
-						<img
-							className={'mr-4 ml-4 w-16'}
-							src={LogoGob}
-							alt={'LOGO_GOBIERNO'}
-						/>
-						<img className={'mr-4 ml-4 w-16'} src={UTNG} alt={'logo-utng'} />
-						<img className={'mr-4 ml-4 w-24'} src={Atg} alt={'ATG-ADDITIVE'} />
-						<img
-							className={'mr-4 ml-4 w-32'}
-							src={Horizont}
-							alt={'HORIZONTC'}
-						/>
-						<img className={'mr-4 ml-4 w-24'} src={Educafin} alt={'EDUCAFIN'} />
-						<img className={'mr-4 ml-4 w-24'} src={IdeaGTO} alt={'idea-gto'} />
-						<img className={'mr-4 ml-4 w-24'} src={CEI} alt={'CEI_GPA'} />
-						<img
-							className={'mr-4 ml-4 w-16'}
-							src={Cinvestav}
-							alt={'Cinvestav'}
-						/>
-						<img className={'mr-4 ml-4 w-24'} src={IECA} alt={'IECA'} />
-						<img
-							className={'mr-4 ml-4 w-16'}
-							src={Juventud}
-							alt={'JuventudEsGTO'}
-						/>
-						<img className={'mr-4 ml-4 w-16'} src={TDM} alt={'TDM'} />
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-16'}
+								src={GTOtech}
+								alt={'GTOtech2'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-24'}
+								src={AeroSpace}
+								alt={'Aerospace'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-24'}
+								src={GTOtech}
+								alt={'GTOtech2'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-24'} src={Cofoce} alt={'COFOCE'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-24'}
+								src={Aerocluster}
+								alt={'AEROCLUSTER_QRO'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-24'} src={Canieti} alt={'CANIETI'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-24'} src={Clutig} alt={'CLUTIG'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-16'}
+								src={LogoGob}
+								alt={'LOGO_GOBIERNO'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-16'} src={UTNG} alt={'logo-utng'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-24'}
+								src={Atg}
+								alt={'ATG-ADDITIVE'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-32'}
+								src={Horizont}
+								alt={'HORIZONTC'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-24'}
+								src={Educafin}
+								alt={'EDUCAFIN'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-24'}
+								src={IdeaGTO}
+								alt={'idea-gto'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-24'} src={CEI} alt={'CEI_GPA'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-16'}
+								src={Cinvestav}
+								alt={'Cinvestav'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-24'} src={IECA} alt={'IECA'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-16'}
+								src={Juventud}
+								alt={'JuventudEsGTO'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-16'} src={TDM} alt={'TDM'} />
+						</LazyLoad>
 					</div>
 				</div>
 			</div>

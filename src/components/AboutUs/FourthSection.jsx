@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Hannover from '../../assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.jpg';
@@ -36,13 +37,15 @@ function FourthSection() {
 								}
 							>
 								<div className={'rounded-2xl bg-azulitoClaro pb-6'}>
-									<img
-										className={
-											'mb-[18px] w-[350px] rounded-tl-2xl rounded-tr-2xl'
-										}
-										src={Hannover}
-										alt={'HANNOVER_MESSE'}
-									/>
+									<LazyLoad>
+										<img
+											className={
+												'mb-[18px] w-[350px] rounded-tl-2xl rounded-tr-2xl'
+											}
+											src={Hannover}
+											alt={'HANNOVER_MESSE'}
+										/>
+									</LazyLoad>
 									<div
 										className={
 											'flex flex-col items-start pr-6 pl-6 text-center'
@@ -71,13 +74,15 @@ function FourthSection() {
 								}
 							>
 								<div className={'rounded-2xl bg-azulitoClaro pb-[74px]'}>
-									<img
-										className={
-											'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
-										}
-										src={Xprice}
-										alt={'xprize'}
-									/>
+									<LazyLoad>
+										<img
+											className={
+												'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
+											}
+											src={Xprice}
+											alt={'xprize'}
+										/>
+									</LazyLoad>
 									<div
 										className={
 											'flex flex-col items-start pr-6 pl-6 text-center'
@@ -105,13 +110,15 @@ function FourthSection() {
 								}
 							>
 								<div className={'rounded-2xl bg-azulitoClaro pb-[44px]'}>
-									<img
-										className={
-											'mb-[18px] h-[227px] w-[450px] rounded-tl-2xl rounded-tr-2xl'
-										}
-										src={AWS}
-										alt={'xprize'}
-									/>
+									<LazyLoad>
+										<img
+											className={
+												'mb-[18px] h-[227px] w-[450px] rounded-tl-2xl rounded-tr-2xl'
+											}
+											src={AWS}
+											alt={'xprize'}
+										/>
+									</LazyLoad>
 									<div
 										className={
 											'flex flex-col items-start pr-6 pl-6 text-center'
@@ -145,13 +152,15 @@ function FourthSection() {
 								}
 							>
 								<div className={'rounded-2xl bg-azulitoClaro pb-[170px]'}>
-									<img
-										className={
-											'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
-										}
-										src={Educate}
-										alt={'Educate Optimen'}
-									/>
+									<LazyLoad>
+										<img
+											className={
+												'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
+											}
+											src={Educate}
+											alt={'Educate Optimen'}
+										/>
+									</LazyLoad>
 									<div
 										className={
 											'flex flex-col items-start pr-6 pl-6 text-center'
@@ -174,13 +183,15 @@ function FourthSection() {
 								}
 							>
 								<div className={'rounded-2xl bg-azulitoClaro pb-[120px]'}>
-									<img
-										className={
-											'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
-										}
-										src={InnovationHUB}
-										alt={'InnovationHUB'}
-									/>
+									<LazyLoad>
+										<img
+											className={
+												'mb-[18px] h-[227px] rounded-tl-2xl rounded-tr-2xl'
+											}
+											src={InnovationHUB}
+											alt={'InnovationHUB'}
+										/>
+									</LazyLoad>
 									<div
 										className={
 											'flex flex-col items-start pr-6 pl-6 text-center'

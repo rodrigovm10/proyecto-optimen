@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 function New({ title, date, description, src, alt }) {
 	return (
 		<div className="relative h-full overflow-hidden whitespace-nowrap">
@@ -12,11 +13,13 @@ function New({ title, date, description, src, alt }) {
 							<div>{description}</div>
 						</div>
 					</div>
-					<img
-						className="h-[300px] w-[300px] object-cover"
-						src={src}
-						alt={alt}
-					/>
+					<LazyLoad>
+						<img
+							className="h-[300px] w-[300px] object-cover"
+							src={src}
+							alt={alt}
+						/>
+					</LazyLoad>
 				</div>
 			</div>
 		</div>

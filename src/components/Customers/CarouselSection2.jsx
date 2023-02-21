@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Border from '../../components/Border';
@@ -54,34 +55,54 @@ function CarouselSection2({
 							showStatus={false}
 						>
 							<div>
-								<img src={src1} alt={alt1} />
+								<LazyLoad>
+									<img src={src1} alt={alt1} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src2} alt={alt2} />
+								<LazyLoad>
+									<img src={src2} alt={alt2} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src3} alt={alt3} />
+								<LazyLoad>
+									<img src={src3} alt={alt3} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src4} alt={alt4} />
+								<LazyLoad>
+									<img src={src4} alt={alt4} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src5} alt={alt5} />
+								<LazyLoad>
+									<img src={src5} alt={alt5} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src6} alt={alt6} />
+								<LazyLoad>
+									<img src={src6} alt={alt6} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src7} alt={alt7} />
+								<LazyLoad>
+									<img src={src7} alt={alt7} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src8} alt={alt8} />
+								<LazyLoad>
+									<img src={src8} alt={alt8} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src9} alt={alt9} />
+								<LazyLoad>
+									<img src={src9} alt={alt9} />
+								</LazyLoad>
 							</div>
 							<div>
-								<img src={src10} alt={alt10} />
+								<LazyLoad>
+									<img src={src10} alt={alt10} />
+								</LazyLoad>
 							</div>
 						</Carousel>
 					</div>

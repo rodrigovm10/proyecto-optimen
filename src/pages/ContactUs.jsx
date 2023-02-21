@@ -1,12 +1,20 @@
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import Form from '../components/ContactUs/Form';
+import { Suspense, lazy } from 'react';
+const Navigation = lazy(() => import('../components/Navigation'));
+const Footer = lazy(() => import('../components/Footer'));
+const Form = lazy(() => import('../components/ContactUs/Form'));
+
 function ContactUs() {
 	return (
 		<>
-			<Navigation />
-			<Form />
-			<Footer />
+			<Suspense>
+				<Navigation />
+			</Suspense>
+			<Suspense>
+				<Form />
+			</Suspense>
+			<Suspense>
+				<Footer />
+			</Suspense>
 		</>
 	);
 }

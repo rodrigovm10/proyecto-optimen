@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import Border from '../Border';
 import Img1 from '../../assets/Imagenes-Optimen/Home/img-1.jpg';
 import Img2 from '../../assets/Imagenes-Optimen/Home/img-2.jpg';
@@ -24,11 +25,13 @@ function FirstSection() {
 								Services IT Software Solutions Development
 							</p>
 						</div>
-						<img
-							className={'max-w-full'}
-							src={Img1}
-							alt={'A world class global enterpise'}
-						/>
+						<LazyLoad>
+							<img
+								className={'max-w-full'}
+								src={Img1}
+								alt={'A world class global enterpise'}
+							/>
+						</LazyLoad>
 					</div>
 					<Border />
 					<div

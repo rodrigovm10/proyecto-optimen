@@ -1,17 +1,19 @@
 import { Suspense, lazy } from 'react';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
+const Navigation = lazy(() => import('../components/Navigation'));
+const Footer = lazy(() => import('../components/Footer'));
 const HeroAbout = lazy(() => import('../components/AboutUs/HeroAbout'));
 const FirstSection = lazy(() => import('../components/AboutUs/FirstSection'));
 const SecondSection = lazy(() => import('../components/AboutUs/SecondSection'));
 const ThirdSection = lazy(() => import('../components/AboutUs/ThirdSection'));
 const FourthSection = lazy(() => import('../components/AboutUs/FourthSection'));
-import FifthSection from '../components/AboutUs/FifthSection';
+const FifthSection = lazy(() => import('../components/AboutUs/FifthSection'));
 
 function AboutUs() {
 	return (
 		<div className="overflow-x-hidden">
-			<Navigation />
+			<Suspense>
+				<Navigation />
+			</Suspense>
 			<Suspense>
 				<HeroAbout
 					title="What is Optimen?"
@@ -30,8 +32,12 @@ function AboutUs() {
 			<Suspense>
 				<FourthSection />
 			</Suspense>
-			<FifthSection />
-			<Footer />
+			<Suspense>
+				<FifthSection />
+			</Suspense>
+			<Suspense>
+				<Footer />
+			</Suspense>
 		</div>
 	);
 }

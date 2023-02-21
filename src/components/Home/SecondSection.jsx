@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import Esr from '../../assets/Imagenes-Optimen/Home/esr.png';
 import MarcaGTO from '../../assets/Imagenes-Optimen/Home/marca-gto-logo.png';
 import Boeing from '../../assets/Imagenes-Optimen/Home/boeing_logo.png';
@@ -15,10 +16,22 @@ function SecondSection() {
 			<div className={'overflow-hidden py-6 px-8 opacity-80 '}>
 				<div className={' mr-auto ml-auto w-full max-w-4xl '}>
 					<div className={'flex items-center justify-around'}>
-						<img className={'mr-4 ml-4 w-32'} src={Esr} alt={'esr'} />
-						<img className={'mr-4 ml-4 w-14'} src={MarcaGTO} alt={'gto-logo'} />
-						<img className={'mr-4 ml-4 w-28'} src={Boeing} alt={'boeing'} />
-						<img className={'mr-4 ml-4 w-24'} src={ISO} alt={'ISO'} />
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-32'} src={Esr} alt={'esr'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img
+								className={'mr-4 ml-4 w-14'}
+								src={MarcaGTO}
+								alt={'gto-logo'}
+							/>
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-28'} src={Boeing} alt={'boeing'} />
+						</LazyLoad>
+						<LazyLoad>
+							<img className={'mr-4 ml-4 w-24'} src={ISO} alt={'ISO'} />
+						</LazyLoad>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,13 @@
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 import { Suspense, lazy } from 'react';
+const Navigation = lazy(() => import('../components/Navigation'));
+const Footer = lazy(() => import('../components/Footer'));
+const CarouselSection = lazy(() =>
+	import('../components/Customers/CarouselSection')
+);
+const CarouselSection2 = lazy(() =>
+	import('../components/Customers/CarouselSection2')
+);
+
 import Avianca from './../assets/Imagenes-Optimen/Customers/Avianca.png';
 import Boeing from './../assets/Imagenes-Optimen/Customers/Boeing.png';
 import Interjet from './../assets/Imagenes-Optimen/Customers/InterJet.png';
@@ -18,17 +25,13 @@ import UnitedA from './../assets/Imagenes-Optimen/Customers/United-Airlines-logo
 import Kalita from './../assets/Imagenes-Optimen/Customers/Kalita.webp';
 import Frontier from './../assets/Imagenes-Optimen/Customers/Frontier.png';
 import Alaska from './../assets/Imagenes-Optimen/Customers/Alaska.webp';
-const CarouselSection = lazy(() =>
-	import('../components/Customers/CarouselSection')
-);
-const CarouselSection2 = lazy(() =>
-	import('../components/Customers/CarouselSection2')
-);
 
 function Customers() {
 	return (
 		<>
-			<Navigation />
+			<Suspense>
+				<Navigation />
+			</Suspense>
 			<Suspense>
 				<CarouselSection
 					title={'Our Customers'}
@@ -79,7 +82,9 @@ function Customers() {
 					alt10={'Alaska'}
 				/>
 			</Suspense>
-			<Footer />
+			<Suspense>
+				<Footer />
+			</Suspense>
 		</>
 	);
 }

@@ -45,6 +45,7 @@ module.exports = {
 			},
 			boxShadow: {
 				sombra: '0 1px 5px -4px #000',
+				sombra2: '-6px 6px 20px 0 rgba(0, 0, 0, 0.12)',
 			},
 			flex: {
 				ceroAuto: '0 auto',
