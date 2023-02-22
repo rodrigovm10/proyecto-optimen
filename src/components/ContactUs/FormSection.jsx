@@ -1,7 +1,11 @@
 import { useForm } from 'react-hook-form';
 
 function FormSection() {
-	const { register, handleSubmit } = useForm();
+	const {
+		register,
+		formState: { errors },
+		handleSubmit,
+	} = useForm();
 
 	const onSubmit = data => {
 		console.log(data);
@@ -33,6 +37,11 @@ function FormSection() {
 						}
 						{...register('name', { required: true })}
 					/>
+					{errors.name?.type === 'required' && (
+						<p className="mb-6 text-center font-semibold -tracking-tight text-red-600">
+							The field name is required
+						</p>
+					)}
 					<label
 						for={'Address'}
 						className={
@@ -49,8 +58,20 @@ function FormSection() {
 						className={
 							'mb-6 h-[38px] w-full border-[1px] border-solid border-[#e4e4e4] py-[21px] px-5 text-sm leading-7 text-[#333333]'
 						}
-						{...register('email', { required: true })}
+						{...register('email', {
+							required: true,
+						})}
 					/>
+					{errors.email?.type === 'required' && (
+						<p className="mb-6 text-center font-monserrat font-semibold -tracking-tight text-red-600">
+							The field Email is required
+						</p>
+					)}
+					{!!errors.email?.type.includes('@optimen.com.mx') && (
+						<p className="mb-6 text-center font-semibold tracking-tight text-red-600">
+							The field must contain @optimen.com.mx
+						</p>
+					)}
 					<label
 						for={'Message'}
 						className={
@@ -68,6 +89,11 @@ function FormSection() {
 						}
 						{...register('message', { required: true, maxLength: 5000 })}
 					></textarea>
+					{errors.message?.type === 'required' && (
+						<p className="mb-6 text-center font-monserrat font-semibold tracking-tight text-red-600">
+							The field Message is required
+						</p>
+					)}
 					<input
 						type={'submit'}
 						value={'Submit'}
