@@ -3,7 +3,7 @@ function HeroAbout({ title, description }) {
 		<>
 			<div
 				className={
-					'mb-16 flex h-500 items-center justify-center bg-heroAbout bg-cover bg-fixed bg-no-repeat font-monserrat'
+					'mb-16 flex h-500 items-center justify-center bg-heroAbout bg-cover bg-fixed bg-no-repeat  font-monserrat'
 				}
 			>
 				<div className={'w-3/4 max-w-7xl text-center'}>

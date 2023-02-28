@@ -1,7 +1,11 @@
 import LazyLoad from 'react-lazyload';
 function FirstCard({ src, alt, title, description }) {
 	return (
-		<div className={'flex flex-col items-center justify-start text-center'}>
+		<div
+			className={
+				'flex flex-col items-center justify-start text-center font-monserrat'
+			}
+		>
 			<LazyLoad>
 				<img className={'mb-4 h-20 w-20 object-cover'} src={src} alt={alt} />
 			</LazyLoad>

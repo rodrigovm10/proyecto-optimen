@@ -2,7 +2,7 @@ function FourthCard({ src, alt, title, description }) {
 	return (
 		<div
 			className={
-				'transition-card h-full w-[30%] translate-x-0 whitespace-normal'
+				'transition-card h-full w-[30%] translate-x-0 whitespace-normal font-monserrat'
 			}
 		>
 			<div className={'rounded-2xl bg-azulitoClaro pb-6'}>

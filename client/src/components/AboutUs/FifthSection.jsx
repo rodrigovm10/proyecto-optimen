@@ -3,7 +3,9 @@ import SecondLine from './SecondLine';
 
 function FifthSection() {
 	return (
-		<div className={'bg-[rgb(0, 128, 255, 0)] relative py-20 px-8'}>
+		<div
+			className={'bg-[rgb(0, 128, 255, 0)] relative py-20 px-8 font-monserrat'}
+		>
 			<h2
 				className={
 					'mb-9 text-center text-4xl font-semibold leading-10 text-cobalto'

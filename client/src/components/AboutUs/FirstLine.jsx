@@ -1,6 +1,10 @@
 function FirstLine() {
 	return (
-		<div className={'sticky flex flex-col items-start justify-start'}>
+		<div
+			className={
+				'sticky flex flex-col items-start justify-start font-monserrat'
+			}
+		>
 			<a
 				href={'#1'}
 				className={
