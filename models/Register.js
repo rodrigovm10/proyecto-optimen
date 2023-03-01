@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 
-const registerSchema = new moongose.Schema({
+const registerSchema = new mongoose.Schema({
 	moveType: {
 		type: String,
 		required: true,

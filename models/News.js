@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const newsSchema = new moongose.Schema({
+const newsSchema = new mongoose.Schema({
 	email: {
 		type: String,
 		required: true,

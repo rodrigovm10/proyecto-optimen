@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userSchema = new moongose.Schema({
+const userSchema = new mongoose.Schema({
 	email: {
 		type: String,
 		required: true,
@@ -15,12 +15,10 @@ const userSchema = new moongose.Schema({
 			default: 'ContentCreator',
 		},
 	],
-	active: [
-		{
-			type: Boolean,
-			default: true,
-		},
-	],
+	active: {
+		type: Boolean,
+		default: true,
+	},
 });
 
 module.exports = mongoose.model('User', userSchema);
