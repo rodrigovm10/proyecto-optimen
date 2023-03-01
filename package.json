@@ -1,20 +1,27 @@
 {
-  "name": "proyecto-optimen",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rodrigovm10/proyecto-optimen.git"
-  },
-  "author": "equipoIntegradora",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rodrigovm10/proyecto-optimen/issues"
-  },
-  "homepage": "https://github.com/rodrigovm10/proyecto-optimen#readme"
+	"name": "proyecto-optimen",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rodrigovm10/proyecto-optimen.git"
+	},
+	"author": "equipoIntegradora",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rodrigovm10/proyecto-optimen/issues"
+	},
+	"homepage": "https://github.com/rodrigovm10/proyecto-optimen#readme",
+	"dependencies": {
+		"date-fns": "^2.29.3",
+		"express": "^4.18.2",
+		"mongoose": "^7.0.0",
+		"nodemon": "^2.0.20",
+		"uuid": "^9.0.0"
+	}
 }
