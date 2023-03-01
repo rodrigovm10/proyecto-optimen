@@ -6,28 +6,34 @@ function Login() {
 					<h1 className="mb-8 text-center text-2xl font-semibold">Login</h1>
 					<form>
 						<label
-							for="Email"
+							for={'Email'}
 							className="mb-3 text-xs font-medium uppercase leading-5 tracking-widest"
 						>
 							Email Address
 						</label>
 						<input
-							name="Email"
+							id={'Email'}
+							name={'Email'}
 							type="email"
 							placeholder="Enter Your Email Address"
 							className="border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333]"
 						/>
-						<label className="mb-3 text-xs font-medium uppercase leading-5 tracking-widest">
+						<label
+							for={'Password'}
+							className="mb-3 text-xs font-medium uppercase leading-5 tracking-widest"
+						>
 							Password
 						</label>
 						<input
-							for="Password"
+							id={'Password'}
+							for={'Password'}
 							type="password"
 							placeholder="Enter Your Password"
 							className="border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333]"
 						/>
 						<input
-							name="Password"
+							id={'Submit'}
+							name="Submit"
 							type="submit"
 							className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white"
 						/>

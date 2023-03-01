@@ -11,6 +11,7 @@ function NavBar() {
 				<Links to="/AdminView/Profile" name="Perfiles" />
 				<Links to="/AdminView/AddUsers" name="Añadir Usuarios" />
 				<Links to="/AdminView/Privileges" name="Permisos" />
+				<Links to="/Login" name="Salir" />
 			</div>
 		</>
 	);
