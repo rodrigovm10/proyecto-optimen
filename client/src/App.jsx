@@ -12,7 +12,9 @@ import UpdatesRegister from './components/Admin/UpdatesRegister';
 import AddUsers from './components/Admin/AddUsers';
 import Profile from './components/Admin/Profile';
 import Privileges from './components/Admin/Privileges';
-
+import EditUser from './features/users/EditUser';
+import NewUserForm from './features/users/NewUserForm';
+import Prefetch from './features/auth/Prefetch';
 function App() {
 	return (
 		<BrowserRouter>
@@ -23,18 +25,24 @@ function App() {
 				<Route path="/Contact Us" element={<ContactUs />}></Route>
 				<Route path="/News" element={<News />}></Route>
 				<Route path="/Login" element={<Login />}></Route>
-				<Route path="/AdminView" element={<AdminView />}></Route>
 				<Route
 					path="/ContentCreatorView"
 					element={<ContentCreatorView />}
 				></Route>
-				<Route
-					path="/AdminView/UpdatesRegister"
-					element={<UpdatesRegister />}
-				></Route>
 				<Route path="/AdminView/AddUsers" element={<AddUsers />}></Route>
-				<Route path="/AdminView/Profile" element={<Profile />}></Route>
 				<Route path="/AdminView/Privileges" element={<Privileges />}></Route>
+				<Route element={<Prefetch />}>
+					<Route path="AdminView">
+						<Route index element={<AdminView />} />
+						<Route path="UpdatesRegister" element={<UpdatesRegister />} />
+						<Route path="Profile" element={<Profile />} />
+						<Route path="New" element={<NewUserForm />} />
+						<Route></Route>
+					</Route>
+					<Route path="users">
+						<Route path=":id" element={<EditUser />} />
+					</Route>
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	);

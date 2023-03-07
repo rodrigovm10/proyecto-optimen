@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import LogoBlanco from '../assets/Imagenes-Optimen/logo optimen blanco.png';
 function Navigation() {
 	return (
