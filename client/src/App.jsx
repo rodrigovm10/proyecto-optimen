@@ -15,6 +15,8 @@ import Privileges from './components/Admin/Privileges';
 import EditUser from './features/users/EditUser';
 import NewUserForm from './features/users/NewUserForm';
 import Prefetch from './features/auth/Prefetch';
+import PersistLogin from './features/auth/PersistLogin';
+
 function App() {
 	return (
 		<BrowserRouter>
@@ -31,14 +33,16 @@ function App() {
 				></Route>
 				<Route path="/AdminView/AddUsers" element={<AddUsers />}></Route>
 				<Route path="/AdminView/Privileges" element={<Privileges />}></Route>
-				<Route element={<Prefetch />}>
-					<Route path="AdminView">
-						<Route index element={<AdminView />} />
-						<Route path="UpdatesRegister" element={<UpdatesRegister />} />
-						<Route path="Profile" element={<Profile />}></Route>
-						<Route path="New" element={<NewUserForm />} />
-						<Route path="users">
-							<Route path=":id" element={<EditUser />} />
+				<Route element={<PersistLogin />}>
+					<Route element={<Prefetch />}>
+						<Route path="AdminView">
+							<Route index element={<AdminView />} />
+							<Route path="UpdatesRegister" element={<UpdatesRegister />} />
+							<Route path="Profile" element={<Profile />}></Route>
+							<Route path="New" element={<NewUserForm />} />
+							<Route path="users">
+								<Route path=":id" element={<EditUser />} />
+							</Route>
 						</Route>
 					</Route>
 				</Route>

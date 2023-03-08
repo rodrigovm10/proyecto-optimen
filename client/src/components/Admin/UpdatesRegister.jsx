@@ -1,7 +1,7 @@
 import NavBar from './NavBar';
 import { useTable } from 'react-table';
-import useRows from '../Hooks/useRows';
-import useColumns from '../Hooks/useColumn';
+import useRows from '../../Hooks/useRows';
+import useColumns from '../../Hooks/useColumn';
 function UpdatesRegister() {
 	const columns = useColumns();
 	const data = useRows();

@@ -5,12 +5,15 @@ import { useDispatch } from 'react-redux';
 import { setCredentials } from '../features/auth/authSlice';
 import { useLoginMutation } from '../features/auth/authApiSlice';
 
+import usePersist from '../Hooks/usePersist';
+
 function Login() {
 	const userRef = useRef();
 	const errRef = useRef();
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [errMsg, setErrMsg] = useState('');
+	const [persist, setPersist] = usePersist();
 
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
@@ -48,6 +51,7 @@ function Login() {
 	};
 	const handleUserInput = e => setEmail(e.target.value);
 	const handlePwdInput = e => setPassword(e.target.value);
+	const handleToggle = () => setPersist(prev => !prev);
 
 	const errClass = errMsg ? 'errmsg' : 'offscreen';
 
@@ -103,6 +107,19 @@ function Login() {
 							value={'Submit'}
 							className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white"
 						/>
+						<label
+							htmlFor="persist"
+							className="mt-4 flex w-full items-center gap-[0.5em]"
+						>
+							<input
+								type="checkbox"
+								className="h-6 w-6"
+								id="persist"
+								onChange={handleToggle}
+								checked={persist}
+							/>
+							Trust this Device
+						</label>
 					</form>
 				</div>
 			</div>
