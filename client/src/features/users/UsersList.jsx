@@ -8,15 +8,19 @@ const UsersList = () => {
 		isSuccess,
 		isError,
 		error,
-	} = useGetUsersQuery();
+	} = useGetUsersQuery(undefined, {
+		pollingInterval: 60000,
+		refetchOnFocus: true,
+		refetchOnMountOrArgChange: true,
+	});
 
 	let content;
 
-	if (isLoading) content = <p>Loading...</p>;
+	if (isLoading) content = <p className="ml-[22%]">Loading...</p>;
 
 	if (isError) {
 		content = (
-			<p className="mb-0.5 inline-block p-0.5 text-red-500">
+			<p className="mb-0.5 ml-[22%] inline-block p-0.5 text-red-500">
 				{error?.data?.message}
 			</p>
 		);

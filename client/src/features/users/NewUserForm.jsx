@@ -65,7 +65,7 @@ const NewUserForm = () => {
 	});
 
 	const errClass = isError
-		? 'inline-block text-red p-[0.25em] mb-[0.5em]'
+		? 'inline-block text-red-500 mb-[0.5em] font-semibold text-xl text-center'
 		: 'offscreen';
 	const validUserClass = !validEmail
 		? 'border-2 border-solid border-[#f00]'
@@ -77,44 +77,55 @@ const NewUserForm = () => {
 		? 'border-2 border-solid border-[#f00]'
 		: '';
 
+	const canSaveClass = 'opacity-60 cursor-auto';
+
 	const content = (
 		<>
 			<NavBar />
-			<p className={errClass}>{error?.data?.message}</p>
-
 			<form
-				className="ml-[22%] flex max-w-[800px] flex-col flex-nowrap justify-center gap-[0.75em] overflow-hidden"
+				className="ml-[22%] flex max-w-[800px] flex-col flex-nowrap justify-center gap-[0.75em] overflow-hidden font-monserrat"
 				onSubmit={onSaveUserClicked}
 			>
-				<div className="flex items-center justify-between">
+				<div className="flex items-center justify-between text-xl font-semibold text-cobalto">
 					<h2>Nuevo Usuario</h2>
 				</div>
-				<label htmlFor="email">
+				<label
+					htmlFor="email"
+					className="text-sm font-medium leading-5 tracking-wide"
+				>
 					Email: <span className="whitespace-nowrap">[Correo de Optimen]</span>
 				</label>
 				<input
-					className={`border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validUserClass}`}
+					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validUserClass}`}
 					type="email"
 					id="email"
 					name="email"
 					value={email}
 					onChange={onEmailChanged}
 				/>
-				<label htmlFor="password">
+				<label
+					htmlFor="password"
+					className="text-sm font-medium leading-5 tracking-wide"
+				>
 					Password:{' '}
 					<span className="whitespace-nowrap">
 						[4-12 carácteres incl. !@#$%]
 					</span>
 				</label>
 				<input
-					className={`border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
+					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
 					type="password"
 					id="password"
 					name="password"
 					value={password}
 					onChange={onPasswordChanged}
 				/>
-				<label htmlFor="roles">Roles:</label>
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="roles"
+				>
+					Roles:
+				</label>
 				<select
 					className={`w-fit p-[0.25em] ${validRolesClass}`}
 					type="password"
@@ -132,9 +143,13 @@ const NewUserForm = () => {
 					name="Submit"
 					type="submit"
 					title="Save"
+					value={'Guardar'}
 					disabled={!canSave}
-					className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white"
+					className={`w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white ${
+						!canSave ? canSaveClass : ''
+					}`}
 				/>
+				<p className={`font-monserrat ${errClass}`}>{error?.data?.message}</p>
 			</form>
 		</>
 	);

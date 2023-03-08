@@ -4,8 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ROLES } from '../../config/roles';
+import NavBar from '../../components/Admin/NavBar';
 
-const USER_REGEX = /^[A-z]{3,20}$/;
+const USER_REGEX = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/;
 
 const EditUserForm = ({ user }) => {
@@ -97,68 +98,76 @@ const EditUserForm = ({ user }) => {
 
 	const errContent = (error?.data?.message || delerror?.data?.message) ?? '';
 
+	const canSaveClass = 'opacity-60 cursor-auto';
+
 	const content = (
 		<>
+			<NavBar />
 			<p className={errClass}>{errContent}</p>
 
 			<form
-				className="flex max-w-[800px] flex-col flex-nowrap gap-[0.75em]"
+				className="ml-[22%] flex max-w-[800px] flex-col flex-nowrap gap-[0.75em]"
 				onSubmit={e => e.preventDefault()}
 			>
-				<div className="flex items-center justify-between">
+				<div className="flex items-center justify-between text-xl font-semibold text-cobalto">
 					<h2>Edit User</h2>
-					<div className="absolute right-[0.5em] flex items-center justify-end gap-[0.5em]">
-						<button
-							className="grid h-[48px] w-[48px] place-content-center border-none bg-transparent text-xl text-white"
-							title="Save"
-							onClick={onSaveUserClicked}
-							disabled={!canSave}
-						>
-							<FontAwesomeIcon icon={faSave} />
-						</button>
-						<button
-							className="grid h-[48px] w-[48px] place-content-center border-none bg-transparent text-xl text-white"
-							title="Delete"
-							onClick={onDeleteUserClicked}
-						>
-							<FontAwesomeIcon icon={faTrashCan} />
-						</button>
-					</div>
 				</div>
-				<label className="form__label" htmlFor="username">
-					Username: <span className="nowrap">[3-20 letters]</span>
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="email"
+				>
+					Email: <span className="nowrap">[3-20 letters]</span>
 				</label>
 				<input
-					className={`rounded-2xl p-[0.5em] ${validUserClass}`}
-					id="username"
-					name="username"
+					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validUserClass}`}
+					id="email"
+					name="email"
 					type="text"
 					autoComplete="off"
 					value={email}
 					onChange={onEmailChanged}
 				/>
 
-				<label className="form__label" htmlFor="password">
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="password"
+				>
 					Password:{' '}
 					<span className="whitespace-nowrap">[empty = no change]</span>{' '}
 					<span className="whitespace-nowrap">[4-12 chars incl. !@#$%]</span>
 				</label>
 				<input
-					className={`border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
+					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
 					id="password"
 					name="password"
 					type="password"
 					value={password}
 					onChange={onPasswordChanged}
 				/>
-
 				<label
-					className="form__label form__checkbox-container"
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="roles"
+				>
+					Roles Asignados:
+				</label>
+				<select
+					id="roles"
+					name="roles"
+					className={`w-fit p-[0.25em] ${validRolesClass}`}
+					multiple={true}
+					size="2"
+					value={roles}
+					onChange={onRolesChanged}
+				>
+					{options}
+				</select>
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
 					htmlFor="user-active"
 				>
-					ACTIVE:
+					Activo:
 					<input
-						className="h-6 w-6"
+						className="h-4 w-4"
 						id="user-active"
 						name="user-active"
 						type="checkbox"
@@ -166,21 +175,28 @@ const EditUserForm = ({ user }) => {
 						onChange={onActiveChanged}
 					/>
 				</label>
-
-				<label className="form__label" htmlFor="roles">
-					ASSIGNED ROLES:
-				</label>
-				<select
-					id="roles"
-					name="roles"
-					className={`w-fit p-[0.25em] ${validRolesClass}`}
-					multiple={true}
-					size="3"
-					value={roles}
-					onChange={onRolesChanged}
-				>
-					{options}
-				</select>
+				<div>
+					<input
+						id={'Submit'}
+						name="Submit"
+						type="submit"
+						title="Save"
+						value="Guardar"
+						disabled={!canSave}
+						onClick={onSaveUserClicked}
+						className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white"
+					/>
+					<input
+						id={'Submit'}
+						name="Submit"
+						type="submit"
+						title="Delete"
+						value="Eliminar"
+						disabled={!canSave}
+						onClick={onDeleteUserClicked}
+						className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-red-500 p-4 text-center leading-4 text-white"
+					/>
+				</div>
 			</form>
 		</>
 	);

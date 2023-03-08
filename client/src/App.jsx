@@ -35,12 +35,11 @@ function App() {
 					<Route path="AdminView">
 						<Route index element={<AdminView />} />
 						<Route path="UpdatesRegister" element={<UpdatesRegister />} />
-						<Route path="Profile" element={<Profile />} />
+						<Route path="Profile" element={<Profile />}></Route>
 						<Route path="New" element={<NewUserForm />} />
-						<Route></Route>
-					</Route>
-					<Route path="users">
-						<Route path=":id" element={<EditUser />} />
+						<Route path="users">
+							<Route path=":id" element={<EditUser />} />
+						</Route>
 					</Route>
 				</Route>
 			</Routes>
