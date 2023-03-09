@@ -132,7 +132,7 @@ const NewUserForm = () => {
 					id="roles"
 					name="roles"
 					multiple={true}
-					size="2"
+					size="3"
 					value={roles}
 					onChange={onRolesChanged}
 				>

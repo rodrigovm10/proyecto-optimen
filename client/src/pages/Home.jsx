@@ -12,24 +12,14 @@ function Home() {
 			<div className="overflow-x-hidden">
 				<Suspense>
 					<Navigation />
-				</Suspense>
-				<Suspense>
 					<Hero
 						title="Welcome to Optimen"
 						description="Unique team of Resorces Managment an Optimization Experts and
 							passionate Software Delevopers."
 					/>
-				</Suspense>
-				<Suspense>
 					<Slider />
-				</Suspense>
-				<Suspense>
 					<FirstSection />
-				</Suspense>
-				<Suspense>
 					<SecondSection />
-				</Suspense>
-				<Suspense>
 					<Footer />
 				</Suspense>
 			</div>

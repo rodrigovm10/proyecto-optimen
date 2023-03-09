@@ -20,7 +20,7 @@ function FormSection() {
 			>
 				<form onSubmit={handleSubmit(onSubmit)} className={'flex flex-col'}>
 					<label
-						for={'Name'}
+						htmlFor={'Name'}
 						className={
 							'mb-3 text-xs font-medium uppercase leading-[1px] tracking-widest'
 						}
@@ -32,6 +32,7 @@ function FormSection() {
 						name={'Name'}
 						placeholder={'Enter your name'}
 						id={'Name'}
+						required
 						className={
 							'mb-6 h-[38px] w-full border-[1px] border-solid border-[#e4e4e4] py-[21px] px-5 text-sm leading-7 text-[#333333]'
 						}
@@ -43,7 +44,7 @@ function FormSection() {
 						</p>
 					)}
 					<label
-						for={'Address'}
+						htmlFor={'Address'}
 						className={
 							'mb-3 text-xs font-medium uppercase leading-[1px] tracking-widest'
 						}
@@ -55,6 +56,7 @@ function FormSection() {
 						name={'Address'}
 						placeholder={'Enter your email'}
 						id={'Address'}
+						required
 						className={
 							'mb-6 h-[38px] w-full border-[1px] border-solid border-[#e4e4e4] py-[21px] px-5 text-sm leading-7 text-[#333333]'
 						}
@@ -73,7 +75,7 @@ function FormSection() {
 						</p>
 					)}
 					<label
-						for={'Message'}
+						htmlFor={'Message'}
 						className={
 							'mb-3 text-xs font-medium uppercase leading-[1px] tracking-widest'
 						}
@@ -84,6 +86,7 @@ function FormSection() {
 						name={'Message'}
 						placeholder={'Message...'}
 						id={'Message'}
+						required
 						className={
 							'mb-6 h-[200px] border-[1px] border-solid border-[#e4e4e4] py-[21px] px-5 pt-3 text-sm leading-4'
 						}

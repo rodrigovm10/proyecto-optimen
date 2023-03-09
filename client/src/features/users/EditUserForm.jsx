@@ -155,7 +155,7 @@ const EditUserForm = ({ user }) => {
 					name="roles"
 					className={`w-fit p-[0.25em] ${validRolesClass}`}
 					multiple={true}
-					size="2"
+					size="3"
 					value={roles}
 					onChange={onRolesChanged}
 				>

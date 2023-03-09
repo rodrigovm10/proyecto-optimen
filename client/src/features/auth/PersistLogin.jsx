@@ -52,9 +52,9 @@ const PersistLogin = () => {
 		//persist: yes, token: no
 		console.log('error');
 		content = (
-			<p className="mb-[0.5em] inline-block text-center text-xl font-semibold text-red-500">
-				{error.data?.message}
-				<Link to="/Login">Please login again</Link>.
+			<p className="mb-[0.5em] flex justify-center text-center font-monserrat text-xl font-semibold text-red-500">
+				{`${error.data?.message} - `}
+				<Link to="/Login"> Please login again</Link>.
 			</p>
 		);
 	} else if (isSuccess && trueSuccess) {

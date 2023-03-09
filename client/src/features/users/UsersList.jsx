@@ -29,9 +29,8 @@ const UsersList = () => {
 	if (isSuccess) {
 		const { ids } = users;
 
-		const tableContent = ids?.length
-			? ids.map(userId => <Users key={userId} userId={userId} />)
-			: null;
+		const tableContent =
+			ids?.length && ids.map(userId => <Users key={userId} userId={userId} />);
 
 		content = (
 			<div className='font-monserrat" ml-[20%] flex items-center justify-center'>

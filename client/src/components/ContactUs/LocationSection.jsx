@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 function LocationSection() {
 	return (
 		<div>
@@ -23,7 +21,7 @@ function LocationSection() {
 				>
 					Contact
 				</h2>
-				<Link className={'mb-[5px] opacity-60'}>info@optimen.com.mx</Link>
+				<p className={'mb-[4px] opacity-60'}>info@optimen.com.mx</p>
 				<p className={'text-sm text-[#aaa]'}>+52 (477) 7173339</p>
 			</div>
 		</div>

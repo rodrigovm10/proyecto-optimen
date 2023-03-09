@@ -9,14 +9,8 @@ function News() {
 		<div className="bg-[#f5f7fa]">
 			<Suspense>
 				<Navigation />
-			</Suspense>
-			<Suspense>
 				<HeroNews />
-			</Suspense>
-			<Suspense>
 				<NewsContainer />
-			</Suspense>
-			<Suspense>
 				<Footer />
 			</Suspense>
 		</div>

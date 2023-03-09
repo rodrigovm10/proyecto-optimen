@@ -8,11 +8,7 @@ function ContactUs() {
 		<>
 			<Suspense>
 				<Navigation />
-			</Suspense>
-			<Suspense>
 				<Form />
-			</Suspense>
-			<Suspense>
 				<Footer />
 			</Suspense>
 		</>

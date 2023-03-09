@@ -16,36 +16,58 @@ import EditUser from './features/users/EditUser';
 import NewUserForm from './features/users/NewUserForm';
 import Prefetch from './features/auth/Prefetch';
 import PersistLogin from './features/auth/PersistLogin';
+import RequireAuth from './features/auth/RequireAuth';
+import { ROLES } from './config/roles';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
+				{/* Rutas de la vista principal */}
 				<Route index element={<Home />}></Route>
 				<Route path="/About Us" element={<AboutUs />}></Route>
 				<Route path="/Customers" element={<Customers />}></Route>
 				<Route path="/Contact Us" element={<ContactUs />}></Route>
 				<Route path="/News" element={<News />}></Route>
 				<Route path="/Login" element={<Login />}></Route>
-				<Route
-					path="/ContentCreatorView"
-					element={<ContentCreatorView />}
-				></Route>
-				<Route path="/AdminView/AddUsers" element={<AddUsers />}></Route>
-				<Route path="/AdminView/Privileges" element={<Privileges />}></Route>
+
 				<Route element={<PersistLogin />}>
-					<Route element={<Prefetch />}>
-						<Route path="AdminView">
-							<Route index element={<AdminView />} />
-							<Route path="UpdatesRegister" element={<UpdatesRegister />} />
-							<Route path="Profile" element={<Profile />}></Route>
-							<Route path="New" element={<NewUserForm />} />
-							<Route path="users">
-								<Route path=":id" element={<EditUser />} />
+					<Route
+						element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}
+					>
+						<Route element={<Prefetch />}>
+							{/* Rutas de la vista creador de contenido */}
+							<Route
+								element={<RequireAuth allowedRoles={[ROLES.ContentCreator]} />}
+							>
+								<Route
+									path="/ContentCreatorView"
+									element={<ContentCreatorView />}
+								></Route>
+							</Route>
+							{/* Rutas de la vista de administrador */}
+							<Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+								<Route path="AdminView">
+									<Route index element={<AdminView />} />
+									<Route path="AddUsers" element={<AddUsers />} />
+									<Route path="UpdatesRegister" element={<UpdatesRegister />} />
+									<Route path="Profile" element={<Profile />} />
+
+									<Route path="New" element={<NewUserForm />} />
+									<Route path="users">
+										<Route path=":id" element={<EditUser />} />
+									</Route>
+								</Route>
+							</Route>
+							<Route element={<RequireAuth allowedRoles={[ROLES.AdminRoot]} />}>
+								<Route path="AdminView/Privileges" element={<Privileges />} />
 							</Route>
 						</Route>
+						{/*Prefetch */}
 					</Route>
+					{/* Require Auth */}
 				</Route>
+				{/*Persist Login */}
 			</Routes>
 		</BrowserRouter>
 	);

@@ -67,7 +67,7 @@ function Login() {
 					</p>
 					<form onSubmit={handleSubmit}>
 						<label
-							for={'Email'}
+							htmlFor={'Email'}
 							className="mb-3 text-xs font-medium uppercase leading-5 tracking-widest"
 						>
 							Email Address
@@ -80,23 +80,23 @@ function Login() {
 							value={email}
 							onChange={handleUserInput}
 							autoComplete="off"
-							requried
+							required
 							placeholder="Enter Your Email Address"
 							className="border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333]"
 						/>
 						<label
-							for={'Password'}
+							htmlFor={'Password'}
 							className="mb-3 text-xs font-medium uppercase leading-5 tracking-widest"
 						>
 							Password
 						</label>
 						<input
 							id={'Password'}
-							for={'Password'}
+							htmlFor={'Password'}
 							type="password"
 							value={password}
 							onChange={handlePwdInput}
-							requried
+							required
 							placeholder="Enter Your Password"
 							className="border-[rgba(0, 0, 0, 0.16)] mb-8 h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333]"
 						/>

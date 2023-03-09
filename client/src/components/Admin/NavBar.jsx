@@ -4,6 +4,8 @@ import { useNavigate, Link, useLocation } from 'react-router-dom ';
 
 import { useSendLogoutMutation } from '../../features/auth/authApiSlice';
 
+import useAuth from '../../Hooks/useAuth';
+
 const ADMIN_REGEX = /^\/AdminView(\/)?$/;
 const USERS_REGEX = /^\/AdminView\/users(\/)?$/;
 
@@ -18,7 +20,10 @@ function NavBar() {
 		if (isSuccess) navigate('/Login');
 	}, [isSuccess, navigate]);
 
-	const onLogoutClicked = () => sendLogout();
+	const onLogoutClicked = () => {
+		sendLogout();
+		navigate('/Login');
+	};
 
 	if (isLoading) return <p>Logging Out...</p>;
 
@@ -30,27 +35,34 @@ function NavBar() {
 	}
 
 	const logoutButton = (
-		<button
-			className="text-[#dadada] hover:opacity-80"
+		<input
+			className="cursor-pointer text-[#dadada] hover:opacity-80"
+			type="submit"
+			value="Salir"
 			title="Logout"
-			onClick={sendLogout}
-		>
-			Salir
-		</button>
+			onClick={onLogoutClicked}
+		/>
 	);
+
+	const { email, status, isAdminRoot, isAdmin, isContentCreator } = useAuth();
 
 	return (
 		<>
 			<div className="fixed m-0 h-[100%] w-[20%] overflow-auto bg-cobalto p-0 text-center">
 				<Links to="/AdminView" name="Inicio"></Links>
-				<Links
-					to="/AdminView/UpdatesRegister"
-					name="Registro de Actualizaciones"
-				/>
-				<Links to="/AdminView/Profile" name="Perfiles" />
-				<Links to="/AdminView/AddUsers" name="Añadir Usuarios" />
-				<Links to="/AdminView/Privileges" name="Permisos" />
+				{isAdmin && (
+					<Links
+						to="/AdminView/UpdatesRegister"
+						name="Registro de Actualizaciones"
+					/>
+				)}
+				{isAdmin && <Links to="/AdminView/Profile" name="Perfiles" />}
+				{isAdmin && <Links to="/AdminView/AddUsers" name="Añadir Usuarios" />}
+				{isAdminRoot && <Links to="/AdminView/Privileges" name="Permisos" />}
 				{logoutButton}
+
+				<p className="my-10 text-xs text-[#dadada] ">Usuario Actual: {email}</p>
+				<p className="my-10 text-xs text-[#dadada] ">Tipo Usuario: {status}</p>
 			</div>
 		</>
 	);

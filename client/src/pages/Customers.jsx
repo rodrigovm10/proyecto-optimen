@@ -31,8 +31,6 @@ function Customers() {
 		<>
 			<Suspense>
 				<Navigation />
-			</Suspense>
-			<Suspense>
 				<CarouselSection
 					title={'Our Customers'}
 					description={
@@ -53,8 +51,6 @@ function Customers() {
 					src7={Volaris}
 					alt7={'Volaris'}
 				/>
-			</Suspense>
-			<Suspense>
 				<CarouselSection2
 					title={'Our Project Experience'}
 					description={
@@ -81,8 +77,6 @@ function Customers() {
 					src10={Alaska}
 					alt10={'Alaska'}
 				/>
-			</Suspense>
-			<Suspense>
 				<Footer />
 			</Suspense>
 		</>
