@@ -19,6 +19,12 @@ const userSchema = new mongoose.Schema({
 		type: Boolean,
 		default: true,
 	},
+	permissions: [
+		{
+			type: String,
+			default: 'Admin',
+		},
+	],
 });
 
 module.exports = mongoose.model('User', userSchema);

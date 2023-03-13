@@ -6,8 +6,10 @@ import { setCredentials } from '../features/auth/authSlice';
 import { useLoginMutation } from '../features/auth/authApiSlice';
 
 import usePersist from '../Hooks/usePersist';
+import useAuth from '../Hooks/useAuth';
 
 function Login() {
+	const { isAdmin, isContentCreator, isAdminRoot } = useAuth();
 	const userRef = useRef();
 	const errRef = useRef();
 	const [email, setEmail] = useState('');
@@ -35,7 +37,15 @@ function Login() {
 			dispatch(setCredentials({ accessToken }));
 			setEmail('');
 			setPassword('');
-			navigate('/AdminView');
+			if (isAdmin) {
+				navigate('/Admin');
+			}
+			if (isContentCreator) {
+				navigate('/ContentCreator');
+			}
+			if (isAdminRoot) {
+				navigate('/AdminRoot');
+			}
 		} catch (err) {
 			if (!err.status) {
 				setErrMsg('No Server Response');

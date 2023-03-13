@@ -4,14 +4,20 @@ import { useNavigate } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
 import { selectUserById } from './usersApiSlice';
+import useAuth from '../../Hooks/useAuth';
 
 const Users = ({ userId }) => {
+	const { isAdmin, isAdminRoot } = useAuth();
+
 	const user = useSelector(state => selectUserById(state, userId));
 
 	const navigate = useNavigate();
 
 	if (user) {
-		const handleEdit = () => navigate(`/AdminView/users/${userId}`);
+		const handleEdit = () =>
+			navigate(
+				`${isAdmin ? `/Admin/users/${userId}` : `/AdminRoot/users/${userId}`}`
+			);
 
 		const userRolesString = user.roles.toString().replaceAll(',', ', ');
 

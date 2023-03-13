@@ -18,6 +18,8 @@ import Prefetch from './features/auth/Prefetch';
 import PersistLogin from './features/auth/PersistLogin';
 import RequireAuth from './features/auth/RequireAuth';
 import { ROLES } from './config/roles';
+import ProfileCreator from './features/contentCreator/ProfileCreator';
+import AdminRootView from './pages/AdminRootView';
 
 function App() {
 	return (
@@ -40,14 +42,14 @@ function App() {
 							<Route
 								element={<RequireAuth allowedRoles={[ROLES.ContentCreator]} />}
 							>
-								<Route
-									path="/ContentCreatorView"
-									element={<ContentCreatorView />}
-								></Route>
+								<Route path="ContentCreator">
+									<Route index element={<ContentCreatorView />} />
+									<Route path="Profile" element={<ProfileCreator />} />
+								</Route>
 							</Route>
 							{/* Rutas de la vista de administrador */}
 							<Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
-								<Route path="AdminView">
+								<Route path="Admin">
 									<Route index element={<AdminView />} />
 									<Route path="AddUsers" element={<AddUsers />} />
 									<Route path="UpdatesRegister" element={<UpdatesRegister />} />
@@ -60,12 +62,18 @@ function App() {
 								</Route>
 							</Route>
 							<Route element={<RequireAuth allowedRoles={[ROLES.AdminRoot]} />}>
-								<Route path="AdminView/Privileges" element={<Privileges />} />
+								<Route path="AdminRoot">
+									<Route index element={<AdminRootView />} />
+									<Route path="Privileges" element={<Privileges />} />
+									<Route path="users">
+										<Route path=":id" element={<EditUser />} />
+									</Route>
+								</Route>
 							</Route>
+							{/*Prefetch */}
 						</Route>
-						{/*Prefetch */}
+						{/* Require Auth */}
 					</Route>
-					{/* Require Auth */}
 				</Route>
 				{/*Persist Login */}
 			</Routes>

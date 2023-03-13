@@ -34,7 +34,7 @@ const NewUserForm = () => {
 			setEmail('');
 			setPassword('');
 			setRoles([]);
-			navigate('/AdminView/Profile');
+			navigate('/Admin/Profile');
 		}
 	}, [isSuccess, navigate]);
 
@@ -131,7 +131,7 @@ const NewUserForm = () => {
 					type="password"
 					id="roles"
 					name="roles"
-					multiple={true}
+					multiple={false}
 					size="3"
 					value={roles}
 					onChange={onRolesChanged}

@@ -1,26 +1,23 @@
 const mongoose = require('mongoose');
 
 const newsSchema = new mongoose.Schema({
-	email: {
+	title: {
 		type: String,
 		required: true,
 	},
-	password: {
+	date: {
 		type: String,
 		required: true,
 	},
-	roles: [
-		{
-			type: String,
-			default: 'ContentCreator',
-		},
-	],
-	active: [
-		{
-			type: Boolean,
-			default: true,
-		},
-	],
+	description: {
+		type: String,
+		required: true,
+	},
+	image: {
+		data: Buffer,
+		type: String,
+		required: true,
+	},
 });
 
 module.exports = mongoose.model('User', newsSchema);

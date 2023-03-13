@@ -49,16 +49,31 @@ function NavBar() {
 	return (
 		<>
 			<div className="fixed m-0 h-[100%] w-[20%] overflow-auto bg-cobalto p-0 text-center">
-				<Links to="/AdminView" name="Inicio"></Links>
+				<Links
+					to={`${
+						isAdmin
+							? '/Admin'
+							: isContentCreator
+							? '/ContentCreator'
+							: '/AdminRoot'
+					}`}
+					name="Inicio"
+				></Links>
 				{isAdmin && (
 					<Links
-						to="/AdminView/UpdatesRegister"
+						to="/Admin/UpdatesRegister"
 						name="Registro de Actualizaciones"
 					/>
 				)}
-				{isAdmin && <Links to="/AdminView/Profile" name="Perfiles" />}
-				{isAdmin && <Links to="/AdminView/AddUsers" name="Añadir Usuarios" />}
-				{isAdminRoot && <Links to="/AdminView/Privileges" name="Permisos" />}
+				{isAdmin && <Links to="/Admin/Profile" name="Perfiles" />}
+				{isAdmin && <Links to="/Admin/AddUsers" name="Añadir Usuarios" />}
+				{isAdminRoot && <Links to="/AdminRoot/Privileges" name="Permisos" />}
+				{isContentCreator && (
+					<Links to="/ContentCreator/Profile" name="Perfil" />
+				)}
+				{isContentCreator && (
+					<Links to="/ContentCreator" name="Añadir Noticias" />
+				)}
 				{logoutButton}
 
 				<p className="my-10 text-xs text-[#dadada] ">Usuario Actual: {email}</p>
