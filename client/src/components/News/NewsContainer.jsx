@@ -17,6 +17,7 @@ import New13 from '../../assets/Imagenes-Optimen/News/New13.jpg';
 import New14 from '../../assets/Imagenes-Optimen/News/New14.jpg';
 import New15 from '../../assets/Imagenes-Optimen/News/New15.jpg';
 import New16 from '../../assets/Imagenes-Optimen/News/csf_latam.jpg';
+
 function NewsContainer() {
 	return (
 		<div className="mt-auto mb-[50px] mr-auto ml-auto w-full max-w-940 rounded-2xl bg-white">

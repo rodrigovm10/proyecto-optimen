@@ -17,8 +17,11 @@ import Cinvestav from '../../assets/Imagenes-Optimen/Home/Cinvestav.png';
 import IECA from '../../assets/Imagenes-Optimen/Home/IECA_.png';
 import Juventud from '../../assets/Imagenes-Optimen/Home/JuventudEsGTO.jpg';
 import TDM from '../../assets/Imagenes-Optimen/Home/TDM.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Slider() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<section>
 			<h2
@@ -26,7 +29,7 @@ function Slider() {
 					'mt-3 mb-5 text-center text-4xl font-semibold leading-40 text-cobalto'
 				}
 			>
-				Partnerships and Affiliations
+				{t('home.slider.title')}
 			</h2>
 			<div className={'overflow-hidden py-6 px-8 opacity-40'}>
 				<div className={' mr-auto ml-auto w-full max-w-4xl '}>

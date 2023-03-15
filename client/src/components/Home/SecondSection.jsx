@@ -3,7 +3,11 @@ import Esr from '../../assets/Imagenes-Optimen/Home/esr.png';
 import MarcaGTO from '../../assets/Imagenes-Optimen/Home/marca-gto-logo.png';
 import Boeing from '../../assets/Imagenes-Optimen/Home/boeing_logo.png';
 import ISO from '../../assets/Imagenes-Optimen/Home/iso.jpg';
+import { useTranslation } from 'react-i18next';
+
 function SecondSection() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<section className={'font-monserrat'}>
 			<h2
@@ -11,7 +15,7 @@ function SecondSection() {
 					'mt-10 mb-10 text-center text-4xl font-semibold leading-40 text-cobalto'
 				}
 			>
-				Awards and Certifications
+				{t('home.second-section.title')}
 			</h2>
 			<div className={'overflow-hidden py-6 px-8 opacity-80 '}>
 				<div className={' mr-auto ml-auto w-full max-w-4xl '}>

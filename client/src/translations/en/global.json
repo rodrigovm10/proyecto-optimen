@@ -1,0 +1,135 @@
+{
+	"navigation": {
+		"home": "Home",
+		"about": "About us",
+		"customers": "Customers",
+		"news": "News",
+		"contact": "Contact us"
+	},
+	"footer": {
+		"location": "Location",
+		"about": "About"
+	},
+	"home": {
+		"hero": {
+			"title": "Welcome to Optimen",
+			"description": "Unique team of Resorces Managment an Optimization Experts and passionate Software Delevopers."
+		},
+		"slider": {
+			"title": "Partnerships and Affiliations"
+		},
+		"first-section": {
+			"title-1": "A World Class Global Enterpise",
+			"description-1": "Mexican Company with the following experience since 2006: Resource Optimization Consultancy and Configuration Support Services IT Software Solutions Development",
+			"title-2": "Our Purpose",
+			"description-2": "Streamline the world mobility",
+			"title-3": "Capabilities",
+			"description-3-1": "Airline Operations Expertise",
+			"description-3-2": "Analytics / Analysis Development",
+			"description-3-3": "Software Architecture",
+			"description-3-4": "Consulting & Businnes Development",
+			"description-3-5": "New Products and R&D",
+			"description-3-6": "High Technologý Exterpise",
+			"description-3-7": "Customer Trust",
+			"description-3-8": "Systems Implementation & Support",
+			"description-3-9": "Software Development",
+			"description-3-10": "Resource Optimization",
+			"description-3-11": "Resource Managment",
+			"description-3-12": "Operations Modeling"
+		},
+		"second-section": {
+			"title": "Awards and Certifications"
+		}
+	},
+	"about-us": {
+		"hero": {
+			"title": "What is Optimen?",
+			"description": "Optimen is a Mexican Software Development company that provides resources management and optimization services to different industries. The company was designated and approved as an International Service Contractor for Jeppesen and Boeing."
+		},
+		"first-section": {
+			"mission": "Mission",
+			"vision": "Vision",
+			"values": "Values",
+			"mission-description": "Support and facilitate Air Lines around the world to maintain reliable and sustainable operaions through Technology, Innovation and living our Values.",
+			"vision-description": "To be the First option in Software, Technology and Innovation services for the global Airlines in the area of Aeronautical operational control.",
+			"values-1": "Trustworthy",
+			"values-2": "Respect",
+			"values-3": "Integrity",
+			"values-4": "Teamwork",
+			"values-5": "Innovation"
+		},
+		"second-section": {
+			"title": "Our Services",
+			"consultancy": "Consultancy",
+			"auditing": "Auditing",
+			"bussines": "Businnes Rules Development",
+			"implementation": "Implementation Outsourcing",
+			"innovation": "Innovation",
+			"interfaces": "Interfaces Development",
+			"consultancy-description": "Consultancy Services",
+			"auditing-description": "Auditing and process improvement",
+			"bussines-description": "Development of business rules for resource management",
+			"implementation-description": "Implement Aircraft and Crew Tracking Systems and Optimizers",
+			"innovation-description": "Innovation and Development of new systems",
+			"interfaces-description": "Development of Integrations / Interfaces for computer systems"
+		},
+		"third-section": {
+			"title": "Airline Experience",
+			"card-1": "Associated with long experience in the Airline Industry with high trust and tight relation with commercial airlines and industry key players.",
+			"card-2": "Broad experience developing software in real Airline Operational Control Systems and implementation of Optimization Software.",
+			"card-3": "Strong Project Management following the industry best practices."
+		},
+		"fourth-section": {
+			"title": "Innovation Hub",
+			"card-1": "Optimen family present at 'Industrial Transformation Mexico, Hannover Messe'. HANNOVER MESSE is the most important international platform and hot spot for industrial transformation - with excellent innovations or unusual products.",
+			"card-2": "Optimen teamed up with Inbiodroid are working together on ANA Avatar XPRIZE challenge that aims to create an Avatar system that can transport human presence to a remote location in real time.",
+			"card-3": "Hackathon organized by the alliance between AWS, Optimen, Educafin, IdeaGTO, SEG and GAP with the purpose that students, Guanajuato talent, will execute innovative projects aimed at improving airport services.",
+			"card-4": "EDUCATE OPTIMEN",
+			"card-5": "Optimen inaugurated its innovation center, a space focus on competencies development for the aeronautical sector."
+		},
+		"fifth-section": {
+			"title": "Our Story Through the Time",
+			"part-0": "2006 - The Beginning",
+			"part-1": "2009 - First support team",
+			"part-2": "2014 - On the big league",
+			"part-3": "2016 - Our Opening",
+			"part-4": "2017 - Optimen and the Aerospace Cluster",
+			"part-5": "2017 - First South American Client",
+			"part-6": "2017 - Guanajuato Talent",
+			"part-7": "2017 - Go Innovation Forum",
+			"part-8": "2018 - Other Relationships",
+			"part-9": "2019 - Innovation Hub Optimen",
+			"part-10": "2019 - Going global",
+			"part-11": "2019 - UTNG relationship",
+			"part-12": "2020 - Aeroclúster Querétaro",
+			"part-13": "2020 - CANIETI-CLUTIG",
+			"part-14": "2020 - Distinctive 'Marca GTO'",
+			"part-15": "2021 - EDUCAFIN EVOLUCIONA",
+			"part-0-description": "Foundation of Optimen and first business contract with Jeppesen Systems AB in Sweden.",
+			"part-1-description": "Optimen installs its first consulting and support team in Mexicana de Aviación, S. A. B. de C. V.",
+			"part-2-description": "Optimen was designated and approved as an International Service Contractor for Jeppesen and Boeing.",
+			"part-3-description": "Opening of our offices in the city of León, Guanajuato.",
+			"part-4-description": "Integration of Optimen to the 'Aerospace Cluster in Guanajuato'.",
+			"part-5-description": "We obtained our first Client in South America, LATAM.",
+			"part-6-description": "We obtained the 'Talent Guanajuato' Recognition , by Government of the State of Guanajuato.",
+			"part-7-description": "Participation as speakers in the Go Innovation Forum 'Optimen - Disruptive Business Model of Guanajuato'.",
+			"part-8-description": "Integration of Optimen to the Digital Cluster 'GTO Tech', as members and active participants",
+			"part-9-description": "Grand opening of the 'Innovation Hub Optimen', a technological innovation center dedicated to developing the skills of the work team.",
+			"part-10-description": "Obtains its first European client.",
+			"part-11-description": "Signing of a collaboration agreement with the Universidad Tecnológica del Norte de Guanajuato (UTNG) for the development of projects.",
+			"part-12-description": "Integration to the 'Aeroclúster Querétaro', as members and active participants.",
+			"part-13-description": "Integration to the 'CANIETI-CLUTIG', as members and active participants.",
+			"part-14-description": "Obtaining the badge 'Marca GTO'.",
+			"part-15-description": "Signing of a Collaboration Agreement with Educafin Evoluciona to promote the employability of young people from Guanajuato in the aeronautical sector."
+		}
+	},
+	"customers": {
+		"title-1": "Our Customers",
+		"description-1": "Through our capabilities, the services we provide, and our commitment, we implement projects resulting in satisfied clients and success stories.",
+		"title-2": "Our Project Experience",
+		"description-2": "Through our experience as certified Jeppesen/Boeing consultants, we contribute to the support of the configuration and customization of state-of-the-art optimization software for several key airlines in the aeronautical sector at an international level."
+	},
+	"news": {
+		"title": "News"
+	}
+}

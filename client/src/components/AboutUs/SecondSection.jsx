@@ -6,13 +6,16 @@ import Business from '../../assets/Imagenes-Optimen/About Us/rules.png';
 import Outsoursing from '../../assets/Imagenes-Optimen/About Us/outsourcing.png';
 import Innovation from '../../assets/Imagenes-Optimen/About Us/innovation (1).png';
 import Interface from '../../assets/Imagenes-Optimen/About Us/interface.png';
+import { useTranslation } from 'react-i18next';
 
 function SecondSection() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<div className={'ml-8 mr-8 font-monserrat'}>
 			<section className={'py-10 px-8'}>
 				<h2 className={'mb-5 text-center text-3xl font-semibold text-cobalto'}>
-					Our Services
+					{t('about-us.second-section.title')}
 				</h2>
 				<div
 					className={'mb-5 grid grid-cols-3 grid-rows-auto2 gap-y-12 gap-x-14'}
@@ -20,44 +23,40 @@ function SecondSection() {
 					<SecondCard
 						src={Consultant}
 						alt={'Consultancy'}
-						title={'Consultancy'}
-						description={'Consultancy Services'}
+						title={t('about-us.second-section.consultancy')}
+						description={t('about-us.second-section.consultancy-description')}
 					></SecondCard>
 					<SecondCard
 						src={Auditing}
 						alt={'Auditing'}
-						title={'Auditing'}
-						description={'Auditing and process improvement'}
+						title={t('about-us.second-section.auditing')}
+						description={t('about-us.second-section.auditing-description')}
 					></SecondCard>
 					<SecondCard
 						src={Business}
 						alt={'Business Rules'}
-						title={'Business Rules Development'}
-						description={
-							'Development of business rules for resource management'
-						}
+						title={t('about-us.second-section.bussines')}
+						description={t('about-us.second-section.bussines-description')}
 					></SecondCard>
 					<SecondCard
 						src={Outsoursing}
 						alt={'Implementationg Outsourcing'}
-						title={'Implementationg Outsourcing'}
-						description={
-							'Implement Aircraft and Crew Tracking Systems and Optimizers'
-						}
+						title={t('about-us.second-section.implementation')}
+						description={t(
+							'about-us.second-section.implementation-description'
+						)}
 					></SecondCard>
 					<SecondCard
 						src={Innovation}
 						alt={'Innovation'}
-						title={'Innovation'}
-						description={'Innovation and Development of new systems'}
+						title={t('about-us.second-section.innovation')}
+						description={t('about-us.second-section.innovation-description')}
 					></SecondCard>
 					<SecondCard
 						src={Interface}
 						alt={'Interfaces Development'}
-						title={'Interfaces Development'}
-						description={
-							'Development of Integrations / Interfaces for computer systems'
-						}
+						title={t('about-us.second-section.interfaces')}
+						description={t('about-us.second-section.interfaces-description')}
 					></SecondCard>
 				</div>
 				<Border />

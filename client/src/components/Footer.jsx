@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import LogoAzul from '../assets/Imagenes-Optimen/logo-blanco-azul.png';
+import { useTranslation } from 'react-i18next';
+
 function Footer() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<footer className={'relative bg-gris py-10 pr-8 pl-4 '}>
 			<div className={'mr-auto ml-auto w-full max-w-940'}>
@@ -20,15 +24,15 @@ function Footer() {
 					>
 						<Nav
 							title={'Menu'}
-							link1={'Home'}
+							link1={t('navigation.home')}
 							to1={'/'}
-							link2={'About Us'}
+							link2={t('navigation.about')}
 							to2={'/About Us'}
-							link3={'Customers'}
+							link3={t('navigation.customers')}
 							to3={'/Customers'}
-							link4={'News'}
+							link4={t('navigation.news')}
 							to4={'/News'}
-							link5={'Contact Us'}
+							link5={t('navigation.contact')}
 							to5={'/Contact Us'}
 						/>
 						<div
@@ -37,7 +41,7 @@ function Footer() {
 							}
 						>
 							<p className={'font-bold uppercase tracking-wider opacity-80'}>
-								Location
+								{t('footer.location')}
 							</p>
 							<p className={'mt-3 mb-1 opacity-60'}>
 								Av. León 119 | León, Guanajuato | Mexico
@@ -48,7 +52,7 @@ function Footer() {
 							</p>
 						</div>
 						<Nav
-							title={'About'}
+							title={t('footer.about')}
 							link1={'Carrer'}
 							link2={'Security Policiy'}
 							link3={'Privacy'}

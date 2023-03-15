@@ -2,8 +2,11 @@ import LazyLoad from 'react-lazyload';
 import Border from '../Border';
 import Img1 from '../../assets/Imagenes-Optimen/Home/img-1.jpg';
 import Img2 from '../../assets/Imagenes-Optimen/Home/img-2.jpg';
+import { useTranslation } from 'react-i18next';
 
 function FirstSection() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<div className={'ml-8 mr-8 font-monserrat'}>
 			<section className={'mr-auto ml-auto w-full max-w-1440'}>
@@ -17,12 +20,10 @@ function FirstSection() {
 									'mt-3 mb-5 text-4xl font-semibold leading-40 text-cobalto'
 								}
 							>
-								A World Class Global Enterpise
+								{t('home.first-section.title-1')}
 							</h2>
 							<p className={'mb-3 text-base leading-6 text-slate-400'}>
-								Mexican Company with the following experience since 2006:
-								Resource Optimization Consultancy and Configuration Support
-								Services IT Software Solutions Development
+								{t('home.first-section.description-1')}
 							</p>
 						</div>
 						<LazyLoad>
@@ -50,10 +51,10 @@ function FirstSection() {
 									'mt-3 mb-5 text-4xl font-semibold leading-40 text-cobalto'
 								}
 							>
-								Our Purpose
+								{t('home.first-section.title-2')}
 							</h2>
 							<p className={'mb-3 text-base leading-6 text-slate-400 '}>
-								Streamline the world mobility
+								{t('home.first-section.description-2')}
 							</p>
 						</div>
 					</div>
@@ -61,58 +62,58 @@ function FirstSection() {
 				<Border />
 				<div className={'text-center'}>
 					<h2 className={'mb-5 mt-7 pb-10 text-4xl font-semibold text-cobalto'}>
-						Capabilities
+						{t('home.first-section.title-3')}
 					</h2>
 					<div className={'grid grid-cols-2 gap-4'}>
 						<p
 							className={'font-bold text-azulito opacity-30 hover:opacity-100'}
 						>
-							Airline Operations Expertise
+							{t('home.first-section.description-3-1')}
 						</p>
 						<p className={'font-bold opacity-30 hover:opacity-100'}>
-							Analytics / Analysis Development
+							{t('home.first-section.description-3-2')}
 						</p>
 						<p className={'font-bold opacity-30 hover:opacity-100'}>
-							Software Architecture
+							{t('home.first-section.description-3-3')}
 						</p>
 						<p
 							className={'font-bold text-azulito opacity-30 hover:opacity-100'}
 						>
-							Consulting & Businnes Development
+							{t('home.first-section.description-3-4')}
 						</p>
 						<p
 							className={'font-bold text-azulito opacity-30 hover:opacity-100'}
 						>
-							New Products and R&D
+							{t('home.first-section.description-3-5')}
 						</p>
 						<p className={'font-bold opacity-30 hover:opacity-100'}>
-							High Technologý Exterpise
+							{t('home.first-section.description-3-6')}
 						</p>
 						<p className={'font-bold opacity-30 hover:opacity-100'}>
-							Customer Trust
+							{t('home.first-section.description-3-7')}
 						</p>
 						<p
 							className={'font-bold text-azulito opacity-30 hover:opacity-100'}
 						>
-							Systems Implementation & Support
+							{t('home.first-section.description-3-8')}
 						</p>
 						<p
 							className={'font-bold text-azulito opacity-30 hover:opacity-100'}
 						>
-							Software Development
+							{t('home.first-section.description-3-9')}
 						</p>
 						<p className={'font-bold opacity-30 hover:opacity-100'}>
-							Resource Optimization
+							{t('home.first-section.description-3-10')}
 						</p>
 						<p className={'mb-8 font-bold opacity-30 hover:opacity-100'}>
-							Resource Managment
+							{t('home.first-section.description-3-11')}
 						</p>
 						<p
 							className={
 								'mb-8 font-bold text-azulito opacity-30 hover:opacity-100'
 							}
 						>
-							Operations Modeling
+							{t('home.first-section.description-3-12')}
 						</p>
 					</div>
 					<Border />

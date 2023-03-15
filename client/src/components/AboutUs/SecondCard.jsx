@@ -1,10 +1,7 @@
-import LazyLoad from 'react-lazyload';
 function SecondCard({ src, alt, title, description }) {
 	return (
 		<div className="font-monserrat">
-			<LazyLoad>
-				<img className={'w-[50px]'} src={src} alt={alt} />
-			</LazyLoad>
+			<img className={'w-[50px]'} src={src} alt={alt} loading="lazy" />
 			<h3 className={'text-semibold mb-3 text-xl leading-8 text-azulito'}>
 				{title}
 			</h3>

@@ -1,29 +1,23 @@
 import LazyLoad from 'react-lazyload';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Hannover from '../../assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.jpg';
-import Xprice from '../../assets/Imagenes-Optimen/About Us/xprize_ana_avatar.png';
+import Hannover from '../../assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.webp';
+import Xprice from '../../assets/Imagenes-Optimen/About Us/xprize_ana_avatar.webp';
 import AWS from '../../assets/Imagenes-Optimen/About Us/aws_mentefactura.png';
 import InnovationHUB from '../../assets/Imagenes-Optimen/About Us/Inn_Hub.png';
 import Educate from '../../assets/Imagenes-Optimen/About Us/Educate_Opti.png';
 import Border from '../Border';
+import { useTranslation } from 'react-i18next';
+
 function FourthSection() {
+	const [t] = useTranslation('global');
+
 	return (
 		<div className={'ml-8 mr-8 font-monserrat'}>
 			<section className={'py-10 px-8'}>
 				<h2 className={'mb-5 text-center text-3xl font-semibold text-cobalto'}>
-					Innovation Hub
+					{t('about-us.fourth-section.title')}
 				</h2>
-				<p
-					className={
-						'mr-auto ml-auto max-w-[530px] text-center text-opacidad opacity-60'
-					}
-				>
-					Througt our capabilities, the services we provide , and our
-					commitment, we implement proyects resulting in sastifiedclients and
-					succes stories
-				</p>
-
 				<div className={'mt-12 h-auto text-center'}>
 					<Carousel>
 						<div
@@ -59,11 +53,7 @@ function FourthSection() {
 											Hannover Messe
 										</h3>
 										<p className={'mb-5 opacity-60'}>
-											Optimen family present at 'Industrial Transformation
-											Mexico, Hannover Messe'. HANNOVER MESSE is the most
-											important international platform and hot spot for
-											industrial transformation - with excellent innovations or
-											unusual products.
+											{t('about-us.fourth-section.card-1')}
 										</p>
 									</div>
 								</div>
@@ -96,10 +86,7 @@ function FourthSection() {
 											Ana Avatar XPrize
 										</h3>
 										<p className={'mb-5 opacity-60'}>
-											Optimen teamed up with Inbiodroid are working together on
-											ANA Avatar XPRIZE challenge that aims to create an Avatar
-											system that can transport human presence to a remote
-											location in real time.
+											{t('about-us.fourth-section.card-2')}
 										</p>
 									</div>
 								</div>
@@ -132,10 +119,7 @@ function FourthSection() {
 											AWS Mentefactura GTO Challenge
 										</h3>
 										<p className={'mb-5 opacity-60'}>
-											Hackathon organized by the alliance between AWS, Optimen,
-											Educafin, IdeaGTO, SEG and GAP with the purpose that
-											students, Guanajuato talent, will execute innovative
-											projects aimed at improving airport services.
+											{t('about-us.fourth-section.card-3')}
 										</p>
 									</div>
 								</div>
@@ -202,11 +186,10 @@ function FourthSection() {
 												'mb-3 text-center text-2xl font-semibold text-azulito'
 											}
 										>
-											Innovation Hub
+											{t('about-us.fourth-section.title')}
 										</h3>
 										<p className={'mb-5 opacity-60'}>
-											Optimen inaugurated its innovation center, a space focus
-											on competencies development for the aeronautical sector.
+											{t('about-us.fourth-section.card-5')}
 										</p>
 									</div>
 								</div>

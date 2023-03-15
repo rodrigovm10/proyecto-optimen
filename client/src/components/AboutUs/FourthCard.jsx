@@ -10,6 +10,7 @@ function FourthCard({ src, alt, title, description }) {
 					className={'mb-[18px] rounded-tl-2xl rounded-tr-2xl'}
 					src={src}
 					alt={alt}
+					loading="lazy"
 				/>
 				<div className={'flex flex-col items-start pr-6 pl-6'}>
 					<h3

@@ -169,7 +169,7 @@ const EditUserForm = ({ user }) => {
 				className="text-sm font-medium leading-5 tracking-wide"
 				htmlFor="roles"
 			>
-				Roles Asignados:
+				Privilegios:
 			</label>
 			<select
 				id="roles"

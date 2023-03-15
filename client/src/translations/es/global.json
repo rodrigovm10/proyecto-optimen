@@ -1,0 +1,135 @@
+{
+	"navigation": {
+		"home": "Inicio",
+		"about": "Sobre Nosotros",
+		"customers": "Clientes",
+		"news": "Noticias",
+		"contact": "Contacto"
+	},
+	"footer": {
+		"location": "Ubicación",
+		"about": "Sobre Nosotros"
+	},
+	"home": {
+		"hero": {
+			"title": "Bienvenido a Optimen",
+			"description": "Equipo único de expertos en gestión y optimización de recursos y apasionados desarrolladores de software."
+		},
+		"slider": {
+			"title": "Asociaciones y afiliaciones"
+		},
+		"first-section": {
+			"title-1": "Una empresa global de clase mundial",
+			"description-1": "Empresa mexicana con experiencia desde 2006 en: Optimización de recursos Servicios de consultoría y soporte de configuración Desarrollo de soluciones de software de TI",
+			"title-2": "Nuestro Propósito",
+			"description-2": "Agilizar la movilidad del mundo",
+			"title-3": "Nuestras Capacidades",
+			"description-3-1": "Experiencia en operaciones aéreas",
+			"description-3-2": "Experiencia en analítica / análisis",
+			"description-3-3": "Arquitectura de software",
+			"description-3-4": "Consultoría y desarrollo empresarial",
+			"description-3-5": "Nuevos productos y R&D",
+			"description-3-6": "Experiencia en alta tecnología",
+			"description-3-7": "Confianza del cliente",
+			"description-3-8": "Implementación y soporte de sistemas",
+			"description-3-9": "Desarrollo de software",
+			"description-3-10": "Optimización de recursos",
+			"description-3-11": "Administración de recursos",
+			"description-3-12": "Modelado de operaciones"
+		},
+		"second-section": {
+			"title": "Premios y Certificaciones"
+		}
+	},
+	"about-us": {
+		"hero": {
+			"title": "¿Qué es Optimen?",
+			"description": "Optimen es una empresa mexicana de desarrollo de software con sede en León, Guanajuato, que brinda servicios a la industria de las aerolíneas. La compañía fue designada y aprobada como contratista de servicios internacionales para Jeppesen y Boeing."
+		},
+		"first-section": {
+			"mission": "Misión",
+			"vision": "Visión",
+			"values": "Valores",
+			"mission-description": "Apoyar y asistir a las aerolíneas en todo el mundo para mantener operaciones confiables y sostenibles a través de Tecnología, Innovación y vivir nuestros Valores.",
+			"vision-description": "Ser la primera opción en servicios de software, tecnología e innovación para las aerolíneas globales en el área de control operacional aeronáutico.",
+			"values-1": "Confiable",
+			"values-2": "Respeto",
+			"values-3": "Integridad",
+			"values-4": "Trabajo en equipo",
+			"values-5": "Inovación"
+		},
+		"second-section": {
+			"title": "Nuestros Servicios",
+			"consultancy": "Consultoría",
+			"auditing": "Auditoría",
+			"bussines": "Desarrollo de reglas de negocios",
+			"implementation": "Tercerización de la implementación",
+			"innovation": "Inovación",
+			"interfaces": "Desarrollo de Interfazes",
+			"consultancy-description": "Servicios de Consultoría",
+			"auditing-description": "Auditoría y mejora de procesos",
+			"bussines-description": "Desarrollo de reglas comerciales para la gestión de recursos.",
+			"implementation-description": "Implementar optimizadores y sistemas de seguimiento de aeronaves y tripulaciones",
+			"innovation-description": "Inovación y desarrollo de nuevos sistemas",
+			"interfaces-description": "Desarrollo de Integraciones / Interfaces para sistemas infórmaticos"
+		},
+		"third-section": {
+			"title": "Experiencia Aeronáutica",
+			"card-1": "Asociado con una larga experiencia en la industria de la aviación con una alta confianza y una estrecha relación con las aerolíneas comerciales y los actores clave de la industria.",
+			"card-2": "Amplia experiencia en el desarrollo de software en sistemas de control operacional de aerolíneas reales y en la implementación del software de optimización.",
+			"card-3": "Fuerte gestión de proyectos siguiendo las mejores prácticas de la industria."
+		},
+		"fourth-section": {
+			"title": "Centro de Inovación",
+			"card-1": "Familia Optimen presente en 'Industrial Transformation Mexico, Hannover Messe' HANNOVER MESSE es la plataforma internacional más importante para la transformación industrial, con excelentes innovaciones o productos inusuales.",
+			"card-2": "Optimen junto con Inbiodroid están trabajando juntos en el desafío ANA Avatar XPRIZE que tiene como objetivo crear un sistema Avatar que pueda transportar la presencia humana a una ubicación remota en tiempo real.",
+			"card-3": "Optimen inauguró su centro de innovación, un espacio dedicado al desarrollo de competencias en el sector aeronáutico.",
+			"card-4": "EDUCATE OPTIMEN",
+			"card-5": "Hackaton organizado por la alianza entre AWS, Optimen, Educafin, IdeaGTO, SEG y GAP con la finalidad de que estudiantes, talento guanajuatense, ejecutarán proyectos innovadores encaminados a mejorar los servicios aeroportuarios."
+		},
+		"fifth-section": {
+			"title": "Nuestra Historia a través del tiempo",
+			"part-0": "2006 - El Inicio",
+			"part-1": "2009 - Primer equipo de soporte",
+			"part-2": "2014 - En las grandes ligas",
+			"part-3": "2016 - Nuestra Inauguración",
+			"part-4": "2017 - Optimen y el Clúster Aeroespacial",
+			"part-5": "2017 - Primer cliente Sudamericano",
+			"part-6": "2017 - Talento Guanajuato",
+			"part-7": "2017 - Foro Go Innovation",
+			"part-8": "2018 - Más relaciones",
+			"part-9": "2019 - Centro de innovación Optimen",
+			"part-10": "2019 - Globalizándonos",
+			"part-11": "2019 - Relación con UTNG",
+			"part-12": "2020 - Aeroclúster Querétaro",
+			"part-13": "2020 - CANIETI-CLUTIG",
+			"part-14": "2020 - Distintivo 'Marca GTO'",
+			"part-15": "2021 - EDUCAFIN EVOLUCIONA",
+			"part-0-description": "Fundación de Optimen y primer contrato con Jeppesen Systems AB en Suecia.",
+			"part-1-description": "Optimen instala su primer equipo de consultoría y soporte en Mexicana de Aviación, S. A. B. de C. V.",
+			"part-2-description": "Optimen fue designada y aprobada como contratista de servicios internacionales para Jeppesen y Boeing.",
+			"part-3-description": "Inauguración de nuestras oficinas en la ciudad de León, Guanajuato.",
+			"part-4-description": "Integración de Optimen al “Clúster Aeroespacial en Guanajuato”.",
+			"part-5-description": "Obtuvimos nuestro primer Cliente en Sudamérica, la aerolínea LATAM.",
+			"part-6-description": "Acreedores del Reconocimiento “Talento Guanajuato”, por parte del Gobierno del Estado de Guanajuato.",
+			"part-7-description": "Participación como ponentes en el Foro Go Innovation “Optimen - Modelo de Negocio Disruptivo de Guanajuato”.",
+			"part-8-description": "Integración de Optimen al Clúster Digital “GTO Tech”, como miembros y participantes activos.",
+			"part-9-description": "Inauguración del “Innovation Hub Optimen”, centro de innovación tecnológica dedicado al desarrollo de competencias del equipo de trabajo.",
+			"part-10-description": "Se obtiene el primer Cliente en Europa",
+			"part-11-description": "Firma de convenio de colaboración con la Universidad Tecnológica del Norte de Guanajuato (UTNG) para desarrollo de proyectos de innovación.",
+			"part-12-description": "Integración al “Aeroclúster Querétaro”, como miembros y participantes activos.",
+			"part-13-description": "Integración a la 'CANIETI-CLUTIG', miembros y participantes activos.",
+			"part-14-description": "Obtención del distintivo 'Marca GTO'.",
+			"part-15-description": "Firma de Convenio de Colaboración con Educafin Evoluciona para impulsar la empleabilidad de los jóvenes guanajuatenses en el sector aeronáutico."
+		}
+	},
+	"customers": {
+		"title-1": "Nuestros Clientes",
+		"description-1": "A través de nuestras capacidades, los servicios que brindamos y nuestro compromiso, implementamos proyectos obteniendo como resultado clientes satisfechos y casos de éxito.",
+		"title-2": "Nuestra Experiencia en Proyectos",
+		"description-2": "A través de nuestros servicios como consultores certificados de Jeppesen/Boeing, contribuimos al soporte de la configuración y personalización de software de optimización de última generación para diversas aerolíneas claves del sector aeronáutico a nivel internacional."
+	},
+	"news": {
+		"title": "Noticias"
+	}
+}

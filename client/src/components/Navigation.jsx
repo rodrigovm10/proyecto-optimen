@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import LogoBlanco from '../assets/Imagenes-Optimen/logo optimen blanco.png';
+import { useTranslation } from 'react-i18next';
+
 function Navigation() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<div
 			className={'flex items-center justify-start bg-cobalto py-2 pr-10 pl-8'}
@@ -16,33 +20,35 @@ function Navigation() {
 							to={'/'}
 							className={'p-5 tracking-widest text-white opacity-60'}
 						>
-							Home
+							{t('navigation.home')}
 						</Link>
 
 						<Link
 							to={'/About Us'}
 							className={'p-5 tracking-widest text-white opacity-60'}
 						>
-							About
+							{t('navigation.about')}
 						</Link>
 						<Link
 							to={'/Customers'}
 							className={'p-5 tracking-widest text-white opacity-60'}
 						>
-							Customers
+							{t('navigation.customers')}
 						</Link>
 						<Link
 							to={'/News'}
 							className={'p-5 tracking-widest text-white opacity-60 '}
 						>
-							News
+							{t('navigation.news')}
 						</Link>
 						<Link
 							to={'/Contact Us'}
 							className={'p-5 text-xs tracking-widest text-white opacity-60 '}
 						>
-							Contact Us
+							{t('navigation.contact')}
 						</Link>
+						<button onClick={() => i18n.changeLanguage('es')}>ES</button>
+						<button onClick={() => i18n.changeLanguage('en')}>EN</button>
 					</nav>
 				</div>
 			</div>

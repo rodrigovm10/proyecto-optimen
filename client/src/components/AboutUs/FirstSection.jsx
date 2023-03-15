@@ -1,9 +1,14 @@
+import { LazyLoad } from 'react-lazyload';
 import FirstCard from './FirstCard';
 import Border from '../Border';
 import Mission from '../../assets/Imagenes-Optimen/About Us/mission.png';
-import Vision from '../../assets/Imagenes-Optimen/About Us/vision.png';
+import Vision from '../../assets/Imagenes-Optimen/About Us/vision.webp';
 import Values from '../../assets/Imagenes-Optimen/About Us/values.png';
+import { useTranslation } from 'react-i18next';
+
 function FirstSection() {
+	const [t, i18n] = useTranslation('global');
+
 	return (
 		<div className={'ml-8 mr-8 font-monserrat'}>
 			<section className={'mt-[-5rem] px-8 pt-14 pb-10'}>
@@ -12,30 +17,26 @@ function FirstSection() {
 						<FirstCard
 							src={Mission}
 							alt={'mission'}
-							title={'Mission'}
-							description={
-								'Support and facilitate Air Lines around the world to maintain reliable and sustainable operaions through Technology, Innovation and living our Values.'
-							}
+							title={t('about-us.first-section.mission')}
+							description={t('about-us.first-section.mission-description')}
 						></FirstCard>
 						<FirstCard
 							src={Vision}
 							alt={'vision'}
-							title={'Vision'}
-							description={
-								'To be the First option in Software, Technology and Innovation services for the global Airlines in the area of Aeronautical operational control.'
-							}
+							title={t('about-us.first-section.vision')}
+							description={t('about-us.first-section.vision-description')}
 						></FirstCard>
 						<FirstCard
 							src={Values}
 							alt={'values'}
-							title={'Values'}
+							title={t('about-us.first-section.values')}
 							description={
 								<p>
-									Trustworthy
-									<br /> Respect
-									<br /> Integrity
-									<br /> Teamwork
-									<br /> Innovation
+									{t('about-us.first-section.values-1')}
+									<br /> {t('about-us.first-section.values-2')}
+									<br /> {t('about-us.first-section.values-3')}
+									<br /> {t('about-us.first-section.values-4')}
+									<br /> {t('about-us.first-section.values-5')}
 								</p>
 							}
 						></FirstCard>

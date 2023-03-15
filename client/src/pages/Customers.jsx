@@ -26,16 +26,17 @@ import Kalita from './../assets/Imagenes-Optimen/Customers/Kalita.webp';
 import Frontier from './../assets/Imagenes-Optimen/Customers/Frontier.png';
 import Alaska from './../assets/Imagenes-Optimen/Customers/Alaska.webp';
 
+import { useTranslation } from 'react-i18next';
+
 function Customers() {
+	const [t] = useTranslation('global');
 	return (
 		<>
 			<Suspense>
 				<Navigation />
 				<CarouselSection
-					title={'Our Customers'}
-					description={
-						'Through our capabilities, the services we provide, and our commitment, we implement projects resulting in satisfied clients and success stories.'
-					}
+					title={t('customers.title-1')}
+					description={t('customers.description-1')}
 					src1={Avianca}
 					alt1={'Avianca'}
 					src2={Boeing}
@@ -52,10 +53,8 @@ function Customers() {
 					alt7={'Volaris'}
 				/>
 				<CarouselSection2
-					title={'Our Project Experience'}
-					description={
-						'Through our experience as certified Jeppesen/Boeing consultants, we contribute to the support of the configuration and customization of state-of-the-art optimization software for several key airlines in the aeronautical sector at an international level.'
-					}
+					title={t('customers.title-2')}
+					description={t('customers.description-2')}
 					src1={Endeavor}
 					alt1={'Endeavor'}
 					src2={Azul}
