@@ -3,7 +3,7 @@ import FirstCard from './FirstCard';
 import Border from '../Border';
 import Mission from '../../assets/Imagenes-Optimen/About Us/mission.png';
 import Vision from '../../assets/Imagenes-Optimen/About Us/vision.webp';
-import Values from '../../assets/Imagenes-Optimen/About Us/values.png';
+import Values from '../../assets/Imagenes-Optimen/About Us/values.webp';
 import { useTranslation } from 'react-i18next';
 
 function FirstSection() {

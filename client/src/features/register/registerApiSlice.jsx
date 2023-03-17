@@ -29,11 +29,11 @@ export const registerApiSlice = apiSlice.injectEndpoints({
 			},
 		}),
 		addNewRegister: builder.mutation({
-			query: initialUserData => ({
+			query: initialRegisterData => ({
 				url: '/register',
 				method: 'POST',
 				body: {
-					...initialUserData,
+					...initialRegisterData,
 				},
 			}),
 			invalidatesTags: [{ type: 'Register', id: 'LIST' }],

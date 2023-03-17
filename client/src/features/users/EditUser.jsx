@@ -8,7 +8,7 @@ const EditUser = () => {
 
 	const user = useSelector(state => selectUserById(state, id));
 
-	const content = user ? <EditUserForm user={user} /> : <p>Cargando...</p>;
+	const content = user ? <EditUserForm userR={user} /> : <p>Cargando...</p>;
 
 	return content;
 };

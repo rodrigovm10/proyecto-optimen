@@ -3,9 +3,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Hannover from '../../assets/Imagenes-Optimen/About Us/HANNOVER_MESSE.webp';
 import Xprice from '../../assets/Imagenes-Optimen/About Us/xprize_ana_avatar.webp';
-import AWS from '../../assets/Imagenes-Optimen/About Us/aws_mentefactura.png';
-import InnovationHUB from '../../assets/Imagenes-Optimen/About Us/Inn_Hub.png';
-import Educate from '../../assets/Imagenes-Optimen/About Us/Educate_Opti.png';
+import AWS from '../../assets/Imagenes-Optimen/About Us/aws_mentefactura.webp';
+import InnovationHUB from '../../assets/Imagenes-Optimen/About Us/Inn_Hub.webp';
+import Educate from '../../assets/Imagenes-Optimen/About Us/Educate_Opti.webp';
 import Border from '../Border';
 import { useTranslation } from 'react-i18next';
 

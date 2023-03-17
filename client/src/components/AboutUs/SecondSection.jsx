@@ -1,11 +1,11 @@
 import Border from '../Border';
 import SecondCard from '../AboutUs/SecondCard';
-import Consultant from '../../assets/Imagenes-Optimen/About Us/consultant.png';
-import Auditing from '../../assets/Imagenes-Optimen/About Us/check-list.png';
-import Business from '../../assets/Imagenes-Optimen/About Us/rules.png';
+import Consultant from '../../assets/Imagenes-Optimen/About Us/consultant.webp';
+import Auditing from '../../assets/Imagenes-Optimen/About Us/check-list.webp';
+import Business from '../../assets/Imagenes-Optimen/About Us/rules.webp';
 import Outsoursing from '../../assets/Imagenes-Optimen/About Us/outsourcing.png';
-import Innovation from '../../assets/Imagenes-Optimen/About Us/innovation (1).png';
-import Interface from '../../assets/Imagenes-Optimen/About Us/interface.png';
+import Innovation from '../../assets/Imagenes-Optimen/About Us/innovation.webp';
+import Interface from '../../assets/Imagenes-Optimen/About Us/interface.webp';
 import { useTranslation } from 'react-i18next';
 
 function SecondSection() {

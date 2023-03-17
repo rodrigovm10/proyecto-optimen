@@ -1,5 +1,4 @@
 const User = require('../models/User');
-const Register = require('../models/Register');
 const asyncHandler = require('express-async-handler');
 const bcrypt = require('bcrypt');
 
@@ -18,7 +17,7 @@ const getAllUsers = asyncHandler(async (req, res) => {
 //@route POST / users
 //@access Private
 const createNewUser = asyncHandler(async (req, res) => {
-	const { email, password, roles, permissions } = req.body;
+	const { email, password, roles, permission } = req.body;
 	//Confirma data
 	if (!email || !password || !Array.isArray(roles) || !roles.length) {
 		return res.status(400).json({ message: 'All fields are required.' });

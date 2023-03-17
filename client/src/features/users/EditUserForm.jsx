@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useUpdateUserMutation, useDeleteUserMutation } from './usersApiSlice';
+import { useAddNewRegisterMutation } from '../register/registerApiSlice';
 import { useNavigate } from 'react-router-dom';
 import { ROLES } from '../../config/roles';
 import NavBar from '../../components/Admin/NavBar';
@@ -8,8 +9,10 @@ import useAuth from '../../Hooks/useAuth';
 const USER_REGEX = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/;
 
-const EditUserForm = ({ user }) => {
+const EditUserForm = ({ userR }) => {
 	const { isAdmin, isAdminRoot } = useAuth();
+	const auth = useAuth();
+	const emailR = auth.email;
 
 	const [updateUser, { isLoading, isSuccess, isError, error }] =
 		useUpdateUserMutation();
@@ -19,14 +22,22 @@ const EditUserForm = ({ user }) => {
 		{ isSuccess: isDelSuccess, isError: isDelError, error: delerror },
 	] = useDeleteUserMutation();
 
+	const [addNewRegister] = useAddNewRegisterMutation();
+
 	const navigate = useNavigate();
 
-	const [email, setEmail] = useState(user.email);
+	const [moveTypeU, setMoveTypeU] = useState('');
+	const [dateTypeU, setDateTypeU] = useState('');
+	const [userU, setUserU] = useState();
+	const [moveTypeD, setMoveTypeD] = useState('');
+	const [dateTypeD, setDateTypeD] = useState('');
+	const [userD, setUserD] = useState();
+	const [email, setEmail] = useState(userR.email);
 	const [validEmail, setValidEmail] = useState(false);
 	const [password, setPassword] = useState('');
 	const [validPassword, setValidPassword] = useState(false);
-	const [roles, setRoles] = useState(user.roles);
-	const [active, setActive] = useState(user.active);
+	const [roles, setRoles] = useState(userR.roles);
+	const [active, setActive] = useState(userR.active);
 
 	useEffect(() => {
 		setValidEmail(USER_REGEX.test(email));
@@ -56,16 +67,39 @@ const EditUserForm = ({ user }) => {
 
 	const onActiveChanged = () => setActive(prev => !prev);
 
+	const date = new Date().toISOString().slice(0, 10);
+
+	useEffect(() => {
+		setMoveTypeU('Se actualizó un usuario');
+		setDateTypeU(date);
+		setUserU(emailR);
+	}, [moveTypeU, dateTypeU, userU]);
+
+	useEffect(() => {
+		setMoveTypeD('Se eliminó un usuario');
+		setDateTypeD(date);
+		setUserD(emailR);
+	}, [moveTypeD, dateTypeD, userD]);
+
 	const onSaveUserClicked = async e => {
+		let moveType = moveTypeU;
+		let dateType = dateTypeU;
+		let user = userU;
 		if (password) {
-			await updateUser({ id: user.id, email, password, roles, active });
+			await updateUser({ id: userR.id, email, password, roles, active });
+			await addNewRegister({ moveType, dateType, user });
 		} else {
-			await updateUser({ id: user.id, email, roles, active });
+			await updateUser({ id: userR.id, email, roles, active });
+			await addNewRegister({ moveType, dateType, user });
 		}
 	};
 
 	const onDeleteUserClicked = async () => {
-		await deleteUser({ id: user.id });
+		let moveType = moveTypeD;
+		let dateType = dateTypeD;
+		let user = userD;
+		await deleteUser({ id: userR.id });
+		await addNewRegister({ moveType, dateType, user });
 	};
 
 	const options = Object.values(ROLES).map(role => {
@@ -86,8 +120,8 @@ const EditUserForm = ({ user }) => {
 
 	const errClass =
 		isError || isDelError
-			? 'inline-block text-red p-[0.25em] mb-[0.5em]'
-			: 'offscreen';
+			? 'inline-block text-red p-[0.25em] mb-[0.5em] ml-[20%]'
+			: 'offscreen ';
 	const validUserClass = !validEmail
 		? 'border-2 border-solid border-[#F00]'
 		: '';

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const AutoIncrement = require('mongoose-sequence')(mongoose);
 
 const registerSchema = new mongoose.Schema({
 	moveType: {
@@ -11,16 +10,9 @@ const registerSchema = new mongoose.Schema({
 		required: true,
 	},
 	user: {
-		type: mongoose.Schema.Types.ObjectId,
+		type: String,
 		required: true,
-		ref: 'User',
 	},
-});
-
-registerSchema.plugin(AutoIncrement, {
-	inc_field: 'ticket',
-	id: 'ticketNums',
-	start_seq: 500,
 });
 
 module.exports = mongoose.model('Register', registerSchema);

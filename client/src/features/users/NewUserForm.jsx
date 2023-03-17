@@ -1,27 +1,38 @@
 import { useState, useEffect } from 'react';
 import { useAddNewUserMutation } from './usersApiSlice';
+import { useAddNewRegisterMutation } from '../register/registerApiSlice';
 import { useNavigate } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import { ROLES } from '../../config/roles';
 import NavBar from '../../components/Admin/NavBar';
 
-const USER_REGEX = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+const USER_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/;
 
 const NewUserForm = () => {
+	const { email } = useAuth();
+
 	const [addNewUser, { isLoading, isSuccess, isError, error }] =
 		useAddNewUserMutation();
 
+	const [addNewRegister] = useAddNewRegisterMutation();
+
 	const navigate = useNavigate();
 
-	const [email, setEmail] = useState('');
+	const [moveType, setMoveType] = useState('');
+	const [dateType, setDateType] = useState('');
+	const [user, setUser] = useState();
+	const [emailU, setEmail] = useState('');
 	const [validEmail, setValidEmail] = useState(false);
 	const [password, setPassword] = useState('');
 	const [validPassword, setValidPassword] = useState(false);
 	const [roles, setRoles] = useState(['Admin']);
 
 	useEffect(() => {
-		setValidEmail(USER_REGEX.test(email));
-	}, [email]);
+		setValidEmail(
+			USER_REGEX.test(emailU) && emailU.endsWith('@optimen.com.mx')
+		);
+	}, [emailU]);
 
 	useEffect(() => {
 		setValidPassword(PWD_REGEX.test(password));
@@ -47,10 +58,20 @@ const NewUserForm = () => {
 	const canSave =
 		[roles.length, validEmail, validPassword].every(Boolean) && !isLoading;
 
+	const date = new Date().toISOString().slice(0, 10);
+
+	const onClickSave = () => {
+		setMoveType('Se creó usuario');
+		setDateType(date);
+		setUser(email);
+	};
+
 	const onSaveUserClicked = async e => {
 		e.preventDefault();
 		if (canSave) {
+			let email = emailU;
 			await addNewUser({ email, password, roles });
+			await addNewRegister({ moveType, dateType, user });
 		}
 	};
 
@@ -62,9 +83,10 @@ const NewUserForm = () => {
 		);
 	});
 
-	const errClass = isError
-		? 'inline-block text-red-500 mb-[0.5em] font-semibold text-xl text-center'
-		: 'offscreen';
+	const errClass =
+		isError || !validEmail
+			? 'inline-block text-red-500 mb-[0.5em] font-semibold text-xl text-center'
+			: 'offscreen';
 	const validUserClass = !validEmail
 		? 'border-2 border-solid border-[#f00]'
 		: '';
@@ -88,7 +110,7 @@ const NewUserForm = () => {
 					<h2>Nuevo Usuario</h2>
 				</div>
 				<label
-					htmlFor="email"
+					htmlFor="emailU"
 					className="text-sm font-medium leading-5 tracking-wide"
 				>
 					Email: <span className="whitespace-nowrap">[Correo de Optimen]</span>
@@ -98,7 +120,7 @@ const NewUserForm = () => {
 					type="email"
 					id="email"
 					name="email"
-					value={email}
+					value={emailU}
 					onChange={onEmailChanged}
 				/>
 				<label
@@ -140,13 +162,19 @@ const NewUserForm = () => {
 					id={'Submit'}
 					name="Submit"
 					type="submit"
-					title="Save"
+					tite="Save"
 					value={'Guardar'}
 					disabled={!canSave}
+					onClick={onClickSave}
 					className={`w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white ${
 						!canSave ? canSaveClass : ''
 					}`}
 				/>
+				{!validEmail ? (
+					<p className={`font-monserrat ${errClass}`}>
+						El email debe contener el dominio '@optimen.com.mx'
+					</p>
+				) : null}
 				<p className={`font-monserrat ${errClass}`}>{error?.data?.message}</p>
 			</form>
 		</>

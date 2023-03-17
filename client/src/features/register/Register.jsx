@@ -1,10 +1,18 @@
-import { useNavigate } from 'react-router-dom';
-
-import { useSelector } from 'react-redux';
-import { selectRegisterById } from './registerApiSlice';
+import { selectRegisterById, useGetRegisterQuery } from './registerApiSlice';
+import { memo } from 'react';
 
 const Register = ({ registerId }) => {
-	const register = useSelector(state => selectRegisterById(state, registerId));
+	const { register } = useGetRegisterQuery('registerList', {
+		selectFromResult: ({ data }) => ({
+			register: data?.entities[registerId],
+		}),
+	});
+
+	const created = new Date(register.dateType).toLocaleString('es-MX', {
+		day: 'numeric',
+		month: 'long',
+		year: 'numeric',
+	});
 
 	if (register) {
 		return (
@@ -13,7 +21,7 @@ const Register = ({ registerId }) => {
 					{register.moveType}
 				</td>
 				<td className={`text-center" border-2 border-azulito px-10`}>
-					{register.dateType}
+					{created}
 				</td>
 				<td className={`text-center" border-2 border-azulito px-10`}>
 					{register.user}
@@ -23,4 +31,6 @@ const Register = ({ registerId }) => {
 	} else return null;
 };
 
-export default Register;
+const memoizedRegister = memo(Register);
+
+export default memoizedRegister;
