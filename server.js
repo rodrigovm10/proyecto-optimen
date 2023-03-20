@@ -30,6 +30,7 @@ app.use('/', require('./routes/root'));
 app.use('/auth', require('./routes/authRoutes'));
 app.use('/users', require('./routes/userRoutes'));
 app.use('/register', require('./routes/registerRoutes'));
+app.use('/permission', require('./routes/permissionRoutes'));
 
 app.all('*', (req, res) => {
 	res.status(404);

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectUserById } from './usersApiSlice';
 import useAuth from '../../Hooks/useAuth';
+import UserPrivileges from '../../features/users/UserPrivileges';
 
 const Users = ({ userId }) => {
 	const { isAdmin, isAdminRoot } = useAuth();
@@ -16,7 +17,9 @@ const Users = ({ userId }) => {
 	if (user) {
 		const handleEdit = () =>
 			navigate(
-				`${isAdmin ? `/Admin/users/${userId}` : `/AdminRoot/users/${userId}`}`
+				`${
+					isAdmin ? `/Admin/users/${userId}` : `/AdminRoot/permission/${userId}`
+				}`
 			);
 
 		const userRolesString = user.roles.toString().replaceAll(',', ', ');

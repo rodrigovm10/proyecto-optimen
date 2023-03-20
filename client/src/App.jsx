@@ -20,6 +20,7 @@ import RequireAuth from './features/auth/RequireAuth';
 import { ROLES } from './config/roles';
 import ProfileCreator from './features/contentCreator/ProfileCreator';
 import AdminRootView from './pages/AdminRootView';
+import EditPermission from './features/users/EditPermission';
 
 function App() {
 	return (
@@ -65,8 +66,8 @@ function App() {
 								<Route path="AdminRoot">
 									<Route index element={<AdminRootView />} />
 									<Route path="Privileges" element={<Privileges />} />
-									<Route path="users">
-										<Route path=":id" element={<EditUser />} />
+									<Route path="permission">
+										<Route path=":id" element={<EditPermission />} />
 									</Route>
 								</Route>
 							</Route>

@@ -11,7 +11,7 @@ const useAuth = () => {
 
 	if (token) {
 		const decoded = jwtDecode(token);
-		const { email, roles } = decoded.UserInfo;
+		const { email, roles, permissions } = decoded.UserInfo;
 
 		isAdminRoot = roles.includes('AdminRoot');
 		isAdmin = roles.includes('Admin');
@@ -21,7 +21,15 @@ const useAuth = () => {
 		if (isAdmin) status = 'Admin';
 		if (isContentCreator) status = 'Content Creator';
 
-		return { email, roles, status, isAdminRoot, isAdmin, isContentCreator };
+		return {
+			email,
+			roles,
+			status,
+			isAdminRoot,
+			isAdmin,
+			isContentCreator,
+			permissions,
+		};
 	}
 
 	return {
@@ -31,6 +39,7 @@ const useAuth = () => {
 		isAdmin,
 		isContentCreator,
 		status,
+		permissions: [],
 	};
 };
 

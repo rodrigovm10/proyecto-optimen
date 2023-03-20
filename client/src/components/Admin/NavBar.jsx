@@ -44,7 +44,8 @@ function NavBar() {
 		/>
 	);
 
-	const { email, status, isAdminRoot, isAdmin, isContentCreator } = useAuth();
+	const { email, status, isAdminRoot, isAdmin, isContentCreator, permissions } =
+		useAuth();
 
 	return (
 		<>
@@ -59,19 +60,23 @@ function NavBar() {
 					}`}
 					name="Inicio"
 				></Links>
-				{isAdmin && (
+				{isAdmin && permissions.includes('Ver Registros') && (
 					<Links
 						to="/Admin/UpdatesRegister"
 						name="Registro de Actualizaciones"
 					/>
 				)}
-				{isAdmin && <Links to="/Admin/Profile" name="Perfiles" />}
-				{isAdmin && <Links to="/Admin/AddUsers" name="Añadir Usuarios" />}
+				{isAdmin && permissions.includes('Ver Perfiles') && (
+					<Links to="/Admin/Profile" name="Perfiles" />
+				)}
+				{isAdmin && permissions.includes('Añadir Usuarios') && (
+					<Links to="/Admin/AddUsers" name="Añadir Usuarios" />
+				)}
 				{isAdminRoot && <Links to="/AdminRoot/Privileges" name="Permisos" />}
 				{isContentCreator && (
 					<Links to="/ContentCreator/Profile" name="Perfil" />
 				)}
-				{isContentCreator && (
+				{isContentCreator && permissions.includes('Añadir Noticias') && (
 					<Links to="/ContentCreator" name="Añadir Noticias" />
 				)}
 				{logoutButton}

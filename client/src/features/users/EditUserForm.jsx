@@ -10,7 +10,7 @@ const USER_REGEX = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/;
 
 const EditUserForm = ({ userR }) => {
-	const { isAdmin, isAdminRoot } = useAuth();
+	const { isAdmin, isAdminRoot, permissions } = useAuth();
 	const auth = useAuth();
 	const emailR = auth.email;
 
@@ -135,168 +135,37 @@ const EditUserForm = ({ userR }) => {
 
 	const canSaveClass = 'opacity-60 cursor-auto';
 
-	const formAdmin = (
-		<>
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="email"
-			>
-				Email: <span className="nowrap">[3-20 letters]</span>
-			</label>
+	let buttonDelete;
+	if (permissions.includes('Eliminar Usuarios')) {
+		buttonDelete = (
 			<input
-				className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validUserClass}`}
-				id="email"
-				name="email"
-				type="text"
-				autoComplete="off"
-				value={email}
-				onChange={onEmailChanged}
+				id={'Submit'}
+				name="Submit"
+				type="submit"
+				title="Delete"
+				value="Eliminar"
+				disabled={!canSave}
+				onClick={onDeleteUserClicked}
+				className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-red-500 p-4 text-center leading-4 text-white"
 			/>
+		);
+	}
 
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="password"
-			>
-				Password: <span className="whitespace-nowrap">[empty = no change]</span>{' '}
-				<span className="whitespace-nowrap">[4-12 chars incl. !@#$%]</span>
-			</label>
+	let buttonSave;
+	if (permissions.includes('Editar Usuario')) {
+		buttonSave = (
 			<input
-				className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
-				id="password"
-				name="password"
-				type="password"
-				value={password}
-				onChange={onPasswordChanged}
+				id={'Submit'}
+				name="Submit"
+				type="submit"
+				title="Save"
+				value="Guardar"
+				disabled={!canSave}
+				onClick={onSaveUserClicked}
+				className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white"
 			/>
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="user-active"
-			>
-				Activo:
-				<input
-					className="h-4 w-4"
-					id="user-active"
-					name="user-active"
-					type="checkbox"
-					checked={active}
-					onChange={onActiveChanged}
-				/>
-			</label>
-			<div>
-				<input
-					id={'Submit'}
-					name="Submit"
-					type="submit"
-					title="Delete"
-					value="Eliminar"
-					disabled={!canSave}
-					onClick={onDeleteUserClicked}
-					className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-red-500 p-4 text-center leading-4 text-white"
-				/>
-			</div>
-		</>
-	);
-
-	const formAdminRoot = (
-		<>
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="roles"
-			>
-				Privilegios:
-			</label>
-			<select
-				id="roles"
-				name="roles"
-				className={`w-fit p-[0.25em] ${validRolesClass}`}
-				multiple={true}
-				size="3"
-				value={roles}
-				onChange={onRolesChanged}
-			>
-				{options}
-			</select>
-		</>
-	);
-
-	const formAll = (
-		<>
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="email"
-			>
-				Email: <span className="nowrap">[3-20 letters]</span>
-			</label>
-			<input
-				className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validUserClass}`}
-				id="email"
-				name="email"
-				type="text"
-				autoComplete="off"
-				value={email}
-				onChange={onEmailChanged}
-			/>
-
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="password"
-			>
-				Password: <span className="whitespace-nowrap">[empty = no change]</span>{' '}
-				<span className="whitespace-nowrap">[4-12 chars incl. !@#$%]</span>
-			</label>
-			<input
-				className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
-				id="password"
-				name="password"
-				type="password"
-				value={password}
-				onChange={onPasswordChanged}
-			/>
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="user-active"
-			>
-				Activo:
-				<input
-					className="h-4 w-4"
-					id="user-active"
-					name="user-active"
-					type="checkbox"
-					checked={active}
-					onChange={onActiveChanged}
-				/>
-			</label>
-			<label
-				className="text-sm font-medium leading-5 tracking-wide"
-				htmlFor="roles"
-			>
-				Roles Asignados:
-			</label>
-			<select
-				id="roles"
-				name="roles"
-				className={`w-fit p-[0.25em] ${validRolesClass}`}
-				multiple={true}
-				size="3"
-				value={roles}
-				onChange={onRolesChanged}
-			>
-				{options}
-			</select>
-			<div>
-				<input
-					id={'Submit'}
-					name="Submit"
-					type="submit"
-					title="Delete"
-					value="Eliminar"
-					disabled={!canSave}
-					onClick={onDeleteUserClicked}
-					className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-red-500 p-4 text-center leading-4 text-white"
-				/>
-			</div>
-		</>
-	);
+		);
+	}
 
 	const content = (
 		<>
@@ -308,25 +177,73 @@ const EditUserForm = ({ userR }) => {
 				onSubmit={e => e.preventDefault()}
 			>
 				<div className="flex items-center justify-between text-xl font-semibold text-cobalto">
-					<h2>{`${
-						isAdmin && isAdminRoot
-							? `Editar Usuario y Privilegios`
-							: isAdmin
-							? `Editar Usuario`
-							: `Editar Privilegios`
-					}`}</h2>
+					<h2>Editar Usuario</h2>
 				</div>
-				{isAdmin && isAdminRoot ? formAll : isAdmin ? formAdmin : formAdminRoot}
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="email"
+				>
+					Email: <span className="nowrap">[3-20 letters]</span>
+				</label>
 				<input
-					id={'Submit'}
-					name="Submit"
-					type="submit"
-					title="Save"
-					value="Guardar"
-					disabled={!canSave}
-					onClick={onSaveUserClicked}
-					className="w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white"
+					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validUserClass}`}
+					id="email"
+					name="email"
+					type="text"
+					autoComplete="off"
+					value={email}
+					onChange={onEmailChanged}
 				/>
+
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="password"
+				>
+					Password:{' '}
+					<span className="whitespace-nowrap">[empty = no change]</span>{' '}
+					<span className="whitespace-nowrap">[4-12 chars incl. !@#$%]</span>
+				</label>
+				<input
+					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
+					id="password"
+					name="password"
+					type="password"
+					value={password}
+					onChange={onPasswordChanged}
+				/>
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="user-active"
+				>
+					Activo:
+					<input
+						className="h-4 w-4"
+						id="user-active"
+						name="user-active"
+						type="checkbox"
+						checked={active}
+						onChange={onActiveChanged}
+					/>
+				</label>
+				<label
+					className="text-sm font-medium leading-5 tracking-wide"
+					htmlFor="roles"
+				>
+					Roles Asignados:
+				</label>
+				<select
+					id="roles"
+					name="roles"
+					className={`w-fit p-[0.25em] ${validRolesClass}`}
+					multiple={false}
+					size="3"
+					value={roles}
+					onChange={onRolesChanged}
+				>
+					{options}
+				</select>
+				{buttonDelete}
+				{buttonSave}
 			</form>
 		</>
 	);

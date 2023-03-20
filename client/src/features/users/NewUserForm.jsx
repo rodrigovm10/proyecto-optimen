@@ -27,6 +27,12 @@ const NewUserForm = () => {
 	const [password, setPassword] = useState('');
 	const [validPassword, setValidPassword] = useState(false);
 	const [roles, setRoles] = useState(['Admin']);
+	const [permissions, setPermissions] = useState([
+		'Ver Registros',
+		'Añadir Usuarios',
+		'Eliminar Usuarios',
+		'Editar Usuario',
+	]);
 
 	useEffect(() => {
 		setValidEmail(
@@ -43,6 +49,7 @@ const NewUserForm = () => {
 			setEmail('');
 			setPassword('');
 			setRoles([]);
+			setPermissions([]);
 			navigate('/Admin/Profile');
 		}
 	}, [isSuccess, navigate]);
@@ -70,7 +77,7 @@ const NewUserForm = () => {
 		e.preventDefault();
 		if (canSave) {
 			let email = emailU;
-			await addNewUser({ email, password, roles });
+			await addNewUser({ email, password, roles, permissions });
 			await addNewRegister({ moveType, dateType, user });
 		}
 	};
@@ -151,7 +158,6 @@ const NewUserForm = () => {
 					type="password"
 					id="roles"
 					name="roles"
-					multiple={false}
 					size="3"
 					value={roles}
 					onChange={onRolesChanged}
