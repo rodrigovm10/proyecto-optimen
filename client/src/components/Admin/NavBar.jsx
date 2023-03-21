@@ -66,9 +66,7 @@ function NavBar() {
 						name="Registro de Actualizaciones"
 					/>
 				)}
-				{isAdmin && permissions.includes('Ver Perfiles') && (
-					<Links to="/Admin/Profile" name="Perfiles" />
-				)}
+				{isAdmin && <Links to="/Admin/Profile" name="Perfiles" />}
 				{isAdmin && permissions.includes('Añadir Usuarios') && (
 					<Links to="/Admin/AddUsers" name="Añadir Usuarios" />
 				)}
@@ -77,7 +75,7 @@ function NavBar() {
 					<Links to="/ContentCreator/Profile" name="Perfil" />
 				)}
 				{isContentCreator && permissions.includes('Añadir Noticias') && (
-					<Links to="/ContentCreator" name="Añadir Noticias" />
+					<Links to="/ContentCreator/AddNew" name="Añadir Noticias" />
 				)}
 				{logoutButton}
 

@@ -32,6 +32,9 @@ const NewUserForm = () => {
 		'Añadir Usuarios',
 		'Eliminar Usuarios',
 		'Editar Usuario',
+		'Añadir Noticias',
+		'Eliminar Noticias',
+		'Editar Noticia',
 	]);
 
 	useEffect(() => {
@@ -68,7 +71,7 @@ const NewUserForm = () => {
 	const date = new Date().toISOString().slice(0, 10);
 
 	const onClickSave = () => {
-		setMoveType('Se creó usuario');
+		setMoveType('Se creó un usuario');
 		setDateType(date);
 		setUser(email);
 	};

@@ -21,6 +21,7 @@ import { ROLES } from './config/roles';
 import ProfileCreator from './features/contentCreator/ProfileCreator';
 import AdminRootView from './pages/AdminRootView';
 import EditPermission from './features/users/EditPermission';
+import NewForm from './features/contentCreator/NewForm';
 
 function App() {
 	return (
@@ -46,6 +47,7 @@ function App() {
 								<Route path="ContentCreator">
 									<Route index element={<ContentCreatorView />} />
 									<Route path="Profile" element={<ProfileCreator />} />
+									<Route path="AddNew" element={<NewForm />} />
 								</Route>
 							</Route>
 							{/* Rutas de la vista de administrador */}
