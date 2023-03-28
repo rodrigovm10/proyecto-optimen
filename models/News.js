@@ -14,10 +14,9 @@ const newsSchema = new mongoose.Schema({
 		required: true,
 	},
 	image: {
-		data: Buffer,
 		type: String,
 		required: true,
 	},
 });
 
-module.exports = mongoose.model('User', newsSchema);
+module.exports = mongoose.model('News', newsSchema);
