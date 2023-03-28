@@ -47,9 +47,11 @@ function Navigation() {
 						>
 							{t('navigation.contact')}
 						</Link>
-						<button onClick={() => i18n.changeLanguage('es')}>ES</button>
-						<button onClick={() => i18n.changeLanguage('en')}>EN</button>
 					</nav>
+				</div>
+				<div className="flex justify-center gap-x-2 p-5 text-xs tracking-widest text-white opacity-60">
+					<button onClick={() => i18n.changeLanguage('es')}>ES</button>
+					<button onClick={() => i18n.changeLanguage('en')}>EN</button>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@ import { ROLES } from '../../config/roles';
 import NavBar from '../../components/Admin/NavBar';
 
 const USER_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/;
+const PWD_REGEX = /^[A-z0-9!@#$%]{8,12}$/;
 
 const NewUserForm = () => {
 	const { email } = useAuth();
@@ -137,9 +137,9 @@ const NewUserForm = () => {
 					htmlFor="password"
 					className="text-sm font-medium leading-5 tracking-wide"
 				>
-					Password:{' '}
+					Contraseña:{' '}
 					<span className="whitespace-nowrap">
-						[4-12 carácteres incl. !@#$%]
+						[8-12 carácteres incl. !@#$%]
 					</span>
 				</label>
 				<input
@@ -154,7 +154,7 @@ const NewUserForm = () => {
 					className="text-sm font-medium leading-5 tracking-wide"
 					htmlFor="roles"
 				>
-					Roles:
+					Rol:
 				</label>
 				<select
 					className={`w-fit p-[0.25em] ${validRolesClass}`}

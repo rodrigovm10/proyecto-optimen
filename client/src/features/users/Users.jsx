@@ -20,7 +20,7 @@ const Users = ({ userId }) => {
 				`${
 					isAdmin ? `/Admin/users/${userId}` : `/AdminRoot/permission/${userId}`
 				}`
-			);
+			); 
 
 		const userRolesString = user.roles.toString().replaceAll(',', ', ');
 

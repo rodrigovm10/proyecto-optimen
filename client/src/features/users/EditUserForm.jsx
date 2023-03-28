@@ -199,9 +199,11 @@ const EditUserForm = ({ userR }) => {
 					className="text-sm font-medium leading-5 tracking-wide"
 					htmlFor="password"
 				>
-					Password:{' '}
-					<span className="whitespace-nowrap">[empty = no change]</span>{' '}
-					<span className="whitespace-nowrap">[4-12 chars incl. !@#$%]</span>
+					Contraseña:{' '}
+					<span className="whitespace-nowrap">
+						[campo vacío no habrá cambios en contraseña]
+					</span>{' '}
+					<span className="whitespace-nowrap">[8-12 incl. !@#$%]</span>
 				</label>
 				<input
 					className={`border-[rgba(0, 0, 0, 0.16)] h-12 w-full rounded-lg border-[1px] border-solid py-2 px-4 text-[#333333] ${validPwdClass}`}
@@ -229,7 +231,7 @@ const EditUserForm = ({ userR }) => {
 					className="text-sm font-medium leading-5 tracking-wide"
 					htmlFor="roles"
 				>
-					Roles Asignados:
+					Rol Asignados:
 				</label>
 				<select
 					id="roles"
