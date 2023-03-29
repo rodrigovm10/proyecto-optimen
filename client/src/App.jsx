@@ -22,6 +22,8 @@ import ProfileCreator from './features/contentCreator/ProfileCreator';
 import AdminRootView from './pages/AdminRootView';
 import EditPermission from './features/users/EditPermission';
 import NewForm from './features/contentCreator/NewForm';
+import NewsList from './features/contentCreator/NewsList';
+import EditNews from './features/contentCreator/EditNews';
 
 function App() {
 	return (
@@ -47,7 +49,11 @@ function App() {
 								<Route path="ContentCreator">
 									<Route index element={<ContentCreatorView />} />
 									<Route path="Profile" element={<ProfileCreator />} />
-									<Route path="AddNew" element={<NewForm />} />
+									<Route path="AddNews" element={<NewForm />} />
+									<Route path="SeeNews" element={<NewsList />} />
+									<Route path="news">
+										<Route path=":id" element={<EditNews />} />
+									</Route>
 								</Route>
 							</Route>
 							{/* Rutas de la vista de administrador */}

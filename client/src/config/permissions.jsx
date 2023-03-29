@@ -9,4 +9,5 @@ export const PERMISSIONS_CONTENTCREATOR = {
 	AddNews: 'Añadir Noticias',
 	DeleteNews: 'Eliminar Noticias',
 	EditNews: 'Editar Noticia',
+	SeeNews: 'Ver Noticias',
 };

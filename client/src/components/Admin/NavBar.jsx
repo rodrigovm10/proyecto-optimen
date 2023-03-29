@@ -75,7 +75,10 @@ function NavBar() {
 					<Links to="/ContentCreator/Profile" name="Perfil" />
 				)}
 				{isContentCreator && permissions.includes('Añadir Noticias') && (
-					<Links to="/ContentCreator/AddNew" name="Añadir Noticias" />
+					<Links to="/ContentCreator/AddNews" name="Añadir Noticias" />
+				)}
+				{isContentCreator && permissions.includes('Ver Noticias') && (
+					<Links to="/ContentCreator/SeeNews" name="Ver Noticias" />
 				)}
 				{logoutButton}
 

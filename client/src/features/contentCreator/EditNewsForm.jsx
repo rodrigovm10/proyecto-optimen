@@ -1,57 +1,71 @@
 import { useState, useEffect } from 'react';
-import { useAddNewNewsMutation } from './contentCreatorApiSlice';
+import {
+	useUpdateNewsMutation,
+	useDeleteNewsMutation,
+} from './contentCreatorApiSlice';
 import { useNavigate } from 'react-router-dom';
 import NavBar from '../../components/Admin/NavBar';
 
-const NewForm = () => {
-	const [addNewNews, { isLoading, isSuccess, isError, error }] =
-		useAddNewNewsMutation();
+const EditNewsForm = ({ news }) => {
+	const [updateNews, { isLoading, isSuccess, isError, error }] =
+		useUpdateNewsMutation();
+
+	const [
+		deleteNews,
+		{ isSuccess: isDelSuccess, isError: isDelError, error: delerror },
+	] = useDeleteNewsMutation();
 
 	const navigate = useNavigate();
 
-	const [title, setTitle] = useState('');
-	// const [date, setDate] = useState('');
-	const [description, setDescription] = useState('');
-	const [image, setImage] = useState('');
+	const [title, setTitle] = useState(news.title);
+	const [date, setDate] = useState(news.date);
+	const [description, setDescription] = useState(news.description);
+	const [image, setImage] = useState(news.image);
 
 	useEffect(() => {
-		if (isSuccess) {
+		console.log(isSuccess);
+		if (isSuccess || isDelSuccess) {
 			setTitle('');
-			// setDate('');
 			setDescription('');
 			setImage('');
-			navigate('/Admin/Profile');
+			navigate(`/ContentCreator/SeeNews`);
 		}
-	}, [isSuccess, navigate]);
+	}, [isSuccess, isDelSuccess, navigate]);
 
 	const onTitleChanged = e => setTitle(e.target.value);
-	// const onDateChanged = e => setDate(e.target.value);
 	const onDescriptionChanged = e => setDescription(e.target.value);
 	const onImageChanged = e => setImage(e.target.value);
 
-	const canSave = !isLoading;
+	const onActiveChanged = () => setActive(prev => !prev);
 
-	let dateToday = new Date().toISOString().slice(0, 10);
+	// const date = new Date().toISOString().slice(0, 10);
 
 	const onSaveNewsClicked = async e => {
-		e.preventDefault();
-		if (canSave) {
-			let date = dateToday;
-			await addNewNews({ title, date, description, image });
-		}
+		await updateNews({ id: news.id, title, date, description, image });
 	};
 
-	const errClass = isError
-		? 'inline-block text-red-500 mb-[0.5em] font-semibold text-xl text-center'
-		: 'offscreen';
+	const onDeleteNewsClicked = async () => {
+		await deleteNews({ id: news.id });
+	};
+
+	let canSave;
+
+	canSave = !isLoading;
+
+	const errContent = (error?.data?.message || delerror?.data?.message) ?? '';
+
+	const errClass =
+		isError || isDelError
+			? 'inline-block text-red p-[0.25em] mb-[0.5em] ml-[20%]'
+			: 'offscreen ';
 
 	const content = (
 		<>
 			<NavBar />
-			<p className={`font-monserrat ${errClass}`}>{error?.data?.message}</p>
+			<p className={errClass}>{errContent}</p>
 			<form
 				className="ml-[22%] flex max-w-[800px] flex-col flex-nowrap justify-center gap-[0.75em] overflow-hidden font-monserrat"
-				onSubmit={onSaveNewsClicked}
+				onSubmit={e => e.preventDefault()}
 			>
 				<div className="flex items-center justify-between text-xl font-semibold text-cobalto">
 					<h2>Nueva Noticia</h2>
@@ -81,8 +95,8 @@ const NewForm = () => {
 					type="text"
 					id="fechaNoticia"
 					name="fechaNoticia"
-					value={dateToday}
-					disabled={true}
+					value={date}
+					disabled={false}
 				/>
 				<label
 					htmlFor="descNoticia"
@@ -119,13 +133,24 @@ const NewForm = () => {
 					tite="Save"
 					value={'Guardar'}
 					disabled={!canSave}
+					onClick={onSaveNewsClicked}
 					className={`w-full cursor-pointer rounded-lg border-[1px] border-solid bg-cobalto p-4 text-center leading-4 text-white`}
 				/>
+				<input
+					id={'Submit'}
+					name="Submit"
+					type="submit"
+					tite="Delete"
+					value={'Eliminar'}
+					disabled={!canSave}
+					onClick={onDeleteNewsClicked}
+					className={`w-full cursor-pointer rounded-lg border-[1px] border-solid bg-red-600 p-4 text-center leading-4 text-white`}
+				/>
+				{/* <p className={`font-monserrat ${errClass}`}>{error?.data?.message}</p> */}
 			</form>
 		</>
 	);
-
 	return content;
 };
 
-export default NewForm;
+export default EditNewsForm;
