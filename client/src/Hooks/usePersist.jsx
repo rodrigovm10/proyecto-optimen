@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera un hook, para la parte persistente
+ * del Login.
+ */
+
 import { useState, useEffect } from 'react';
 
 const usePersist = () => {

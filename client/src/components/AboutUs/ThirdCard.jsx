@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera una 'card' que es utilizada en la
+ * tercera sección de about us.
+ */
+
 function ThirdCard({ src, alt, description }) {
 	return (
 		<div className={'mr-4 h-full w-3/12 whitespace-normal'}>

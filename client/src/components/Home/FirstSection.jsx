@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar la primera sección
+ * del apartado de home. A su vez llama al componente 'Border'.
+ */
+
 import LazyLoad from 'react-lazyload';
 import Border from '../Border';
 import Img1 from '../../assets/Imagenes-Optimen/Home/img-1.jpg';

@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el primer carrusel que se visualiza en 
+ * el apartado de customers. Mostrando así como imagenes y texto.
+ */
+
 import LazyLoad from 'react-lazyload';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';

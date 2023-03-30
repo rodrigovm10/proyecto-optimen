@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera la barra de navegación para las distintas
+ * opciones dee los usuarios con inicio de sesión.
+ */
+
 import Links from './Links';
 import { useEffect } from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom ';

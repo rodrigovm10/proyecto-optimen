@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el que llama a los componentes para
+ * generar la sección de formulario y la sección de la localización de la empresa.
+ */
+
 import FormSection from './FormSection';
 import LocationSection from './LocationSection';
 

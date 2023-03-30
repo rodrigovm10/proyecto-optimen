@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente un Link para navegación entre las distintas opciones
+ * para los usuarios con distintos roles.
+ */
+
 import { Link } from 'react-router-dom';
 
 function Links({ to, name }) {

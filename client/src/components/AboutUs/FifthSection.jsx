@@ -1,4 +1,7 @@
-import FirstLine from './FirstLine';
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el de la quinta seción de nuestro about us
+ * siendo así el que muestra esa sección mencionada.
+ */
 import SecondLine from './SecondLine';
 import { useTranslation } from 'react-i18next';
 

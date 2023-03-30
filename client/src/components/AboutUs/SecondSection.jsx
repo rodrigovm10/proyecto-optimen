@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar la segunda sección
+ * de about us, a su vez llama a los componentes 'Border' y 'SecondCard'.
+ */
+
 import Border from '../Border';
 import SecondCard from '../AboutUs/SecondCard';
 import Consultant from '../../assets/Imagenes-Optimen/About Us/consultant.webp';

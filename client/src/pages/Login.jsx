@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el que genera el Login, con todas
+ * las validaciones para que este pueda funcionar de la mejor manera.
+ */
+
 import { useRef, useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 

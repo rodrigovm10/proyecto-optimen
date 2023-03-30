@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el que genera la sección de localización.
+ */
+
 function LocationSection() {
 	return (
 		<div>

@@ -1,3 +1,9 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el principal, donde se llama al componente App
+ * siendo el de las rutas, además de que se utiliza, para usar el almacenamiento
+ * de los datos, además de lo necesario para la traducción.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';

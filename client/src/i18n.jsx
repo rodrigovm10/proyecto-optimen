@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para la traducción de la página
+ * en español e inglés.
+ */
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 

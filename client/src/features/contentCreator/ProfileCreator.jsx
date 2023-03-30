@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera un apartado para ver los datos del
+ * usuario.
+ */
+
 import NavBar from '../../components/Admin/NavBar';
 import useAuth from '../../Hooks/useAuth';
 

@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar la segunda sección
+ * del apartado de home.
+ */
+
 import LazyLoad from 'react-lazyload';
 import Esr from '../../assets/Imagenes-Optimen/Home/esr.png';
 import MarcaGTO from '../../assets/Imagenes-Optimen/Home/marca-gto-logo.png';

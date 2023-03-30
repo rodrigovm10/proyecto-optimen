@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera las rutas de la aplicación.
+ */
+
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';

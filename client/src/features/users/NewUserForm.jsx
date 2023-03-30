@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el formulario para
+ * poder añadir usuarios.
+ */
+
 import { useState, useEffect } from 'react';
 import { useAddNewUserMutation } from './usersApiSlice';
 import { useAddNewRegisterMutation } from '../register/registerApiSlice';

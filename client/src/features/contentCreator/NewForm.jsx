@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el formulario para añadir una nueva
+ * noticia.
+ */
+
 import { useState, useEffect } from 'react';
 import { useAddNewNewsMutation } from './contentCreatorApiSlice';
 import { useNavigate } from 'react-router-dom';

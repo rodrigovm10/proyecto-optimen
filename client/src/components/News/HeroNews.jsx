@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para genera el hero de News.
+ * Con Hero se refiere al apartado donde se visualiza la imagen.
+ */
+
 function HeroNews({ title, description }) {
 	return (
 		<>

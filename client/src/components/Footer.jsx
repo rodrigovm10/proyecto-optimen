@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el footer que se visualiza en
+ * los apartados principales de la página.
+ */
+
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import LogoAzul from '../assets/Imagenes-Optimen/logo-blanco-azul.png';

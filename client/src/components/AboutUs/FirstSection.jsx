@@ -1,3 +1,9 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar la primera sección
+ * del apartado de about us. A su vez llama a los componentes de 'First Card' y
+ * 'Border'.
+ */
+
 import { LazyLoad } from 'react-lazyload';
 import FirstCard from './FirstCard';
 import Border from '../Border';

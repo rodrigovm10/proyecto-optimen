@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera una 'card' que es utilizada en la
+ * segunda sección de about us.
+ */
+
 function SecondCard({ src, alt, title, description }) {
 	return (
 		<div className="font-monserrat">

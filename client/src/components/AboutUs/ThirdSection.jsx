@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar la tercera sección
+ * del apartado de about us. A su vez llama al componente de 'Third Card'.
+ */
+
 import Border from '../Border';
 import ThirdCard from './ThirdCard';
 import Airplane1 from '../../assets/Imagenes-Optimen/About Us/airplane_1.webp';

@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera la noticia, teniendo así ya un estándar
+ * para cada una de ellas.
+ */
+
 import LazyLoad from 'react-lazyload';
 function New({ title, date, description, src, alt }) {
 	return (

@@ -1,5 +1,9 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera la navegación que se visualiza en
+ * los apartados principales de la página.
+ */
+
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import LogoBlanco from '../assets/Imagenes-Optimen/logo optimen blanco.png';
 import { useTranslation } from 'react-i18next';
 

@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el formulario para editar la noticia
+ */
+
 import { useState, useEffect } from 'react';
 import {
 	useUpdateNewsMutation,

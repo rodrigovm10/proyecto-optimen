@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el contenedor de las noticias.
+ * Además utiliza el llamado de New para tener cada noticia en un contendor.
+ */
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import New from './New';

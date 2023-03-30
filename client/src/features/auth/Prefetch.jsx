@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera un despachador para los usuarios y las notas
+ * esto se refiere a que obtendra esos datos, 'despachando' así los datos.
+ */
+
 import { store } from '../../app/store';
 import { usersApiSlice } from '../users/usersApiSlice';
 import { newsApiSlice } from '../contentCreator/contentCreatorApiSlice';

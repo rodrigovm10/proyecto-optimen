@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera los métodos para el incio del Login,
+ * para el Logout y para el refresh de la página.
+ */
+
 import { apiSlice } from '../../app/api/apiSlice';
 import { logOut, setCredentials } from './authSlice';
 

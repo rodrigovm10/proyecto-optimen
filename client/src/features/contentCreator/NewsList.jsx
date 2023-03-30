@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera parte de una tabla, siendo más especificos,
+ * los encabezados de la tablas.
+ */
+
 import { useGetNewsQuery } from './contentCreatorApiSlice';
 import NewsCreated from './NewsCreated';
 import NavBar from '../../components/Admin/NavBar';

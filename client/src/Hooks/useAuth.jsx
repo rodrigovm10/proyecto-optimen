@@ -1,3 +1,10 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera un hook para obtener
+ * información sobre el usuario que este Logeado, esto lo genera mediante jwt,
+ * obteniendo información del token, además utiliza el componente de authSlice
+ * para que esto sea posible.
+ */
+
 import { useSelector } from 'react-redux';
 import { selectCurrentToken } from '../features/auth/authSlice';
 import jwtDecode from 'jwt-decode';

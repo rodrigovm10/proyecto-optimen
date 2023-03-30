@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera los link para navegar entre la página.
+ * Este componente es llamado en el footer.
+ */
+
 import { Link } from 'react-router-dom';
 function Nav({
 	title,

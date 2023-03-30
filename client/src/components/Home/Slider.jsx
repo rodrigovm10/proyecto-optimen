@@ -1,3 +1,9 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar el slider que se ve
+ * en el apartado de home, siendo este el que se ve donde las imagenes van
+ * pasando una tras otras
+ */
+
 import LazyLoad from 'react-lazyload';
 import '../Components.css';
 import GTOtech from '../../assets/Imagenes-Optimen/Home/GTOtech2.webp';

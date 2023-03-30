@@ -1,10 +1,15 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el formulario para poder editar
+ * los roles de los usuarios. Verifica que tipo de usuario es el seleccionado
+ * a editar, para así mostrar los permisos que mostrará.
+ */
+
 import { useState, useEffect } from 'react';
 import {
 	PERMISSIONS_ADMIN,
 	PERMISSIONS_CONTENTCREATOR,
 } from '../../config/permissions';
 import { useUpdateUserMutation } from './usersApiSlice';
-import { useUpdatePermissionMutation } from './permissionApiSlice';
 import { useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import NavBar from '../../components/Admin/NavBar';

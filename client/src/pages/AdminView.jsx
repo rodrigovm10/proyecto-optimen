@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera la primera interfaz al momento de
+ * entrar en el Login como un usuario con el rol de Admin.
+ */
+
 import NavBar from '../components/Admin/NavBar';
 import useAuth from '../Hooks/useAuth';
 

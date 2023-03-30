@@ -1,3 +1,9 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para genera el texto de la
+ * línea del tiempo. Siendo esta donde se visualiza el año y la descripción de
+ * ese año.
+ */
+
 import { useTranslation } from 'react-i18next';
 import React from 'react';
 

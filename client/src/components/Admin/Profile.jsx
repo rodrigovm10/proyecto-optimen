@@ -1,5 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente llama a la lista de usuarios.
+ */
+
 import NavBar from './NavBar';
-import IndividualProfile from './IndividualProfile';
 import UsersList from '../../features/users/UsersList';
 function Profile() {
 	return (

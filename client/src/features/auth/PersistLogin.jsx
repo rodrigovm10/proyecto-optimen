@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el Login persisente, siendo este
+ * el que hace que una sesión siga activa incluso después de cerrar el navegador.
+ */
+
 import { Outlet, Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { useRefreshMutation } from './authApiSlice';

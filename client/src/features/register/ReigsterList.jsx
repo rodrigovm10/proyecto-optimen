@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el encabezado de la tabla donde
+ * se muestran los registros de las noticias
+ */
+
 import { useGetRegisterQuery } from './registerApiSlice';
 import Register from './Register';
 

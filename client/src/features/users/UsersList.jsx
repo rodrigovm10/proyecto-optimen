@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el encabezado de la tabla donde
+ * se muestran los usuarios existentes.
+ */
+
 import { useGetUsersQuery } from './usersApiSlice';
 import Users from './Users';
 

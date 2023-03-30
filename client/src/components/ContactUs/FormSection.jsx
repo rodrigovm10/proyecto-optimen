@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el que genera el formulario de contacto
+ */
+
 import { useForm } from 'react-hook-form';
 
 function FormSection() {

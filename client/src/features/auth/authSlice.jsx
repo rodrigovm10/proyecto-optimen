@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera los token del kwt para cada usuario, esto
+ * al momento de iniciar sesión.
+ */
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const authSlice = createSlice({

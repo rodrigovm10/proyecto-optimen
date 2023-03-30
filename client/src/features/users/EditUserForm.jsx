@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el formulario para que un usuario
+ * pueda ser editado o eliminado, dependiendo de la acción que se quiera realizar.
+ */
+
 import { useState, useEffect } from 'react';
 import { useUpdateUserMutation, useDeleteUserMutation } from './usersApiSlice';
 import { useAddNewRegisterMutation } from '../register/registerApiSlice';

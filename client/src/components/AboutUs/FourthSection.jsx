@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es utilizado para generar la cuarta sección
+ * del apartado de about us. A su vez llama a los componentes de 'Border'.
+ */
+
 import LazyLoad from 'react-lazyload';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';

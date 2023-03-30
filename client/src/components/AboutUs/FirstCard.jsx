@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente crea una 'card' siendo así las que se visualizan
+ * por primera vez en el componente de about us.
+ */
 function FirstCard({ src, alt, title, description }) {
 	return (
 		<div

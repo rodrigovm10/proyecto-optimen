@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente genera el cuerpo de la tabla donde
+ * se muestran los registros de creación, edición o eliminación de noticias.
+ */
+
 import { selectRegisterById, useGetRegisterQuery } from './registerApiSlice';
 import { memo } from 'react';
 

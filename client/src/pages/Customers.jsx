@@ -1,3 +1,10 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el que llama a los componentes dentro de la
+ * ruta './components/Customers', siendo así el 'principal' o el general para
+ * los demás componentes. Llama a todos los componentes de 'Crousel' tanto
+ * el primero como el segundo, además del 'Navigation' y 'Footer'.
+ */
+
 import { Suspense, lazy } from 'react';
 const Navigation = lazy(() => import('../components/Navigation'));
 const Footer = lazy(() => import('../components/Footer'));

@@ -1,3 +1,9 @@
+/**@Author: Rodrigo Vega
+ * @Description: Este componente es el que realiza la conexión con el servidor
+ * como se visualia en el código se utiliza redux para lograr esta conexión.
+ * Además de eso se utiliza la conexión con jwt para dado un 'refresh' se siga
+ * permaneciendo la sesión del usuario
+ */
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { setCredentials } from '../../features/auth/authSlice';
 
