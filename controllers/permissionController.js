@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Archivo del controlador para los permisos.
+ */
+
 const User = require('../models/User');
 const asyncHandler = require('express-async-handler');
 

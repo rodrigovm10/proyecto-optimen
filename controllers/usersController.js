@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Archivo del controlador para los usuarios.
+ * Métodos GET, POST, PATCH, DELETE
+ */
+
 const User = require('../models/User');
 const asyncHandler = require('express-async-handler');
 const bcrypt = require('bcrypt');

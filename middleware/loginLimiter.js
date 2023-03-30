@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración para los intentos de Login que se pueden hacer.
+ */
+
 const rateLimit = require('express-rate-limit');
 const { logEvents } = require('./logger');
 

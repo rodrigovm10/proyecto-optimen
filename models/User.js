@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración de las colecciones de la base de datos para
+ * los usuarios.
+ */
+
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({

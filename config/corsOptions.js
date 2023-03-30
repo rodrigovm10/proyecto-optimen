@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración para los CORS.
+ */
+
 const allowedOrigins = require('./allowedOrigins');
 
 const corsOptions = {

@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Archivo del controlador para los registros.
+ * Métodos GET, POST
+ */
+
 const Register = require('../models/Register');
 const asyncHandler = require('express-async-handler');
 

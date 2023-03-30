@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración del servidor.
+ */
+
 require('dotenv').config();
 const express = require('express');
 const app = express();

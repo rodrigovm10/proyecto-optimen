@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Rutas para el controlador de auth.
+ */
+
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authController');

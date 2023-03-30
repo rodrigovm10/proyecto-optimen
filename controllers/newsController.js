@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Archivo del controlador para las noticias.
+ * Métodos GET, POST, PATCH, DELETE
+ */
+
 const News = require('../models/News');
 const asyncHandler = require('express-async-handler');
 

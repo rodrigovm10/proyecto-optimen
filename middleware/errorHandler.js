@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Manejador de errores, en caso de que exista un error en el servidor.
+ */
+
 const { logEvents } = require('./logger');
 
 const errorHandler = (err, req, res, next) => {

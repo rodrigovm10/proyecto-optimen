@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración que almacenara el log de un usuario al servidor.
+ */
+
 const { format } = require('date-fns');
 const { v4: uuid } = require('uuid');
 const fs = require('fs');

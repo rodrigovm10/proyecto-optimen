@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Archivo del controlador para la autorización de los usuarios.
+ * Métodos GET, POST
+ */
+
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');

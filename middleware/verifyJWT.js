@@ -1,3 +1,7 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración para verificar el uso de jwt
+ */
+
 const jwt = require('jsonwebtoken');
 
 const verifyJWT = (req, res, next) => {

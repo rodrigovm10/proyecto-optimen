@@ -1,3 +1,8 @@
+/**@Author: Rodrigo Vega
+ * @Description: Configuración de las colecciones de la base de datos para
+ * las noticias.
+ */
+
 const mongoose = require('mongoose');
 
 const newsSchema = new mongoose.Schema({
