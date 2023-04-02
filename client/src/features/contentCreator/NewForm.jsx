@@ -25,7 +25,7 @@ const NewForm = () => {
 			// setDate('');
 			setDescription('');
 			setImage('');
-			navigate('/Admin/Profile');
+			navigate('/ContentCreator/SeeNews');
 		}
 	}, [isSuccess, navigate]);
 
