@@ -74,9 +74,6 @@ Además, la página web incluirá un sistema de administración de contenidos, q
 
 ![image](https://user-images.githubusercontent.com/108686186/232250951-b2031f84-522e-4442-89a4-87ff64fbd71f.png)
 
-
-Indicar la descripción del proyecto (tiempo, costo y calidad).
-
 <!-- Objetivo -->
 #### Objetivo
 El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y novedoso.
@@ -103,8 +100,8 @@ El proyecto tiene como objetivo fortalecer la relación empresa con el cliente a
 En ésta sección se indicará los artefactos generados en base a la solución.
 
 <!-- Requerimientos -->
-#### Requerimientos
-Listado de los requerimientos (código requerimiento, descripción)
+#### Requerimientos 
+![image](https://user-images.githubusercontent.com/108686186/232253887-043e788a-efec-41ae-8f43-74f30438c412.png)
 
 <!-- Diagrama de Casos de Uso -->
 #### Diagrama Casos de Uso
@@ -117,7 +114,6 @@ En ésta sección se indicará los artefactos generados en base a la solución.
 
 <!-- Modelo Relacional -->
 #### Modelo Relacional
-Esquema de la base de datos (nombre de campo, tipo de datos, restricciones, etc)
 
 ![image](https://user-images.githubusercontent.com/108686186/232250324-d07c6760-f3b1-4943-92ab-d5246cc2ec87.png)
 
@@ -132,15 +128,17 @@ La colección “Registers” está diseñada para almacenar la información de 
 
 <!-- Diagrama de Clases -->
 #### Diagrama de Clases
+
 ![WhatsApp Image 2023-04-15 at 1 18 27 PM](https://user-images.githubusercontent.com/108686186/232249962-c314e338-57ee-4826-98f9-88466c2ecb75.jpeg)
 
 <!-- Diagrama de Componentes -->
 #### Diagrama de Componentes
-Esquema de los componentes que interactúan (Modelo, Vista, Controlador, Servidor Web, Servidor de base de datos)
+
 ![WhatsApp Image 2023-04-15 at 12 58 40 PM](https://user-images.githubusercontent.com/108686186/232249041-1bd12d78-08e5-4983-84e1-50051cd2f484.jpeg)
 
 <!-- Diagrama de Actividades -->
 #### Diagrama de Actividades
+
 ![WhatsApp Image 2023-04-15 at 2 47 02 PM](https://user-images.githubusercontent.com/108686186/232252855-d1013015-0346-4d2e-a7f7-48b88c120995.jpeg)
 
 ![WhatsApp Image 2023-04-15 at 2 47 35 PM](https://user-images.githubusercontent.com/108686186/232252869-f1fc1e5c-cc09-44eb-96db-81c11395e66f.jpeg)
@@ -149,13 +147,13 @@ Esquema de los componentes que interactúan (Modelo, Vista, Controlador, Servido
 ![WhatsApp Image 2023-04-15 at 2 47 51 PM](https://user-images.githubusercontent.com/108686186/232252882-983a4cee-5e98-49fe-a249-d397d8003935.jpeg)
 
 
-
 <!-- Implementación del proyecto -->
 ## Implementación
 En ésta sección se describe  los artefactos generados en base a la solución.
 
 <!-- Estándares de Codificación -->
 #### Estándares Codificación
+
 * Nombres descriptivos: se usaron nombres descriptivos para las variables para que su función o propósito sea claro y fácil de entender para otros desarrolladores. 
 
 * CamelCase: se utilizó la convención de camelCase para nombrar las variables, lo que significa escribir la primera palabra en minúscula y cada palabra subsiguiente con la primera letra en mayúscula. Por ejemplo, miVariable, nombreDeUsuario.
@@ -168,7 +166,6 @@ En ésta sección se describe  los artefactos generados en base a la solución.
 
 <!-- Arquitectura MVC y Middleware -->
 #### Arquitectura
-Definir los patrones empleados y de seguridad.
 
 ![WhatsApp Image 2023-04-15 at 3 01 17 PM](https://user-images.githubusercontent.com/108686186/232253037-4dd00200-51bb-43a8-a43f-623210bbfc25.jpeg)
 
@@ -213,6 +210,7 @@ Requisitos de software:
 
 <!-- Instalación -->
 ### Instalacion
+
 1.- Primero damos click en un botón verde o azuk "<> Code", se da click y se copia la ruta "https://github.com/rodrigovm10/back-end-AppWeb.git"
 
 2.- Copiamos la ruta y en la terminal se escribe "git clone" y enseguida se pega la ruta para que quede de esta forma "git clone https://github.com/rodrigovm10/back-end-AppWeb.git"
@@ -228,7 +226,9 @@ Requisitos de software:
 7.- Después ejecutamos el comando "npm run dev" y se iniciara en el localhost dado por la terminal.
 
 ## Guias
+
 ### Ingresar a la parte dinámica
+
 Para ingresar a esta parte es necsario ingresar el /Login
 ![image](https://user-images.githubusercontent.com/108686186/232250495-415c6322-f3c6-488e-8223-8410f33fb715.png)
 
@@ -282,7 +282,10 @@ a.	Al dar clic en una noticia nos mostrará un formualrio para editar o elimnar 
 Contribucion.
 
 ## Licencia
-Licencia.
+Software libre
+
+Este repositorio puede ser utilizado, copiado y distribuido, ya sea en su forma original o con modificaciones.
+
 
 ## Contacto
 rv0611200369@gmail.com
