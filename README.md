@@ -56,6 +56,8 @@
 <!-- Acerca del proyecto -->
 ## Acerca del proyecto OPTIMEN WEB SITE
 Requisitos
+* Node JS
+* IDE (Entorno de Desarrollo Integrado)
 
 ### 
 
