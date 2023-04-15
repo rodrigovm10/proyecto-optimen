@@ -91,7 +91,9 @@ El proyecto tiene como objetivo fortalecer la relación empresa con el cliente a
 
 <!-- Organigrama -->
 #### Organigrama
-![WhatsApp Image 2023-04-15 at 1 26 43 PM](https://user-images.githubusercontent.com/108686186/232249949-1ad7fbe4-a258-4d19-b471-6e4869d94bd3.jpeg)
+
+![image](https://user-images.githubusercontent.com/108686186/232255296-9eb11b98-40a8-49ec-8c71-cd65defd6c0c.png)
+
 
 <!-- Diagrama Gantt -->
 #### Diagrama Gantt
