@@ -101,7 +101,8 @@ En ésta sección se indicará los artefactos generados en base a la solución.
 
 <!-- Requerimientos -->
 #### Requerimientos 
-![image](https://user-images.githubusercontent.com/108686186/232253887-043e788a-efec-41ae-8f43-74f30438c412.png)
+![image](https://user-images.githubusercontent.com/108686186/232255046-269bf324-7599-493c-91d0-089e2215884d.png)
+
 
 <!-- Diagrama de Casos de Uso -->
 #### Diagrama Casos de Uso
