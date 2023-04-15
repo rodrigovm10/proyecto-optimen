@@ -68,7 +68,9 @@ Además, la página web incluirá un sistema de administración de contenidos, q
 * El tiempo empleado en la realización del proyecto fue de 14 semanas. Considerando la etapa de investigación hasta los casos de prueba.
 
 * Costos calculados por puntos de función
+
 ![image](https://user-images.githubusercontent.com/108686186/232250902-c127cbf6-c01a-4622-bd46-66156c5926ca.png)
+
 
 ![image](https://user-images.githubusercontent.com/108686186/232250951-b2031f84-522e-4442-89a4-87ff64fbd71f.png)
 
