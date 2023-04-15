@@ -104,6 +104,16 @@ En ésta sección se indicará los artefactos generados en base a la solución.
 #### Modelo Relacional
 Esquema de la base de datos (nombre de campo, tipo de datos, restricciones, etc)
 
+![image](https://user-images.githubusercontent.com/108686186/232250324-d07c6760-f3b1-4943-92ab-d5246cc2ec87.png)
+
+La colección “Users” está diseñada para almacenar la información de los usuarios registrados de Optimen. El campo email será de tipo String este campo este campo almacenará el email (correo electrónico) del usuario, con el cual este usuario a través del login podrá ingresar a la parte dinámica de la página.
+El campo password será de tipo String, es necesario esto para que permita números y letras para las contraseñas, después se encriptará para tener las contraseñas seguras. El campo rol será de tipo String ya que los roles son con nombre, además de tipo String porque solo se podrá almacenar un solo rol por usuario.
+El campo active será de tipo Boolean, almacenará si el usuario esta activo o no, almacenando True o False si dependiendo si un usuario estará activo o no.
+
+![image](https://user-images.githubusercontent.com/108686186/232250343-3878f245-4f87-419d-bdf0-b49fa94512db.png)
+La colección “Registers” está diseñada para almacenar la información de los registros hechos por el administrador, se mandará el tipo de movimiento hecho por un administrador ya sea crear, editar o eliminar, además dando la fecha de cuando se realizó ese movimiento y   el   usuario   que   ha   realizado   ese   movimiento. El campo moveType será de tipo String ya que estará almacenando el tipo de movimiento que un usuario haya realizado, como se ha mencionado, creación, eliminación y edición de una noticia. El campo date será de tipo Date estará almacenando la fecha de cuando se realizado el movimiento. Por último, el campo user será de tipo String almacenando el email del usuario del que haya realizado el movimiento.
+
+
 <!-- Diagrama de Clases -->
 #### Diagrama de Clases
 ![WhatsApp Image 2023-04-15 at 1 18 27 PM](https://user-images.githubusercontent.com/108686186/232249962-c314e338-57ee-4826-98f9-88466c2ecb75.jpeg)
@@ -162,11 +172,70 @@ Requisitos de Instalación.
 
 <!-- Instalación -->
 ### Instalacion
-Instalación del Software
+1.- Primero damos click en un botón verde o azuk "<> Code", se da click y se copia la ruta "https://github.com/rodrigovm10/back-end-AppWeb.git"
 
+2.- Copiamos la ruta y en la terminal se escribe "git clone" y enseguida se pega la ruta para que quede de esta forma "git clone https://github.com/rodrigovm10/back-end-AppWeb.git"
+
+3.- Dentro de la terminal ejecutamos "npm install".
+
+4.- Después se ejecuta el comando "npm start" para iniciar el servidor.
+
+5.- Se abre otra terminal y se abre el proyecto descargado.
+
+6.- Cambiamos a la carpeta client con el comando "cd client" y dentro se ejecuta "npm install".
+
+7.- Después ejecutamos el comando "npm run dev" y se iniciara en el localhost dado por la terminal.
 
 ## Guias
-Guias de Uso.
+### Ingresar a la parte dinámica
+Para ingresar a esta parte es necsario ingresar el /Login
+![image](https://user-images.githubusercontent.com/108686186/232250495-415c6322-f3c6-488e-8223-8410f33fb715.png)
+
+### Uso de rol Admin Root
+1.	Usamos como correo de ejemplo "adminroot@optimen.com.mx" y la contraseña "1234" para ingresar a la vista que tiene un Admin.
+![image](https://user-images.githubusercontent.com/108686186/232250502-36f11509-74e8-4d9a-b213-9f6233bd8f8e.png)
+
+2.	El apartado de permisos será para administrar los permisos para cada usuario.
+![image](https://user-images.githubusercontent.com/108686186/232250520-c91a83f9-226b-4b79-b9a2-28874932c09b.png)
+
+ 
+3.	Al dar clic en editar veremos la siguiente interfaz donde se podrá cambiar los permisos para cada usuario según su rol.
+![image](https://user-images.githubusercontent.com/108686186/232250538-1f249e7c-fb35-47e4-ad3c-bbe76598d5dc.png)
+
+### Uso de rol Admin
+1.	Usamos como correo de ejemplo "admin@optimen.com.mx" y la contraseña "1234" para ingresar a la vista que tiene un Admin.
+![image](https://user-images.githubusercontent.com/108686186/232250575-9c238b4a-984c-411a-aed3-d65ceb2f6af8.png)
+
+2.	El apartado "Registro de Actualizaciones" al momento que se realiza alguna inserción de un usuario, edición o eliminación del mismo.
+![image](https://user-images.githubusercontent.com/108686186/232250595-94fedb5f-8ee4-43fb-9669-1e03ffc3dd36.png)
+
+3.	El apartado "Perilfes" se mostrarán todos los usuarios registrados, además de una opción para editar o eliminar.
+
+Al dar clic en la opción para editar o eliminar sale la siguiente interfaz con las opciones vistas en el mismo.
+![image](https://user-images.githubusercontent.com/108686186/232250646-71f4415d-9bcd-4170-b115-6f4bb8bcb9e8.png)
+
+ 
+4.	El último apartado es el de "Añadir Usuarios" que sirve para lo que es, además vemos como es validado por un correo optimen.com.mx.
+ ![image](https://user-images.githubusercontent.com/108686186/232250681-b9398a01-0778-4e8a-881e-cc5bdb01bed5.png)
+
+
+### Uso de creador de contenido
+1.	Usamos como correo de ejemplo "creator@optimen.com.mx" y la contraseña "1234" para ingresar a la vista que tiene un Admin.
+![image](https://user-images.githubusercontent.com/108686186/232250725-f86bc8e2-21fa-48db-816e-d35744cfcfd4.png)
+ 
+2.	El apartado "Perfil" muestra los datos del usuario.
+![image](https://user-images.githubusercontent.com/108686186/232250745-ffff05ee-e861-427c-9979-e64c72e84dc7.png)
+
+3.	El apartado "Añadir Noticias" muestra un formulario para añadir noticias u eventos.
+![image](https://user-images.githubusercontent.com/108686186/232250761-1342c1b6-8fb6-400d-8a9e-7cd9774b1d89.png)
+ 
+4.	El apartado "Ver noticias" muestra las noticias para poder editar.
+![image](https://user-images.githubusercontent.com/108686186/232250787-37dc766f-9444-4ffb-b1e4-6ff6ad37a544.png)
+
+a.	Al dar clic en una noticia nos mostrará un formualrio para editar o elimnar la noticia/evento.  
+
+![image](https://user-images.githubusercontent.com/108686186/232250800-57c34283-a691-4fb3-b624-0839c55cd628.png)
+
 
 ## Contribución
 Contribucion.
