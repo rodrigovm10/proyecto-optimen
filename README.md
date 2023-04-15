@@ -287,9 +287,6 @@ a.	Al dar clic en una noticia nos mostrará un formualrio para editar o elimnar 
 ![image](https://user-images.githubusercontent.com/108686186/232250800-57c34283-a691-4fb3-b624-0839c55cd628.png)
 
 
-## Contribución
-Contribucion.
-
 ## Licencia
 Software libre
 
@@ -307,6 +304,3 @@ ricardogloria137@gmail.com
 * Rodrigo Vega Montoya (rodrigovm)
 * Sandra Karina Álvarez González (kueb0)
 * Ricardo Juan Jesús Gloria Gloria (35RicardoG)
-
-[contribuidores-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
