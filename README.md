@@ -225,7 +225,7 @@ Requisitos de software:
 
 7.- Después ejecutamos el comando "npm run dev" y se iniciara en el localhost dado por la terminal.
 
-## Guias
+## Guías
 
 ### Ingresar a la parte dinámica
 
