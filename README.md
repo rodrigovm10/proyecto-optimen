@@ -6,11 +6,6 @@
   <ol>
     <li>
       <a href="#acerca-del-proyecto">Acerca del Proyecto</a>
-<li>El proyecto consiste en rediseñar y reestructurar (siempre que sean justificables las
-modificaciones) la página web de Optimen manteniendo su esencia ejecutiva y
-apegándose al manual de identidad proporcionado por la empresa. Además se tiene que
-habilitar la edición de la sección de noticias y eventos desde un usuario administrador que
-pueda iniciar sesión y realizar las actualizaciones por sí mismo.</li>
       
       <ul>
         <li><a href="#descripción">Descripción</a></li>
