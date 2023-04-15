@@ -52,20 +52,28 @@
 </details>
 
 <!-- Acerca del proyecto -->
-## Acerca del proyecto
+## Acerca del proyecto OPTIMEN WEB SITE
 Requisitos
+
+### 
 
 <!-- Descripción -->
 #### Descripción
-El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y novedoso.
+El proyecto de "Optimen Web Site" tiene como objetivo principal crear una página web moderna y atractiva para la empresa Optimen, utilizando la tecnología de ReactJS.
+La página web de Optimen estará diseñada para ser fácilmente navegable y permitir a los usuarios interactuar con la empresa de una manera más eficiente y satisfactoria. La página web incluirá secciones para mostrar información sobre la empresa, sus servicios y productos, un formulario de contacto y un sistema de chat en vivo para que los clientes puedan comunicarse con Optimen en tiempo real.
+Además, la página web incluirá un sistema de administración de contenidos, que permitirá a los administradores de la página agregar, editar y eliminar contenido de manera sencilla y eficiente.
 
-*El tiempo empleado en la realización del proyecto fue de 14 semanas. Considerando la etapa de investigación hasta los casos de prueba.
+* El tiempo empleado en la realización del proyecto fue de 14 semanas. Considerando la etapa de investigación hasta los casos de prueba.
+
+* Costos calculados por puntos de función
+![image](https://user-images.githubusercontent.com/108686186/232250902-c127cbf6-c01a-4622-bd46-66156c5926ca.png)  ![image](https://user-images.githubusercontent.com/108686186/232250951-b2031f84-522e-4442-89a4-87ff64fbd71f.png)
+
 
 Indicar la descripción del proyecto (tiempo, costo y calidad).
 
 <!-- Objetivos -->
 #### Objetivo
-El proyecto tiene como objetivo ofrecer una nueva presentación de Optimen hacia el cliente mediante el rediseño de su página web respetando su manual de identidad y la esencia de su trabajo en operaciones de aerolíneas.
+El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y novedoso.
 
 #### Objetivos específicos
         
@@ -111,6 +119,7 @@ El campo password será de tipo String, es necesario esto para que permita núme
 El campo active será de tipo Boolean, almacenará si el usuario esta activo o no, almacenando True o False si dependiendo si un usuario estará activo o no.
 
 ![image](https://user-images.githubusercontent.com/108686186/232250343-3878f245-4f87-419d-bdf0-b49fa94512db.png)
+
 La colección “Registers” está diseñada para almacenar la información de los registros hechos por el administrador, se mandará el tipo de movimiento hecho por un administrador ya sea crear, editar o eliminar, además dando la fecha de cuando se realizó ese movimiento y   el   usuario   que   ha   realizado   ese   movimiento. El campo moveType será de tipo String ya que estará almacenando el tipo de movimiento que un usuario haya realizado, como se ha mencionado, creación, eliminación y edición de una noticia. El campo date será de tipo Date estará almacenando la fecha de cuando se realizado el movimiento. Por último, el campo user será de tipo String almacenando el email del usuario del que haya realizado el movimiento.
 
 
@@ -130,15 +139,15 @@ En ésta sección se describe  los artefactos generados en base a la solución.
 
 <!-- Estándares de Codificación -->
 #### Estándares Codificación
-Nombres descriptivos: se deben usar nombres descriptivos para las variables para que su función o propósito sea claro y fácil de entender para otros desarrolladores. Por ejemplo, en lugar de usar nombres como "x" o "y", usaremos nombres que describan su función o propósito, como "edad" o "nombre".
+* Nombres descriptivos: se usaron nombres descriptivos para las variables para que su función o propósito sea claro y fácil de entender para otros desarrolladores. 
 
-CamelCase: se debe usar la convención de camelCase para nombrar las variables, lo que significa escribir la primera palabra en minúscula y cada palabra subsiguiente con la primera letra en mayúscula. Por ejemplo, miVariable, nombreDeUsuario.
+* CamelCase: se utilizó la convención de camelCase para nombrar las variables, lo que significa escribir la primera palabra en minúscula y cada palabra subsiguiente con la primera letra en mayúscula. Por ejemplo, miVariable, nombreDeUsuario.
 
-Evitar palabras reservadas: se deben evitar las palabras reservadas de JavaScript como nombres de variables, como "function", "let", "var", "const", "if", "else", etc.
+* Evitar palabras reservadas: se evitó el uso de palabras reservadas de JavaScript como nombres de variables, como "function", "let", "var", "const", "if", "else", etc.
 
-Evitar abreviaturas confusas: se deben evitar abreviaturas confusas que puedan dificultar la comprensión de lo que hace una variable. Por ejemplo, en lugar de usar "s" para "string", usaremos "cadena" o "texto".
+* Evitar abreviaturas confusas: se evitó el uso de abreviaturas confusas que pudieran dificultar la comprensión de lo que hace una variable.
 
-Coherencia en singular o plural: se debe decidir si se usarán nombres en singular o plural para las variables y ser coherentes en todo el código. Por ejemplo, si usamos "usuario" en singular, también usaremos "usuarios" en lugar de "user" en plural.
+* Coherencia en singular o plural: se decidió usar nombres en inglés y en singular para las variables.
 
 <!-- Arquitectura MVC y Middleware -->
 #### Arquitectura
@@ -164,7 +173,6 @@ Evidencia de Ejecución de Casos de prueba.
 
 <!-- Iniciando -->
 ## Iniciando
-Iniciando.
 
 <!-- Requisitos -->
 ### Requisitos
@@ -251,9 +259,9 @@ karisaglez@gmail.com
 ricardogloria137@gmail.com
 
 ## Participantes
-* [Rodrigo Vega Montoya](Rodrigo Vega Montoya)
-* [participante 2](Sandra Karina Álvarez González)
-* [participante 3](Ricardo Juan Jesús Gloria Gloria)
+* Rodrigo Vega Montoya (rodrigovm)
+* Sandra Karina Álvarez González (kueb0)
+* Ricardo Juan Jesús Gloria Gloria (35RicardoG)
 
 [contribuidores-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
