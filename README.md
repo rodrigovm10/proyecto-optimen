@@ -8,7 +8,8 @@
       <a href="#acerca-del-proyecto">Acerca del Proyecto</a>
       <ul>
         <li><a href="#descripción">Descripción</a></li>    
-        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#objetivos">Objetivo</a></li>
+        <li><a href="#objetivos">Objetivos específicos</a></li>
         <li><a href="#organigrama">Organigrama</a></li>
         <li><a href="#diagrama-gantt">Diagrama Gantt</a></li>
       </ul>
@@ -26,6 +27,7 @@
         <li><a href="#modelo-relacional">Modelo Relacional</a></li>
         <li><a href="#diagrama-de-clases">Diagrama de Clases</a></li>
         <li><a href="#diagrama-de-componentes">Diagrama de Componentes</a></li>
+        <li><a href="#diagrama-de-actividades">Diagrama de Actividades</a></li>
       </ul>
     </li>    
     <li>
@@ -66,15 +68,18 @@ Además, la página web incluirá un sistema de administración de contenidos, q
 * El tiempo empleado en la realización del proyecto fue de 14 semanas. Considerando la etapa de investigación hasta los casos de prueba.
 
 * Costos calculados por puntos de función
-![image](https://user-images.githubusercontent.com/108686186/232250902-c127cbf6-c01a-4622-bd46-66156c5926ca.png)  ![image](https://user-images.githubusercontent.com/108686186/232250951-b2031f84-522e-4442-89a4-87ff64fbd71f.png)
+![image](https://user-images.githubusercontent.com/108686186/232250902-c127cbf6-c01a-4622-bd46-66156c5926ca.png)
+
+![image](https://user-images.githubusercontent.com/108686186/232250951-b2031f84-522e-4442-89a4-87ff64fbd71f.png)
 
 
 Indicar la descripción del proyecto (tiempo, costo y calidad).
 
-<!-- Objetivos -->
+<!-- Objetivo -->
 #### Objetivo
 El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y novedoso.
 
+<!-- Objetivos específicos -->
 #### Objetivos específicos
         
 * Visibilizar la marca y que resulte más atractiva para el cliente.
@@ -132,6 +137,16 @@ La colección “Registers” está diseñada para almacenar la información de 
 Esquema de los componentes que interactúan (Modelo, Vista, Controlador, Servidor Web, Servidor de base de datos)
 ![WhatsApp Image 2023-04-15 at 12 58 40 PM](https://user-images.githubusercontent.com/108686186/232249041-1bd12d78-08e5-4983-84e1-50051cd2f484.jpeg)
 
+<!-- Diagrama de Actividades -->
+#### Diagrama de Actividades
+![WhatsApp Image 2023-04-15 at 2 47 02 PM](https://user-images.githubusercontent.com/108686186/232252855-d1013015-0346-4d2e-a7f7-48b88c120995.jpeg)
+
+![WhatsApp Image 2023-04-15 at 2 47 35 PM](https://user-images.githubusercontent.com/108686186/232252869-f1fc1e5c-cc09-44eb-96db-81c11395e66f.jpeg)
+
+
+![WhatsApp Image 2023-04-15 at 2 47 51 PM](https://user-images.githubusercontent.com/108686186/232252882-983a4cee-5e98-49fe-a249-d397d8003935.jpeg)
+
+
 
 <!-- Implementación del proyecto -->
 ## Implementación
@@ -152,6 +167,9 @@ En ésta sección se describe  los artefactos generados en base a la solución.
 <!-- Arquitectura MVC y Middleware -->
 #### Arquitectura
 Definir los patrones empleados y de seguridad.
+
+![WhatsApp Image 2023-04-15 at 3 01 17 PM](https://user-images.githubusercontent.com/108686186/232253037-4dd00200-51bb-43a8-a43f-623210bbfc25.jpeg)
+
 
 <!-- Código Fuente -->
 #### Código Fuente
@@ -176,7 +194,20 @@ Evidencia de Ejecución de Casos de prueba.
 
 <!-- Requisitos -->
 ### Requisitos
-Requisitos de Instalación.
+
+Requisitos de hardware:
+
+* CPU de al menos 1 GHz o superior.
+* RAM de al menos 2 GB o más.
+* Almacenamiento en disco duro de al menos 8 GB o más.
+
+
+Requisitos de software:
+
+* NodeJS: es un entorno de tiempo de ejecución de JavaScript que se utiliza para desarrollar aplicaciones de ReactJS. Se recomienda instalar la última versión estable de Node.js.
+* NPM (Node Package Manager): es un gestor de paquetes para NodeJS que se utiliza para instalar y gestionar las dependencias de las aplicaciones de ReactJS.
+* Un editor de texto o un IDE: es necesario contar con un editor de texto o un entorno de desarrollo integrado (IDE) para escribir y editar el código fuente de la aplicación de ReactJS. Se recomiendan editores de texto como Visual Studio Code, Sublime Text, Atom, entre otros.
+
 
 <!-- Instalación -->
 ### Instalacion
