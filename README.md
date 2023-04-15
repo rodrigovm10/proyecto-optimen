@@ -53,54 +53,32 @@
 
 <!-- Acerca del proyecto -->
 ## Acerca del proyecto
-Requisitos.
+Requisitos
 
 <!-- Descripción -->
-#### Descripción.
+#### Descripción
 El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y novedoso.
 Indicar la descripción del proyecto (tiempo, costo y calidad).
 
 <!-- Objetivos -->
-#### Objetivos.
-Objetivo general del proyecto
+#### Objetivo
+El proyecto tiene como objetivo ofrecer una nueva presentación de Optimen hacia el cliente mediante el rediseño de su página web respetando su manual de identidad y la esencia de su trabajo en operaciones de aerolíneas.
+
+#### Objetivos específicos
         
-        El proyecto tiene como objetivo ofrecer una nueva presentación de Optimen hacia el
-cliente mediante el rediseño de su página web respetando su manual de identidad y la
-esencia de su trabajo en operaciones de aerolíneas.
-        
-        Objetivos específicos
-        
-        ● Visibilizar la marca y que resulte más atractiva para el cliente.
-En este mundo globalizado donde el desarrollo de software tiene una función tan
-preponderante, es importante que, si se intenta dar la imagen de estar
-actualizados, se transmita a través del sitio web, la aplicación web o cualquier
-forma que el usuario tenga de interactuar con la empresa a la distancia.
-        ● Dar a conocer las noticias de la empresa.
-Las noticias tienen el carácter de ser importantes por su vigencia, por ello es
-imprescindible garantizar que éstas podrán ser actualizadas de manera práctica y
-eficiente. Al retirar al programador como intermediario se hace que el proceso sea
-más directo y rápido.
-        ● Proporcionar información sobre los eventos. Al igual que las noticias, los eventos tienen importancia por el momento de ser
-publicados. Se posibilitará que un administrador lo pueda realizar de manera
-eficiente y que resulte atractivo para los clientes mediante un formato previo
-estandarizado.
-        ● Compartir información sobre la empresa con el cliente de manera amigable.
-Se espera que con un diseño adecuado y atractivo, el cliente se interese de
-manera genuina en conocer el trabajo de Optimen.
-        ● Mejorar la velocidad de carga de la página web. Al intentar proyectar que Optimen
-en es una empresa de optimización de software, será primordial asegurar que la
-página pueda ser visualizada por el usuario en pocos segundos para asegurar una
-mejor experiencia en el cliente.
+* Visibilizar la marca y que resulte más atractiva para el cliente.
+* Dar a conocer las noticias de la empresa.
+* Proporcionar información sobre los eventos.
+* Compartir información sobre la empresa con el cliente de manera amigable.
+* Mejorar la velocidad de carga de la página web.
 
 <!-- Organigrama -->
-#### Organigrama.
+#### Organigrama
 Organigrama.
 
 <!-- Diagrama Gantt -->
-#### Diagrama Gantt.
+#### Diagrama Gantt
 ![image](https://user-images.githubusercontent.com/108686186/232246085-f7bb444d-4c7d-401c-a9a0-8900932d9850.png)
-
-
 
 <!-- Análisis del proyecto -->
 ## Análisis de la Solución.
@@ -112,7 +90,7 @@ Listado de los requerimientos (código requerimiento, descripción)
 
 <!-- Diagrama de Casos de Uso -->
 #### Diagrama Casos de Uso.
-Agregar la imagen de los Casos de Uso.
+![WhatsApp Image 2023-04-15 at 12 58 07 PM](https://user-images.githubusercontent.com/108686186/232249516-2aa6eed9-4b7d-4c96-809e-38d518958672.jpeg)
 
 
 
