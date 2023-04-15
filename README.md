@@ -59,8 +59,6 @@ Requisitos
 * Node JS
 * IDE (Entorno de Desarrollo Integrado)
 
-### 
-
 <!-- Descripción -->
 #### Descripción
 El proyecto de "Optimen Web Site" tiene como objetivo principal crear una página web moderna y atractiva para la empresa Optimen, utilizando la tecnología de ReactJS.
@@ -70,11 +68,9 @@ Además, la página web incluirá un sistema de administración de contenidos, q
 * El tiempo empleado en la realización del proyecto fue de 14 semanas. Considerando la etapa de investigación hasta los casos de prueba.
 
 * Costos calculados por puntos de función
+  
+  ![image](https://user-images.githubusercontent.com/108686186/232255556-9577e5fd-48b4-4f3b-ada1-578e06ea4ed8.png)
 
-![image](https://user-images.githubusercontent.com/108686186/232250902-c127cbf6-c01a-4622-bd46-66156c5926ca.png)
-
-
-![image](https://user-images.githubusercontent.com/108686186/232250951-b2031f84-522e-4442-89a4-87ff64fbd71f.png)
 
 <!-- Objetivo -->
 #### Objetivo
@@ -101,7 +97,6 @@ El proyecto tiene como objetivo fortalecer la relación empresa con el cliente a
 
 <!-- Análisis del proyecto -->
 ## Análisis de la Solución
-En ésta sección se indicará los artefactos generados en base a la solución.
 
 <!-- Requerimientos -->
 #### Requerimientos 
@@ -154,7 +149,6 @@ La colección “Registers” está diseñada para almacenar la información de 
 
 <!-- Implementación del proyecto -->
 ## Implementación
-En ésta sección se describe  los artefactos generados en base a la solución.
 
 <!-- Estándares de Codificación -->
 #### Estándares Codificación
@@ -182,7 +176,6 @@ Código Fuente de la solución
 
 <!-- Pruebas proyecto -->
 ## Pruebas
-En ésta sección se describe  los artefactos generados en base a la solución.
 
 <!-- Casos de prueba -->
 #### Casos de prueba
@@ -191,7 +184,6 @@ Indicar los casos de prueba
 <!-- Ejecución Casos de prueba -->
 #### Ejecución
 Evidencia de Ejecución de Casos de prueba.
-
 
 <!-- Iniciando -->
 ## Iniciando
@@ -235,47 +227,59 @@ Requisitos de software:
 ### Ingresar a la parte dinámica
 
 Para ingresar a esta parte es necsario ingresar el /Login
+
 ![image](https://user-images.githubusercontent.com/108686186/232250495-415c6322-f3c6-488e-8223-8410f33fb715.png)
 
 ### Uso de rol Admin Root
 1.	Usamos como correo de ejemplo "adminroot@optimen.com.mx" y la contraseña "1234" para ingresar a la vista que tiene un Admin.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250502-36f11509-74e8-4d9a-b213-9f6233bd8f8e.png)
 
 2.	El apartado de permisos será para administrar los permisos para cada usuario.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250520-c91a83f9-226b-4b79-b9a2-28874932c09b.png)
 
  
 3.	Al dar clic en editar veremos la siguiente interfaz donde se podrá cambiar los permisos para cada usuario según su rol.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250538-1f249e7c-fb35-47e4-ad3c-bbe76598d5dc.png)
 
 ### Uso de rol Admin
 1.	Usamos como correo de ejemplo "admin@optimen.com.mx" y la contraseña "1234" para ingresar a la vista que tiene un Admin.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250575-9c238b4a-984c-411a-aed3-d65ceb2f6af8.png)
 
 2.	El apartado "Registro de Actualizaciones" al momento que se realiza alguna inserción de un usuario, edición o eliminación del mismo.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250595-94fedb5f-8ee4-43fb-9669-1e03ffc3dd36.png)
 
 3.	El apartado "Perilfes" se mostrarán todos los usuarios registrados, además de una opción para editar o eliminar.
 
 Al dar clic en la opción para editar o eliminar sale la siguiente interfaz con las opciones vistas en el mismo.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250646-71f4415d-9bcd-4170-b115-6f4bb8bcb9e8.png)
 
  
 4.	El último apartado es el de "Añadir Usuarios" que sirve para lo que es, además vemos como es validado por un correo optimen.com.mx.
- ![image](https://user-images.githubusercontent.com/108686186/232250681-b9398a01-0778-4e8a-881e-cc5bdb01bed5.png)
+
+![image](https://user-images.githubusercontent.com/108686186/232250681-b9398a01-0778-4e8a-881e-cc5bdb01bed5.png)
 
 
 ### Uso de creador de contenido
 1.	Usamos como correo de ejemplo "creator@optimen.com.mx" y la contraseña "1234" para ingresar a la vista que tiene un Admin.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250725-f86bc8e2-21fa-48db-816e-d35744cfcfd4.png)
  
 2.	El apartado "Perfil" muestra los datos del usuario.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250745-ffff05ee-e861-427c-9979-e64c72e84dc7.png)
 
 3.	El apartado "Añadir Noticias" muestra un formulario para añadir noticias u eventos.
+
 ![image](https://user-images.githubusercontent.com/108686186/232250761-1342c1b6-8fb6-400d-8a9e-7cd9774b1d89.png)
  
 4.	El apartado "Ver noticias" muestra las noticias para poder editar.
+	
 ![image](https://user-images.githubusercontent.com/108686186/232250787-37dc766f-9444-4ffb-b1e4-6ff6ad37a544.png)
 
 a.	Al dar clic en una noticia nos mostrará un formualrio para editar o elimnar la noticia/evento.  
