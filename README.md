@@ -57,11 +57,7 @@ Requisitos.
 
 <!-- Descripción -->
 #### Descripción.
-El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como
-poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa
-mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no
-demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y
-novedoso.
+El proyecto tiene como objetivo fortalecer la relación empresa con el cliente así como poder ser un medio publicitario como tal y sobre todo reforzar la imagen de la empresa mediante una página web. Se sabrá que se tuvo éxito si al cargar la página web no demora más de 5 segundos y si el resultado del diseño es visualmente atractivo y novedoso.
 Indicar la descripción del proyecto (tiempo, costo y calidad).
 
 <!-- Objetivos -->
@@ -102,7 +98,6 @@ Organigrama.
 
 <!-- Diagrama Gantt -->
 #### Diagrama Gantt.
-Diagrama Gantt.
 ![image](https://user-images.githubusercontent.com/108686186/232246085-f7bb444d-4c7d-401c-a9a0-8900932d9850.png)
 
 
@@ -136,6 +131,7 @@ Esquema de las clases empleadas (atributos y sus métodos).
 <!-- Diagrama de Componentes -->
 #### Diagrama de Componentes.
 Esquema de los componentes que interactúan (Modelo, Vista, Controlador, Servidor Web, Servidor de base de datos)
+![WhatsApp Image 2023-04-15 at 12 58 40 PM](https://user-images.githubusercontent.com/108686186/232249041-1bd12d78-08e5-4983-84e1-50051cd2f484.jpeg)
 
 
 <!-- Implementación del proyecto -->
@@ -199,12 +195,14 @@ Contribucion.
 Licencia.
 
 ## Contacto
-Contacto.
+rv0611200369@gmail.com
+karisaglez@gmail.com
+ricardogloria137@gmail.com
 
 ## Participantes
-* [participante 1]()
-* [participante 2]()
-* [participante 3]()
+* [participante 1](Rodrigo Vega Montoya)
+* [participante 2](Sandra Karina Álvarez González)
+* [participante 3](Ricardo Juan Jesús Gloria Gloria)
 
 [contribuidores-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
